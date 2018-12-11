@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=PgOSM
+%uri=https://bitbucket.org/rplinternal/pgosm
+
+001 2018-12-10T21:20:08Z Ryan Lambert <ryan@rustprooflabs.com> # Initial DB structures, cleaning up original version.
