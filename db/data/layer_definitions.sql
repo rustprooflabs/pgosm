@@ -4,7 +4,7 @@
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1000','1099','place','osm_id, name, place, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary,  way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1200','1299','admin_area','osm_id, name, admin_level, boundary, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, COALESCE(tags -> ''building:levels'', ''1'') AS levels, COALESCE(tags -> ''building:height'', ''4'') AS height, tags, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2000','2099','public','osm_id, name, amenity, landuse, way','govn''t offices, post office, police, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2100','2199','health','osm_id, name, amenity, landuse, way','Hospitals, pharmacies');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2200','2299','leisure','osm_id, name, amenity, landuse, leisure, way','');
