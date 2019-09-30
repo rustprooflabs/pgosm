@@ -1,0 +1,3 @@
+.coverage
+pgosm/__pycache__/
+tests/__pycache__/
