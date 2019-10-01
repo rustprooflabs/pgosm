@@ -351,6 +351,7 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8211','glacier','FALSE','FALSE','TRUE','"natural"=''glacier''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8221','wetland','FALSE','FALSE','TRUE','"natural"=''wetland''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8300','coastline','FALSE','FALSE','FALSE','???','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1011','neighborhood','FALSE','TRUE','TRUE','boundary=''neighborhood'' ','');
 
 
 
