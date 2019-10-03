@@ -14,16 +14,15 @@ SQL_OUTPUT_PATH = OUTPUT_DIR + SQL_OUTPUT_FILENAME
 
 print('Output Path:  {}'.format(SQL_OUTPUT_PATH))
 
-def process_layers():
+def process_layers(schema='osm'):
     """ Main Entry point to run process to run PgOSM module."""
     start_time = time.time()
     print('Starting processing.')
     
     file_manager.remove_file(SQL_OUTPUT_PATH)
 
-    create_osm_schema()
-
-    generate_layers()
+    create_osm_schema(schema=schema)
+    generate_layers(schema=schema)
 
     end_time = time.time()
 
@@ -32,18 +31,16 @@ def process_layers():
     print(msg.format(elapsed))
 
 
-
-def create_osm_schema():
-    """Creates an empty `osm` schema.  WARNING:  Drops existing `osm` schema."""
-    sql = 'DROP SCHEMA IF EXISTS osm CASCADE;'
+def create_osm_schema(schema):
+    """Creates an empty schema.  WARNING:  Drops existing `osm` schema."""
+    sql = 'DROP SCHEMA IF EXISTS {} CASCADE;'.format(schema)
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
-    sql = 'CREATE SCHEMA osm;'
+    sql = 'CREATE SCHEMA {};'.format(schema)
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
 
 
-
-def generate_layers():
-    generate_sql_for_layers()
+def generate_layers(schema='osm'):
+    generate_sql_for_layers(schema=schema)
 
     print('Executing SQL Script...')
     raw_sql = file_manager.read_file(SQL_OUTPUT_PATH)
@@ -51,18 +48,15 @@ def generate_layers():
     print('Executing SQL Script completed.')
 
 
-
-def generate_sql_for_layers():
+def generate_sql_for_layers(schema='osm'):
     layers = get_layers()
     print('{} layers returned'.format(len(layers)))
 
     for layer_group_id, data in layers.iterrows():
         layer_columns = data['osm_columns']
         layer_name = data['name']
-        schema = 'osm'
 
         process_layer_classes(layer_group_id, schema, layer_name, layer_columns)
-
 
 
 def get_layers():
@@ -70,8 +64,6 @@ def get_layers():
     sql += ' FROM pgosm.layer_group '
     layers = db.return_dataframe(sql, index_column='layer_group_id')
     return layers
-
-
 
 
 def process_layer_classes(layer_group_id, schema, layer_name, layer_columns):
