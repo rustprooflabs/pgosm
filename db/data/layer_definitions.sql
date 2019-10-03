@@ -348,6 +348,7 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8200','water','FALSE','FALSE','TRUE','"natural"=''water''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8201','reservoir','FALSE','FALSE','TRUE','landuse=''reservoir''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8202','river','FALSE','FALSE','TRUE','waterway=''riverbank''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8203','basin','FALSE','FALSE','TRUE','landuse=''basin''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8211','glacier','FALSE','FALSE','TRUE','"natural"=''glacier''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8221','wetland','FALSE','FALSE','TRUE','"natural"=''wetland''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('8300','coastline','FALSE','FALSE','FALSE','???','');
