@@ -4,10 +4,21 @@ Default layer styles should work in QGIS 3.4 and later.  They are helpful to get
 with QGIS.
 
 	psql -d geodb -f create_layer_styles.sql
+	psql -d geodb -f layer_styles_defaults.sql
 
 ## Export styles
 
-Data only, column inserts to allow not passing in the primary key.
+Data only, column inserts to allow not passing in the primary key (if needed).
+
+	pg_dump --data-only --column-inserts -d geodb -t public.layer_styles > ~/tmp/layer_styles_export.sql
+
+
+## Older Postgres
+
+Bug fixed in 11.3 (and older varients back through 9.4...).  See:
+https://blog.rustprooflabs.com/2019/05/pg-fixed-xml-pg_dump
+
+If upgrading isn't an option, this applies the work around.
 
 	echo "SET XML OPTION DOCUMENT;" > ~/tmp/layer_styles_export.sql
 	pg_dump --data-only --column-inserts -d geodb -t public.layer_styles >> ~/tmp/layer_styles_export.sql
