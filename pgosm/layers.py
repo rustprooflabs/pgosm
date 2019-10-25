@@ -15,15 +15,24 @@ SQL_OUTPUT_PATH = OUTPUT_DIR + SQL_OUTPUT_FILENAME
 
 print('Output Path:  {}'.format(SQL_OUTPUT_PATH))
 
-def process_layers(schema='osm'):
-    """ Main Entry point to run process to run PgOSM module."""
+def process_layers(schema='osm', generate_only=False):
+    """ Main Entry point to run process to run PgOSM module.
+
+    Parameters
+    -----------------
+    schema : str
+        Schema name to create.  Will DROP if exists.  Default='osm'.
+
+    generate_only : boolean
+        When False the generated SQL script is executed.
+    """
     start_time = time.time()
     print('Starting processing.')
     
     file_manager.remove_file(SQL_OUTPUT_PATH)
 
     create_osm_schema(schema=schema)
-    generate_layers(schema=schema)
+    generate_layers(schema=schema, generate_only=generate_only)
 
     end_time = time.time()
 
@@ -48,14 +57,16 @@ def create_osm_schema(schema):
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
 
 
-def generate_layers(schema='osm'):
+def generate_layers(schema='osm', generate_only=False):
     generate_sql_for_layers(schema=schema)
 
-    print('Executing SQL Script...')
-    raw_sql = file_manager.read_file(SQL_OUTPUT_PATH)
-    db.execute_no_results(raw_sql)
-    print('Executing SQL Script completed.')
-
+    if generate_only:
+        print('Generate only.  NOT executing scipt.')
+    else:
+        print('Executing SQL Script...')
+        raw_sql = file_manager.read_file(SQL_OUTPUT_PATH)
+        db.execute_no_results(raw_sql)
+        print('Executing SQL Script completed.')
 
 def generate_sql_for_layers(schema='osm'):
     layers = get_layers()
