@@ -5,6 +5,7 @@ Module to create OSM layers as defined in the layers table in the database.
 Execute `process_layers()` to run module.
 '''
 import time
+import datetime
 from pgosm import file_manager, db
 
 
@@ -14,15 +15,24 @@ SQL_OUTPUT_PATH = OUTPUT_DIR + SQL_OUTPUT_FILENAME
 
 print('Output Path:  {}'.format(SQL_OUTPUT_PATH))
 
-def process_layers(schema='osm'):
-    """ Main Entry point to run process to run PgOSM module."""
+def process_layers(schema='osm', generate_only=False):
+    """ Main Entry point to run process to run PgOSM module.
+
+    Parameters
+    -----------------
+    schema : str
+        Schema name to create.  Will DROP if exists.  Default='osm'.
+
+    generate_only : boolean
+        When False the generated SQL script is executed.
+    """
     start_time = time.time()
     print('Starting processing.')
     
     file_manager.remove_file(SQL_OUTPUT_PATH)
 
     create_osm_schema(schema=schema)
-    generate_layers(schema=schema)
+    generate_layers(schema=schema, generate_only=generate_only)
 
     end_time = time.time()
 
@@ -38,15 +48,25 @@ def create_osm_schema(schema):
     sql = 'CREATE SCHEMA {};'.format(schema)
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
 
+    created = datetime.datetime.now()
+    created = created.strftime("%A %Y-%m-%d")
+    schema_comment = 'PgOSM generated on {}. '.format(created)
+    schema_comment += 'Contains reformatted OpenStreetMap data.'
+    sql = "COMMENT ON SCHEMA {schema} IS '{comment}';"
+    sql = sql.format(schema=schema, comment=schema_comment)
+    file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
 
-def generate_layers(schema='osm'):
+
+def generate_layers(schema='osm', generate_only=False):
     generate_sql_for_layers(schema=schema)
 
-    print('Executing SQL Script...')
-    raw_sql = file_manager.read_file(SQL_OUTPUT_PATH)
-    db.execute_no_results(raw_sql)
-    print('Executing SQL Script completed.')
-
+    if generate_only:
+        print('Generate only.  NOT executing scipt.')
+    else:
+        print('Executing SQL Script...')
+        raw_sql = file_manager.read_file(SQL_OUTPUT_PATH)
+        db.execute_no_results(raw_sql)
+        print('Executing SQL Script completed.')
 
 def generate_sql_for_layers(schema='osm'):
     layers = get_layers()
@@ -55,8 +75,10 @@ def generate_sql_for_layers(schema='osm'):
     for layer_group_id, data in layers.iterrows():
         layer_columns = data['osm_columns']
         layer_name = data['name']
+        description = data['description']
 
-        process_layer_classes(layer_group_id, schema, layer_name, layer_columns)
+        process_layer_classes(layer_group_id, schema, layer_name,
+            layer_columns, description)
 
 
 def get_layers():
@@ -66,7 +88,8 @@ def get_layers():
     return layers
 
 
-def process_layer_classes(layer_group_id, schema, layer_name, layer_columns):
+def process_layer_classes(layer_group_id, schema, layer_name,
+                          layer_columns, description):
     print('Processing layer %s (layer_group_id=%s).' % (layer_name, layer_group_id))
     layer_classes = get_layer_classes(layer_group_id)
 
@@ -99,18 +122,22 @@ def process_layer_classes(layer_group_id, schema, layer_name, layer_columns):
     if geom_point:
         geom_type = 'point'
         table_name = table_base % (schema, layer_name, geom_type)
-        create_layer_sql(table_name, columns, sql_filter, geom_type)
+        create_layer_sql(table_name, columns, sql_filter,
+                         geom_type, description)
     if geom_line:
         geom_type = 'line'
         table_name = table_base % (schema, layer_name, geom_type)
-        create_layer_sql(table_name, columns, sql_filter, geom_type)
+        create_layer_sql(table_name, columns, sql_filter,
+                         geom_type, description)
     if geom_polygon:
         geom_type = 'polygon'
         table_name = table_base % (schema, layer_name, geom_type)
-        create_layer_sql(table_name, columns, sql_filter, geom_type)
+        create_layer_sql(table_name, columns, sql_filter,
+                         geom_type, description)
 
 
-def create_layer_sql(table_name, columns, sql_filter, geom_type):
+def create_layer_sql(table_name, columns, sql_filter,
+                     geom_type, description):
 
     sql = 'SELECT ' + str(columns)
 
@@ -132,6 +159,13 @@ def create_layer_sql(table_name, columns, sql_filter, geom_type):
     sql_index = sql_index.format(index_name=index_name, table_name=table_name)
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql_index)
 
+    created = datetime.datetime.now()
+    created = created.strftime("%A %Y-%m-%d")
+    table_comment = 'PgOSM generated on {}.  {}'.format(created, description)
+    sql_comment = "COMMENT ON TABLE {table_name} is '{comment}'; "
+    sql_comment = sql_comment.format(table_name=table_name,
+                                     comment=table_comment)
+    file_manager.write_to_file(SQL_OUTPUT_PATH, sql_comment)    
 
 def get_layer_classes(layer_group_id):
     sql = 'SELECT layer_detail_id, code, subclass, geom_point, geom_line, '
