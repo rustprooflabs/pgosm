@@ -1,4 +1,4 @@
-#PgOSM and QGIS Styles
+# PgOSM and QGIS Styles
 
 Default layer styles should work in QGIS 3.4 and later.  They are helpful to get started with PgOSM data
 with QGIS.
