@@ -3,14 +3,14 @@
 Default layer styles should work in QGIS 3.4 and later.  They are helpful to get started with PgOSM data
 with QGIS.
 
-	psql -d geodb -f create_layer_styles.sql
-	psql -d geodb -f layer_styles_defaults.sql
+	psql -d pgosm -f create_layer_styles.sql
+	psql -d pgosm -f layer_styles_defaults.sql
 
 ## Export styles
 
 Data only, column inserts to allow not passing in the primary key (if needed).
 
-	pg_dump --data-only --column-inserts -d geodb -t public.layer_styles > ~/tmp/layer_styles_export.sql
+	pg_dump --data-only --column-inserts -d pgosm -t public.layer_styles > ~/tmp/layer_styles_export.sql
 
 
 ## Older Postgres
