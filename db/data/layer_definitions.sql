@@ -113,7 +113,6 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2306','food_court','TRUE','FALSE','TRUE','amenity=''food_court''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2307','biergarten','TRUE','FALSE','TRUE','amenity=''biergarten''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2308','bbq','TRUE','FALSE','TRUE','amenity=''bbq''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2309','food_court','TRUE','FALSE','TRUE','amenity=''food_court'' ','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2310','ice_cream','TRUE','FALSE','TRUE','amenity=''ice_cream'' ','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2311','catering','TRUE','FALSE','TRUE','amenity=''catering'' ','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2401','hotel','TRUE','FALSE','TRUE','tourism=''hotel''','');
