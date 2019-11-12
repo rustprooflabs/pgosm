@@ -18,7 +18,7 @@ In a nutshell, the process looks like this:
 > The `pgosm` database is intended to be short-lived, disposable, and not on a production server.  This process trashes your I/O for a while, depending on your hardware and the size of the data being processed.
 
 
-##Using PgOSM
+## Using PgOSM
 
 The RustProof Labs blog has a two-part post explaining how to load OpenStreetMap data to PostGIS using PgOSM
 
@@ -27,7 +27,7 @@ The RustProof Labs blog has a two-part post explaining how to load OpenStreetMap
 * Step 2: [Transform OpenStreetMap data in PostGIS](https://blog.rustprooflabs.com/2019/01/postgis-pgosm)
 
 
-##Why use PgOSM?
+## Why use PgOSM?
 
 ### Before PgOSM
 
