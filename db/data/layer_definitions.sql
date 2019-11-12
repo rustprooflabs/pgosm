@@ -16,7 +16,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, way','Place of Worship');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, REPLACE(tags -> ''maxspeed'', '' mph'', '''') AS maxspeed, oneway, tracktype, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5200','5299','traffic','osm_id, name, tags -> ''traffic''  AS traffic, highway, ref, way','');
 
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6100','6199','railway','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, way','');
