@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 11.4 (Ubuntu 11.4-1.pgdg16.04+1)
--- Dumped by pg_dump version 11.5 (Ubuntu 11.5-1.pgdg18.04+1)
+-- Dumped from database version 11.5 (Raspbian 11.5-1+deb10u1)
+-- Dumped by pg_dump version 11.5 (Ubuntu 11.5-3.pgdg18.04+1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,1099 +20,7 @@ SET row_security = off;
 -- Data for Name: layer_styles; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (166, 'rustprooflabs', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="0">
- <renderer-v2 attr="code" symbollevels="0" forceraster="0" enableorderby="0" type="categorizedSymbol">
-  <categories>
-   <category render="true" value="7201" label="Forest" symbol="0"/>
-   <category render="true" value="7202" label="Park" symbol="1"/>
-   <category render="true" value="7203" label="Residential" symbol="2"/>
-   <category render="true" value="7204" label="Industrial" symbol="3"/>
-   <category render="true" value="7205" label="Farm" symbol="4"/>
-   <category render="true" value="7206" label="Cemetary" symbol="5"/>
-   <category render="true" value="7208" label="Meadow" symbol="6"/>
-   <category render="true" value="7209" label="Commercial" symbol="7"/>
-   <category render="true" value="7211" label="Recreation" symbol="8"/>
-   <category render="true" value="7212" label="Retail" symbol="9"/>
-   <category render="true" value="7213" label="Military" symbol="10"/>
-   <category render="true" value="7214" label="Quarry" symbol="11"/>
-   <category render="true" value="7215" label="Orchard" symbol="12"/>
-   <category render="true" value="7217" label="Scrub" symbol="13"/>
-   <category render="true" value="7218" label="Grass" symbol="14"/>
-   <category render="true" value="" label="" symbol="15"/>
-  </categories>
-  <symbols>
-   <symbol name="0" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="44,190,31,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="1" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="190,245,186,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="10" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="158,76,0,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="11" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="96,126,235,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="12" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="83,222,123,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="13" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="42,174,33,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="PointPatternFill" pass="0" locked="0" enabled="1">
-     <prop v="0" k="displacement_x"/>
-     <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
-     <prop v="MM" k="displacement_x_unit"/>
-     <prop v="0.4" k="displacement_y"/>
-     <prop v="3x:0,0,0,0,0,0" k="displacement_y_map_unit_scale"/>
-     <prop v="MM" k="displacement_y_unit"/>
-     <prop v="2" k="distance_x"/>
-     <prop v="3x:0,0,0,0,0,0" k="distance_x_map_unit_scale"/>
-     <prop v="MM" k="distance_x_unit"/>
-     <prop v="2" k="distance_y"/>
-     <prop v="3x:0,0,0,0,0,0" k="distance_y_map_unit_scale"/>
-     <prop v="MM" k="distance_y_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@13@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="0" k="angle"/>
-       <prop v="255,0,0,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="arrowhead" k="name"/>
-       <prop v="0,0" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="1.6" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="14" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="144,216,0,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="128,152,72,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="15" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="133,221,125,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="2" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="208,208,208,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.16" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="3" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="230,182,220,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="4" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="109,225,15,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="5" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="173,233,168,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="PointPatternFill" pass="0" locked="0" enabled="1">
-     <prop v="0.2" k="displacement_x"/>
-     <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
-     <prop v="MM" k="displacement_x_unit"/>
-     <prop v="0" k="displacement_y"/>
-     <prop v="3x:0,0,0,0,0,0" k="displacement_y_map_unit_scale"/>
-     <prop v="MM" k="displacement_y_unit"/>
-     <prop v="4.4" k="distance_x"/>
-     <prop v="3x:0,0,0,0,0,0" k="distance_x_map_unit_scale"/>
-     <prop v="MM" k="distance_x_unit"/>
-     <prop v="4.4" k="distance_y"/>
-     <prop v="3x:0,0,0,0,0,0" k="distance_y_map_unit_scale"/>
-     <prop v="MM" k="distance_y_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@5@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="0" k="angle"/>
-       <prop v="155,155,155,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="pentagon" k="name"/>
-       <prop v="0,0" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="1.8" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="6" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="186,221,105,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="128,152,72,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="7" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="209,230,232,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="8" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="35,130,28,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="9" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="230,182,220,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </symbols>
-  <source-symbol>
-   <symbol name="0" alpha="1" type="fill" clip_to_extent="1">
-    <layer class="SimpleFill" pass="0" locked="0" enabled="1">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="35,139,33,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.26" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="solid" k="style"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </source-symbol>
-  <rotation/>
-  <sizescale/>
- </renderer-v2>
- <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
-  <property key="variableNames"/>
-  <property key="variableValues"/>
- </customproperties>
- <blendMode>0</blendMode>
- <featureBlendMode>0</featureBlendMode>
- <layerOpacity>1</layerOpacity>
- <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-  <DiagramCategory penColor="#000000" height="15" lineSizeType="MM" barWidth="5" scaleDependency="Area" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" minimumSize="0" minScaleDenominator="0" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" scaleBasedVisibility="0" width="15" backgroundAlpha="255" penWidth="0" enabled="0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1">
-   <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-   <attribute field="" label="" color="#000000"/>
-  </DiagramCategory>
- </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings zIndex="0" placement="1" dist="0" priority="0" linePlacementFlags="18" showAll="1" obstacle="0">
-  <properties>
-   <Option type="Map">
-    <Option name="name" type="QString" value=""/>
-    <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
-   </Option>
-  </properties>
- </DiagramLayerSettings>
- <fieldConfiguration>
-  <field name="osm_id">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="name">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="landuse">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="natural">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="leisure">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="boundary">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="code">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
- </fieldConfiguration>
- <aliases>
-  <alias index="0" field="osm_id" name=""/>
-  <alias index="1" field="name" name=""/>
-  <alias index="2" field="landuse" name=""/>
-  <alias index="3" field="natural" name=""/>
-  <alias index="4" field="leisure" name=""/>
-  <alias index="5" field="boundary" name=""/>
-  <alias index="6" field="code" name=""/>
- </aliases>
- <excludeAttributesWMS/>
- <excludeAttributesWFS/>
- <defaults>
-  <default field="osm_id" applyOnUpdate="0" expression=""/>
-  <default field="name" applyOnUpdate="0" expression=""/>
-  <default field="landuse" applyOnUpdate="0" expression=""/>
-  <default field="natural" applyOnUpdate="0" expression=""/>
-  <default field="leisure" applyOnUpdate="0" expression=""/>
-  <default field="boundary" applyOnUpdate="0" expression=""/>
-  <default field="code" applyOnUpdate="0" expression=""/>
- </defaults>
- <constraints>
-  <constraint field="osm_id" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="name" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="landuse" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="natural" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="leisure" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="boundary" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="code" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
- </constraints>
- <constraintExpressions>
-  <constraint field="osm_id" desc="" exp=""/>
-  <constraint field="name" desc="" exp=""/>
-  <constraint field="landuse" desc="" exp=""/>
-  <constraint field="natural" desc="" exp=""/>
-  <constraint field="leisure" desc="" exp=""/>
-  <constraint field="boundary" desc="" exp=""/>
-  <constraint field="code" desc="" exp=""/>
- </constraintExpressions>
- <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
- </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
-  <columns>
-   <column name="osm_id" type="field" hidden="0" width="-1"/>
-   <column name="name" type="field" hidden="0" width="-1"/>
-   <column name="landuse" type="field" hidden="0" width="-1"/>
-   <column name="natural" type="field" hidden="0" width="-1"/>
-   <column name="leisure" type="field" hidden="0" width="-1"/>
-   <column name="boundary" type="field" hidden="0" width="-1"/>
-   <column name="code" type="field" hidden="0" width="-1"/>
-   <column type="actions" hidden="1" width="-1"/>
-  </columns>
- </attributetableconfig>
- <editform></editform>
- <editforminit/>
- <editforminitcodesource>0</editforminitcodesource>
- <editforminitfilepath></editforminitfilepath>
- <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
- <featformsuppress>0</featformsuppress>
- <editorlayout>generatedlayout</editorlayout>
- <editable>
-  <field name="boundary" editable="1"/>
-  <field name="code" editable="1"/>
-  <field name="landuse" editable="1"/>
-  <field name="leisure" editable="1"/>
-  <field name="name" editable="1"/>
-  <field name="natural" editable="1"/>
-  <field name="osm_id" editable="1"/>
- </editable>
- <labelOnTop>
-  <field name="boundary" labelOnTop="0"/>
-  <field name="code" labelOnTop="0"/>
-  <field name="landuse" labelOnTop="0"/>
-  <field name="leisure" labelOnTop="0"/>
-  <field name="name" labelOnTop="0"/>
-  <field name="natural" labelOnTop="0"/>
-  <field name="osm_id" labelOnTop="0"/>
- </labelOnTop>
- <widgets/>
- <conditionalstyles>
-  <rowstyles/>
-  <fieldstyles/>
- </conditionalstyles>
- <expressionfields/>
- <previewExpression>name</previewExpression>
- <mapTip></mapTip>
- <layerGeometryType>2</layerGeometryType>
-</qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- <NamedLayer>
-  <se:Name>landuse_polygon</se:Name>
-  <UserStyle>
-   <se:Name>landuse_polygon</se:Name>
-   <se:FeatureTypeStyle>
-    <se:Rule>
-     <se:Name>Forest</se:Name>
-     <se:Description>
-      <se:Title>Forest</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7201</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#2cbe1f</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Park</se:Name>
-     <se:Description>
-      <se:Title>Park</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7202</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#bef5ba</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Residential</se:Name>
-     <se:Description>
-      <se:Title>Residential</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7203</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#d0d0d0</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Industrial</se:Name>
-     <se:Description>
-      <se:Title>Industrial</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7204</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Farm</se:Name>
-     <se:Description>
-      <se:Title>Farm</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7205</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#6de10f</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Cemetary</se:Name>
-     <se:Description>
-      <se:Title>Cemetary</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7206</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#ade9a8</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:GraphicFill>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>pentagon</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#9b9b9b</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>6</se:Size>
-        </se:Graphic>
-       </se:GraphicFill>
-      </se:Fill>
-      <se:VendorOption name="distance">16,16</se:VendorOption>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Meadow</se:Name>
-     <se:Description>
-      <se:Title>Meadow</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7208</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#badd69</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#809848</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Commercial</se:Name>
-     <se:Description>
-      <se:Title>Commercial</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7209</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#d1e6e8</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Recreation</se:Name>
-     <se:Description>
-      <se:Title>Recreation</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7211</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#23821c</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Retail</se:Name>
-     <se:Description>
-      <se:Title>Retail</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7212</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Military</se:Name>
-     <se:Description>
-      <se:Title>Military</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7213</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#9e4c00</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Quarry</se:Name>
-     <se:Description>
-      <se:Title>Quarry</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7214</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#607eeb</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Orchard</se:Name>
-     <se:Description>
-      <se:Title>Orchard</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7215</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#53de7b</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Scrub</se:Name>
-     <se:Description>
-      <se:Title>Scrub</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7217</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#2aae21</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:GraphicFill>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>arrowhead</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>6</se:Size>
-        </se:Graphic>
-       </se:GraphicFill>
-      </se:Fill>
-      <se:VendorOption name="distance">7,7</se:VendorOption>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Grass</se:Name>
-     <se:Description>
-      <se:Title>Grass</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7218</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#90d800</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#809848</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name></se:Name>
-     <se:Description>
-      <se:Title>code is ''''</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal></ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsNull>
-        <ogc:PropertyName>code</ogc:PropertyName>
-       </ogc:PropertyIsNull>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:PolygonSymbolizer>
-      <se:Fill>
-       <se:SvgParameter name="fill">#85dd7d</se:SvgParameter>
-      </se:Fill>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-      </se:Stroke>
-     </se:PolygonSymbolizer>
-    </se:Rule>
-   </se:FeatureTypeStyle>
-  </UserStyle>
- </NamedLayer>
-</StyledLayerDescriptor>
-', true, 'Formats landuse areas (e.g. forest, park, residential, etc.) for OpenStreetMap data sets.', NULL, NULL, '2018-07-18 14:42:54.108027');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (169, 'rustprooflabs', 'osm', 'natural_point', 'way', 'osm_natural_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (169, 'pgosm', 'osm', 'natural_point', 'way', 'osm_natural_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="1" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="0">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{f32d95a2-e7ca-4780-b370-00b8849527a3}">
@@ -2197,733 +1105,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap natural points, e.g. Peak and Tree.', NULL, NULL, '2018-07-18 17:01:58.698118');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (170, 'rustprooflabs', 'osm', 'natural_line', 'way', 'osm_natural_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="25000" simplifyMaxScale="1" maxScale="-4.65661e-10">
- <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
-  <rules key="{ceb7579f-2437-4aae-a2a3-82f29ae548b4}">
-   <rule key="{7194b9ec-39be-4079-97f3-128b76fbda62}" filter="natural = ''cliff''" label="cliff">
-    <rule key="{046fc789-e171-47c9-b196-ea75c4cf9251}" scalemaxdenom="5000" label="0 - 5000" symbol="0"/>
-    <rule key="{1208a689-a64e-4142-be72-4de0230c79a4}" scalemaxdenom="25000" label="5000 - 25000" scalemindenom="5000" symbol="1"/>
-    <rule key="{913e6344-9d92-4ef5-b197-cd5ac518cbed}" scalemaxdenom="50000" label="25000 - 50000" scalemindenom="25000" symbol="2"/>
-    <rule key="{10bc3767-6853-4f6f-b3e9-aec8a703aa54}" scalemaxdenom="100000" label="25000 - 50000" scalemindenom="50000" symbol="3"/>
-   </rule>
-   <rule key="{930691d1-9f5e-4f2b-bb16-91adc5d46a32}" filter="natural = ''tree''" label="tree" symbol="4"/>
-   <rule key="{2142d7f0-5bd4-4504-b5d3-21e2a71d1c4c}" filter="ELSE" checkstate="0"/>
-  </rules>
-  <symbols>
-   <symbol name="0" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="94,94,94,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.46" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
-     <prop v="3" k="interval"/>
-     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
-     <prop v="MM" k="interval_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="0" k="offset_along_line"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
-     <prop v="MM" k="offset_along_line_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="interval" k="placement"/>
-     <prop v="1" k="rotate"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@0@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="180" k="angle"/>
-       <prop v="94,94,94,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="equilateral_triangle" k="name"/>
-       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="2" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="1" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="94,94,94,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.368" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
-     <prop v="3" k="interval"/>
-     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
-     <prop v="MM" k="interval_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="0" k="offset_along_line"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
-     <prop v="MM" k="offset_along_line_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="interval" k="placement"/>
-     <prop v="1" k="rotate"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@1@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="180" k="angle"/>
-       <prop v="94,94,94,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="equilateral_triangle" k="name"/>
-       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="1.6" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="2" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="94,94,94,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.23" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
-     <prop v="3" k="interval"/>
-     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
-     <prop v="MM" k="interval_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="0" k="offset_along_line"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
-     <prop v="MM" k="offset_along_line_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="interval" k="placement"/>
-     <prop v="1" k="rotate"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@2@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="180" k="angle"/>
-       <prop v="94,94,94,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="equilateral_triangle" k="name"/>
-       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="1" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="3" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="94,94,94,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.138" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
-     <prop v="3" k="interval"/>
-     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
-     <prop v="MM" k="interval_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="0" k="offset_along_line"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
-     <prop v="MM" k="offset_along_line_unit"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="interval" k="placement"/>
-     <prop v="1" k="rotate"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-     <symbol name="@3@1" alpha="1" type="marker" clip_to_extent="1">
-      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
-       <prop v="180" k="angle"/>
-       <prop v="94,94,94,255" k="color"/>
-       <prop v="1" k="horizontal_anchor_point"/>
-       <prop v="bevel" k="joinstyle"/>
-       <prop v="equilateral_triangle" k="name"/>
-       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
-       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-       <prop v="MM" k="offset_unit"/>
-       <prop v="0,0,0,255" k="outline_color"/>
-       <prop v="solid" k="outline_style"/>
-       <prop v="0" k="outline_width"/>
-       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-       <prop v="MM" k="outline_width_unit"/>
-       <prop v="area" k="scale_method"/>
-       <prop v="0.6" k="size"/>
-       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-       <prop v="MM" k="size_unit"/>
-       <prop v="1" k="vertical_anchor_point"/>
-       <data_defined_properties>
-        <Option type="Map">
-         <Option name="name" type="QString" value=""/>
-         <Option name="properties"/>
-         <Option name="type" type="QString" value="collection"/>
-        </Option>
-       </data_defined_properties>
-      </layer>
-     </symbol>
-    </layer>
-   </symbol>
-   <symbol name="4" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="42,174,33,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.46" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </symbols>
- </renderer-v2>
- <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
-  <property key="variableNames"/>
-  <property key="variableValues"/>
- </customproperties>
- <blendMode>0</blendMode>
- <featureBlendMode>0</featureBlendMode>
- <layerOpacity>1</layerOpacity>
- <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-  <DiagramCategory penColor="#000000" height="15" lineSizeType="MM" barWidth="5" scaleDependency="Area" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" minimumSize="0" minScaleDenominator="-4.65661e-10" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" scaleBasedVisibility="0" width="15" backgroundAlpha="255" penWidth="0" enabled="0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1">
-   <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
-   <attribute field="" label="" color="#000000"/>
-  </DiagramCategory>
- </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings zIndex="0" placement="2" dist="0" priority="0" linePlacementFlags="18" showAll="1" obstacle="0">
-  <properties>
-   <Option type="Map">
-    <Option name="name" type="QString" value=""/>
-    <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
-   </Option>
-  </properties>
- </DiagramLayerSettings>
- <fieldConfiguration>
-  <field name="osm_id">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="name">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="natural">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="?column?">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="code">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
- </fieldConfiguration>
- <aliases>
-  <alias index="0" field="osm_id" name=""/>
-  <alias index="1" field="name" name=""/>
-  <alias index="2" field="natural" name=""/>
-  <alias index="3" field="?column?" name=""/>
-  <alias index="4" field="code" name=""/>
- </aliases>
- <excludeAttributesWMS/>
- <excludeAttributesWFS/>
- <defaults>
-  <default field="osm_id" applyOnUpdate="0" expression=""/>
-  <default field="name" applyOnUpdate="0" expression=""/>
-  <default field="natural" applyOnUpdate="0" expression=""/>
-  <default field="?column?" applyOnUpdate="0" expression=""/>
-  <default field="code" applyOnUpdate="0" expression=""/>
- </defaults>
- <constraints>
-  <constraint field="osm_id" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="name" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="natural" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="?column?" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="code" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
- </constraints>
- <constraintExpressions>
-  <constraint field="osm_id" desc="" exp=""/>
-  <constraint field="name" desc="" exp=""/>
-  <constraint field="natural" desc="" exp=""/>
-  <constraint field="?column?" desc="" exp=""/>
-  <constraint field="code" desc="" exp=""/>
- </constraintExpressions>
- <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
- </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
-  <columns>
-   <column name="osm_id" type="field" hidden="0" width="-1"/>
-   <column name="name" type="field" hidden="0" width="-1"/>
-   <column name="natural" type="field" hidden="0" width="-1"/>
-   <column name="?column?" type="field" hidden="0" width="-1"/>
-   <column name="code" type="field" hidden="0" width="-1"/>
-   <column type="actions" hidden="1" width="-1"/>
-  </columns>
- </attributetableconfig>
- <editform>.</editform>
- <editforminit/>
- <editforminitcodesource>0</editforminitcodesource>
- <editforminitfilepath></editforminitfilepath>
- <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
- <featformsuppress>0</featformsuppress>
- <editorlayout>generatedlayout</editorlayout>
- <editable>
-  <field name="?column?" editable="1"/>
-  <field name="code" editable="1"/>
-  <field name="name" editable="1"/>
-  <field name="natural" editable="1"/>
-  <field name="osm_id" editable="1"/>
- </editable>
- <labelOnTop>
-  <field name="?column?" labelOnTop="0"/>
-  <field name="code" labelOnTop="0"/>
-  <field name="name" labelOnTop="0"/>
-  <field name="natural" labelOnTop="0"/>
-  <field name="osm_id" labelOnTop="0"/>
- </labelOnTop>
- <widgets/>
- <conditionalstyles>
-  <rowstyles/>
-  <fieldstyles/>
- </conditionalstyles>
- <expressionfields/>
- <previewExpression>osm_id</previewExpression>
- <mapTip>addr:housename</mapTip>
- <layerGeometryType>1</layerGeometryType>
-</qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- <NamedLayer>
-  <se:Name>natural_line</se:Name>
-  <UserStyle>
-   <se:Name>natural_line</se:Name>
-   <se:FeatureTypeStyle>
-    <se:Rule>
-     <se:Name>0 - 5000</se:Name>
-     <se:Description>
-      <se:Title>0 - 5000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>natural</ogc:PropertyName>
-       <ogc:Literal>cliff</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:GraphicStroke>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>7</se:Size>
-         <se:Rotation>
-          <ogc:Literal>180</ogc:Literal>
-         </se:Rotation>
-         <se:Displacement>
-          <se:DisplacementX>0</se:DisplacementX>
-          <se:DisplacementY>-3</se:DisplacementY>
-         </se:Displacement>
-        </se:Graphic>
-        <se:Gap>
-         <ogc:Literal>11</ogc:Literal>
-        </se:Gap>
-       </se:GraphicStroke>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>5000 - 25000</se:Name>
-     <se:Description>
-      <se:Title>5000 - 25000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>natural</ogc:PropertyName>
-       <ogc:Literal>cliff</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:GraphicStroke>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>6</se:Size>
-         <se:Rotation>
-          <ogc:Literal>180</ogc:Literal>
-         </se:Rotation>
-         <se:Displacement>
-          <se:DisplacementX>0</se:DisplacementX>
-          <se:DisplacementY>-3</se:DisplacementY>
-         </se:Displacement>
-        </se:Graphic>
-        <se:Gap>
-         <ogc:Literal>11</ogc:Literal>
-        </se:Gap>
-       </se:GraphicStroke>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>25000 - 50000</se:Name>
-     <se:Description>
-      <se:Title>25000 - 50000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>natural</ogc:PropertyName>
-       <ogc:Literal>cliff</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:GraphicStroke>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>4</se:Size>
-         <se:Rotation>
-          <ogc:Literal>180</ogc:Literal>
-         </se:Rotation>
-         <se:Displacement>
-          <se:DisplacementX>0</se:DisplacementX>
-          <se:DisplacementY>-3</se:DisplacementY>
-         </se:Displacement>
-        </se:Graphic>
-        <se:Gap>
-         <ogc:Literal>11</ogc:Literal>
-        </se:Gap>
-       </se:GraphicStroke>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>25000 - 50000</se:Name>
-     <se:Description>
-      <se:Title>25000 - 50000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>natural</ogc:PropertyName>
-       <ogc:Literal>cliff</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:GraphicStroke>
-        <se:Graphic>
-         <se:Mark>
-          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
-          <se:Fill>
-           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
-          </se:Fill>
-          <se:Stroke>
-           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-          </se:Stroke>
-         </se:Mark>
-         <se:Size>2</se:Size>
-         <se:Rotation>
-          <ogc:Literal>180</ogc:Literal>
-         </se:Rotation>
-         <se:Displacement>
-          <se:DisplacementX>0</se:DisplacementX>
-          <se:DisplacementY>-3</se:DisplacementY>
-         </se:Displacement>
-        </se:Graphic>
-        <se:Gap>
-         <ogc:Literal>11</ogc:Literal>
-        </se:Gap>
-       </se:GraphicStroke>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>tree</se:Name>
-     <se:Description>
-      <se:Title>tree</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>natural</ogc:PropertyName>
-       <ogc:Literal>tree</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#2aae21</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-   </se:FeatureTypeStyle>
-  </UserStyle>
- </NamedLayer>
-</StyledLayerDescriptor>
-', true, 'OpenStreeMap natural lines.  e.g Cliffs', NULL, NULL, '2018-07-18 17:08:05.222986');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (171, 'rustprooflabs', 'osm', 'natural_polygon', 'way', 'osm_natural_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (171, 'pgosm', 'osm', 'natural_polygon', 'way', 'osm_natural_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{e9f1ea8e-f852-4224-97df-ca38e2e0f97f}">
@@ -5205,7 +3387,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap layer', NULL, NULL, '2018-07-18 17:12:59.829246');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (172, 'rustprooflabs', 'osm', 'miscpoi_point', 'way', 'osm_miscpoi_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (172, 'pgosm', 'osm', 'miscpoi_point', 'way', 'osm_miscpoi_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{0a4fd782-d9bd-4c1f-9653-28ab5d3cf32a}">
@@ -8134,7 +6316,733 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap extra points of interest (POI).  e.g. Fire hydrants, benches, toilets, etc.', NULL, NULL, '2018-07-18 17:21:12.850959');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (173, 'rustprooflabs', 'osm', 'traffic_polygon', 'way', 'osm_traffic_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (170, 'pgosm', 'osm', 'natural_line', 'way', 'osm_natural_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="25000" simplifyMaxScale="1" maxScale="-4.65661e-10">
+ <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
+  <rules key="{ceb7579f-2437-4aae-a2a3-82f29ae548b4}">
+   <rule key="{7194b9ec-39be-4079-97f3-128b76fbda62}" filter="natural = ''cliff''" label="cliff">
+    <rule key="{046fc789-e171-47c9-b196-ea75c4cf9251}" scalemaxdenom="5000" label="0 - 5000" symbol="0"/>
+    <rule key="{1208a689-a64e-4142-be72-4de0230c79a4}" scalemaxdenom="25000" label="5000 - 25000" scalemindenom="5000" symbol="1"/>
+    <rule key="{913e6344-9d92-4ef5-b197-cd5ac518cbed}" scalemaxdenom="50000" label="25000 - 50000" scalemindenom="25000" symbol="2"/>
+    <rule key="{10bc3767-6853-4f6f-b3e9-aec8a703aa54}" scalemaxdenom="100000" label="25000 - 50000" scalemindenom="50000" symbol="3"/>
+   </rule>
+   <rule key="{930691d1-9f5e-4f2b-bb16-91adc5d46a32}" filter="natural = ''tree''" label="tree" symbol="4"/>
+   <rule key="{2142d7f0-5bd4-4504-b5d3-21e2a71d1c4c}" filter="ELSE" checkstate="0"/>
+  </rules>
+  <symbols>
+   <symbol name="0" alpha="1" type="line" clip_to_extent="1">
+    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="94,94,94,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
+     <prop v="3" k="interval"/>
+     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+     <prop v="MM" k="interval_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="0" k="offset_along_line"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+     <prop v="MM" k="offset_along_line_unit"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="interval" k="placement"/>
+     <prop v="1" k="rotate"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+     <symbol name="@0@1" alpha="1" type="marker" clip_to_extent="1">
+      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+       <prop v="180" k="angle"/>
+       <prop v="94,94,94,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="equilateral_triangle" k="name"/>
+       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="0,0,0,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="area" k="scale_method"/>
+       <prop v="2" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option name="name" type="QString" value=""/>
+         <Option name="properties"/>
+         <Option name="type" type="QString" value="collection"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </layer>
+   </symbol>
+   <symbol name="1" alpha="1" type="line" clip_to_extent="1">
+    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="94,94,94,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.368" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
+     <prop v="3" k="interval"/>
+     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+     <prop v="MM" k="interval_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="0" k="offset_along_line"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+     <prop v="MM" k="offset_along_line_unit"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="interval" k="placement"/>
+     <prop v="1" k="rotate"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+     <symbol name="@1@1" alpha="1" type="marker" clip_to_extent="1">
+      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+       <prop v="180" k="angle"/>
+       <prop v="94,94,94,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="equilateral_triangle" k="name"/>
+       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="0,0,0,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="area" k="scale_method"/>
+       <prop v="1.6" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option name="name" type="QString" value=""/>
+         <Option name="properties"/>
+         <Option name="type" type="QString" value="collection"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </layer>
+   </symbol>
+   <symbol name="2" alpha="1" type="line" clip_to_extent="1">
+    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="94,94,94,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.23" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
+     <prop v="3" k="interval"/>
+     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+     <prop v="MM" k="interval_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="0" k="offset_along_line"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+     <prop v="MM" k="offset_along_line_unit"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="interval" k="placement"/>
+     <prop v="1" k="rotate"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+     <symbol name="@2@1" alpha="1" type="marker" clip_to_extent="1">
+      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+       <prop v="180" k="angle"/>
+       <prop v="94,94,94,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="equilateral_triangle" k="name"/>
+       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="0,0,0,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="area" k="scale_method"/>
+       <prop v="1" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option name="name" type="QString" value=""/>
+         <Option name="properties"/>
+         <Option name="type" type="QString" value="collection"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </layer>
+   </symbol>
+   <symbol name="3" alpha="1" type="line" clip_to_extent="1">
+    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="94,94,94,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.138" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer class="MarkerLine" pass="0" locked="0" enabled="1">
+     <prop v="3" k="interval"/>
+     <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+     <prop v="MM" k="interval_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="0" k="offset_along_line"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+     <prop v="MM" k="offset_along_line_unit"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="interval" k="placement"/>
+     <prop v="1" k="rotate"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+     <symbol name="@3@1" alpha="1" type="marker" clip_to_extent="1">
+      <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+       <prop v="180" k="angle"/>
+       <prop v="94,94,94,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="equilateral_triangle" k="name"/>
+       <prop v="-0.00000000000000006,-0.80000000000000004" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="0,0,0,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="area" k="scale_method"/>
+       <prop v="0.6" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option name="name" type="QString" value=""/>
+         <Option name="properties"/>
+         <Option name="type" type="QString" value="collection"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </layer>
+   </symbol>
+   <symbol name="4" alpha="1" type="line" clip_to_extent="1">
+    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="42,174,33,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+ </renderer-v2>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory penColor="#000000" height="15" lineSizeType="MM" barWidth="5" scaleDependency="Area" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" minimumSize="0" minScaleDenominator="-4.65661e-10" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" scaleBasedVisibility="0" width="15" backgroundAlpha="255" penWidth="0" enabled="0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1">
+   <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+   <attribute field="" label="" color="#000000"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings zIndex="0" placement="2" dist="0" priority="0" linePlacementFlags="18" showAll="1" obstacle="0">
+  <properties>
+   <Option type="Map">
+    <Option name="name" type="QString" value=""/>
+    <Option name="properties"/>
+    <Option name="type" type="QString" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="natural">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="?column?">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="natural" name=""/>
+  <alias index="3" field="?column?" name=""/>
+  <alias index="4" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default field="osm_id" applyOnUpdate="0" expression=""/>
+  <default field="name" applyOnUpdate="0" expression=""/>
+  <default field="natural" applyOnUpdate="0" expression=""/>
+  <default field="?column?" applyOnUpdate="0" expression=""/>
+  <default field="code" applyOnUpdate="0" expression=""/>
+ </defaults>
+ <constraints>
+  <constraint field="osm_id" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+  <constraint field="name" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+  <constraint field="natural" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+  <constraint field="?column?" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+  <constraint field="code" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="osm_id" desc="" exp=""/>
+  <constraint field="name" desc="" exp=""/>
+  <constraint field="natural" desc="" exp=""/>
+  <constraint field="?column?" desc="" exp=""/>
+  <constraint field="code" desc="" exp=""/>
+ </constraintExpressions>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <columns>
+   <column name="osm_id" type="field" hidden="0" width="-1"/>
+   <column name="name" type="field" hidden="0" width="-1"/>
+   <column name="natural" type="field" hidden="0" width="-1"/>
+   <column name="?column?" type="field" hidden="0" width="-1"/>
+   <column name="code" type="field" hidden="0" width="-1"/>
+   <column type="actions" hidden="1" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <editform>.</editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="?column?" editable="1"/>
+  <field name="code" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="natural" editable="1"/>
+  <field name="osm_id" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field name="?column?" labelOnTop="0"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="natural" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <expressionfields/>
+ <previewExpression>osm_id</previewExpression>
+ <mapTip>addr:housename</mapTip>
+ <layerGeometryType>1</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>natural_line</se:Name>
+  <UserStyle>
+   <se:Name>natural_line</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>0 - 5000</se:Name>
+     <se:Description>
+      <se:Title>0 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>natural</ogc:PropertyName>
+       <ogc:Literal>cliff</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:GraphicStroke>
+        <se:Graphic>
+         <se:Mark>
+          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
+          <se:Fill>
+           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
+          </se:Fill>
+          <se:Stroke>
+           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+          </se:Stroke>
+         </se:Mark>
+         <se:Size>7</se:Size>
+         <se:Rotation>
+          <ogc:Literal>180</ogc:Literal>
+         </se:Rotation>
+         <se:Displacement>
+          <se:DisplacementX>0</se:DisplacementX>
+          <se:DisplacementY>-3</se:DisplacementY>
+         </se:Displacement>
+        </se:Graphic>
+        <se:Gap>
+         <ogc:Literal>11</ogc:Literal>
+        </se:Gap>
+       </se:GraphicStroke>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>5000 - 25000</se:Name>
+     <se:Description>
+      <se:Title>5000 - 25000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>natural</ogc:PropertyName>
+       <ogc:Literal>cliff</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:GraphicStroke>
+        <se:Graphic>
+         <se:Mark>
+          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
+          <se:Fill>
+           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
+          </se:Fill>
+          <se:Stroke>
+           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+          </se:Stroke>
+         </se:Mark>
+         <se:Size>6</se:Size>
+         <se:Rotation>
+          <ogc:Literal>180</ogc:Literal>
+         </se:Rotation>
+         <se:Displacement>
+          <se:DisplacementX>0</se:DisplacementX>
+          <se:DisplacementY>-3</se:DisplacementY>
+         </se:Displacement>
+        </se:Graphic>
+        <se:Gap>
+         <ogc:Literal>11</ogc:Literal>
+        </se:Gap>
+       </se:GraphicStroke>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>25000 - 50000</se:Name>
+     <se:Description>
+      <se:Title>25000 - 50000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>natural</ogc:PropertyName>
+       <ogc:Literal>cliff</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:GraphicStroke>
+        <se:Graphic>
+         <se:Mark>
+          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
+          <se:Fill>
+           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
+          </se:Fill>
+          <se:Stroke>
+           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+          </se:Stroke>
+         </se:Mark>
+         <se:Size>4</se:Size>
+         <se:Rotation>
+          <ogc:Literal>180</ogc:Literal>
+         </se:Rotation>
+         <se:Displacement>
+          <se:DisplacementX>0</se:DisplacementX>
+          <se:DisplacementY>-3</se:DisplacementY>
+         </se:Displacement>
+        </se:Graphic>
+        <se:Gap>
+         <ogc:Literal>11</ogc:Literal>
+        </se:Gap>
+       </se:GraphicStroke>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>25000 - 50000</se:Name>
+     <se:Description>
+      <se:Title>25000 - 50000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>natural</ogc:PropertyName>
+       <ogc:Literal>cliff</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e5e5e</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:GraphicStroke>
+        <se:Graphic>
+         <se:Mark>
+          <se:WellKnownName>equilateral_triangle</se:WellKnownName>
+          <se:Fill>
+           <se:SvgParameter name="fill">#5e5e5e</se:SvgParameter>
+          </se:Fill>
+          <se:Stroke>
+           <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+           <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+          </se:Stroke>
+         </se:Mark>
+         <se:Size>2</se:Size>
+         <se:Rotation>
+          <ogc:Literal>180</ogc:Literal>
+         </se:Rotation>
+         <se:Displacement>
+          <se:DisplacementX>0</se:DisplacementX>
+          <se:DisplacementY>-3</se:DisplacementY>
+         </se:Displacement>
+        </se:Graphic>
+        <se:Gap>
+         <ogc:Literal>11</ogc:Literal>
+        </se:Gap>
+       </se:GraphicStroke>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>tree</se:Name>
+     <se:Description>
+      <se:Title>tree</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>natural</ogc:PropertyName>
+       <ogc:Literal>tree</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#2aae21</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'OpenStreeMap natural lines.  e.g Cliffs', NULL, NULL, '2018-07-18 17:08:05.222986');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (173, 'pgosm', 'osm', 'traffic_polygon', 'way', 'osm_traffic_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{48ea5ceb-e4ed-4ae9-8c86-428e22b45635}">
@@ -8728,7 +7636,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap traffic polygons.  Parking, fences, etc.', NULL, NULL, '2018-07-18 17:28:40.331348');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (174, 'rustprooflabs', 'osm', 'traffic_point', 'way', 'osm_traffic_poinit', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (174, 'pgosm', 'osm', 'traffic_point', 'way', 'osm_traffic_poinit', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="0">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{6b6e7b67-f90c-4532-a694-9c8fef9d99f6}">
@@ -17890,3576 +16798,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap traffic points.  Stop signs, lights, calming, etc.', NULL, NULL, '2018-07-18 17:29:59.170316');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (167, 'rustprooflabs', 'osm', 'road_line', 'way', 'osm_road_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="25000" simplifyMaxScale="1" maxScale="0">
- <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
-  <rules key="{c13d8e6b-872c-4920-8225-706a00f6e061}">
-   <rule key="{ab70c36a-fd09-41e5-8e70-532cb4eaad4b}" filter="ELSE" scalemaxdenom="20000" scalemindenom="1" symbol="0"/>
-   <rule key="{8707c673-9d1d-4b13-98b0-ba157753d504}" filter="code IN (5111, 5112)" label="motorway">
-    <rule key="{6f1c216a-4518-4066-a9d8-091a2a75eb25}" scalemaxdenom="10000" label="Motorway &lt; 10k" symbol="1"/>
-    <rule key="{7b8f4c97-f1ef-4d3e-a36a-7c2001e5dd49}" scalemaxdenom="40000" label="Motorway 10-40k" scalemindenom="10000" symbol="2"/>
-    <rule key="{fa6a489c-1af2-44f1-938f-50bad3b4f9b4}" scalemaxdenom="100000" label="Motorway 40-100k" scalemindenom="40000" symbol="3"/>
-    <rule key="{2a6c7f19-f94e-42fe-aa70-84e0a3c92f4d}" label="Motorway > 100k" scalemindenom="100000" symbol="4"/>
-   </rule>
-   <rule key="{9e4a609a-01d4-42a3-ae48-4f33d9e45ac5}" filter="code IN (5131, 5132)" label="motorway_link">
-    <rule key="{bad8d45a-40d1-4c29-b213-901adc869664}" scalemaxdenom="10000" label="0 - 10000" symbol="5"/>
-    <rule key="{a68b1236-ad96-4a55-b059-d5dcbdfa3652}" scalemaxdenom="40000" label="10000 - 40000" scalemindenom="10000" symbol="6"/>
-    <rule key="{34274842-afef-4734-af8a-253e0b2228d1}" scalemaxdenom="100000" label="40000 - 100000" scalemindenom="40000" symbol="7"/>
-    <rule key="{f3674b70-bfac-48f2-9f71-d9f752d4445e}" label="100000 - 0" scalemindenom="100000" symbol="8"/>
-   </rule>
-   <rule key="{5b935b53-ae8d-419e-8228-b4b4392a6b37}" filter="code = 5113" label="primary">
-    <rule key="{369477b2-9880-4796-b58f-2c4c5f6f518d}" scalemaxdenom="10000" label="Primary &lt; 10k" symbol="9"/>
-    <rule key="{7f70ea5b-00cb-41b3-90a2-fa75ebb824bd}" scalemaxdenom="40000" label="Primary 10-40k" scalemindenom="10000" symbol="10"/>
-    <rule key="{8b50862e-2e6c-4eaf-be9f-0ddb0bfb4634}" scalemaxdenom="100000" label="Primary 40-100k" scalemindenom="40000" symbol="11"/>
-    <rule key="{d625ec6a-6979-47a1-90f9-d35ddb15088e}" scalemaxdenom="150000" label="Primary 100-150k" scalemindenom="100000" symbol="12"/>
-    <rule key="{0d658ee9-20ba-492d-b932-de8e7e3be152}" label="Primary > 150k" scalemindenom="150000" symbol="13"/>
-   </rule>
-   <rule key="{7197a67a-ca50-464e-b4f3-8afc3c59ff5d}" filter="code = 5133" label="primary_link">
-    <rule key="{c2b8bfda-82bd-487b-8060-04ae1835835d}" scalemaxdenom="10000" label="Primary Link &lt; 10k" symbol="14"/>
-    <rule key="{91953c2d-0604-40ef-943e-4875b060e82a}" scalemaxdenom="40000" label="Primary Link 10-40k" scalemindenom="10000" symbol="15"/>
-    <rule key="{e43c2650-bf61-4186-8e37-425bcce08107}" scalemaxdenom="100000" label="Primary Link 40-100k" scalemindenom="40000" symbol="16"/>
-    <rule key="{3f114110-93d4-4da6-bc24-99957cac9515}" scalemaxdenom="150000" label="Primary Link 100-150k" scalemindenom="100000" symbol="17"/>
-    <rule key="{92e1ffa0-c49a-48c7-b6d0-aa9c9f909e35}" label="Primary Link > 150k" scalemindenom="150000" symbol="18"/>
-   </rule>
-   <rule key="{0728bd93-0b98-41c3-b647-d31cb2ce8db5}" filter="code IN (5114,5134)" label="secondary">
-    <rule key="{cfe3f623-cac3-440f-be77-e83712c39f15}" scalemaxdenom="50000" label="Secondary &lt; 10k" scalemindenom="1" symbol="19"/>
-    <rule key="{3fab97bc-9167-47a4-8fca-e2e684bd1c87}" scalemaxdenom="80000" label="Secondary 10-50k" scalemindenom="10000" symbol="20"/>
-    <rule key="{4f7642a8-1ff2-4842-b4c6-ba838e70d03e}" scalemaxdenom="80000" label="Secondary 50-80k" scalemindenom="50000" symbol="21"/>
-    <rule key="{6a70e768-2ef4-4220-aecd-1c6587aae6b3}" scalemaxdenom="110000" label="Secondary 80-110k" scalemindenom="80000" symbol="22"/>
-    <rule key="{95f3d6fa-492c-4d91-990a-d77e1b024b00}" scalemaxdenom="200000" label="Secondary 110-200k" scalemindenom="110000" symbol="23"/>
-    <rule key="{431d94f7-d124-4f65-befd-68b41505e964}" scalemaxdenom="500000" label="Secondary 200-350k" scalemindenom="200000" symbol="24"/>
-   </rule>
-   <rule key="{3256c075-5558-4372-90ef-644809d9e34d}" filter="code IN (5115, 5135)" label="tertiary">
-    <rule key="{80b32985-3c90-4979-9659-1d85580febac}" scalemaxdenom="50000" label="Tertiary &lt; 50k" scalemindenom="1" symbol="25"/>
-    <rule key="{0fb6169a-0c12-4d2a-bdbc-80deddc2fe28}" scalemaxdenom="80000" label="Tertiary 50-80k" scalemindenom="50000" symbol="26"/>
-    <rule key="{72c67a60-4c0b-4af1-bce5-dfdeb024b12b}" scalemaxdenom="110000" label="Tertiary 80-110k" scalemindenom="80000" symbol="27"/>
-    <rule key="{fb814aab-a56d-427e-bc44-43c87e5d1335}" scalemaxdenom="200000" label="Tertiary 110-200k" scalemindenom="110000" symbol="28"/>
-   </rule>
-   <rule key="{25426803-5277-4c7c-a8d6-0124fdee071c}" filter="code = 5122" label="residential">
-    <rule key="{2a6f4968-3485-4f89-b70c-1db564e105cc}" scalemaxdenom="10000" label="Residential &lt; 10k" symbol="29"/>
-    <rule key="{ae0199aa-9b1c-4021-b120-e9a5e06fa587}" scalemaxdenom="25000" label="Residential 10-25k" scalemindenom="10000" symbol="30"/>
-    <rule key="{6af53b1a-e56a-48be-b575-8596856acd77}" scalemaxdenom="50000" label="Residential 25-50k" scalemindenom="25000" symbol="31"/>
-    <rule key="{ed8f165f-27d5-4a64-8e12-178f6786f588}" scalemaxdenom="100000" label="Residential 50-100k" scalemindenom="50000" symbol="32"/>
-   </rule>
-   <rule key="{dac688bd-df49-42ac-a84b-1d17e3ff09be}" filter="highway IN (''road'',''service'',''turning_circle'')" label="road">
-    <rule key="{46fe9598-92e3-4116-aabb-39681a57998d}" scalemaxdenom="2000" label="0 - 2000" symbol="33"/>
-    <rule key="{f10c485e-87e7-4232-b4cc-d55621b9685a}" scalemaxdenom="5000" label="2000 - 5000" scalemindenom="2000" symbol="34"/>
-    <rule key="{fbee0ebf-9a27-4596-bc59-475f420ca4bc}" scalemaxdenom="10000" label="5000 - 10000" scalemindenom="5000" symbol="35"/>
-    <rule key="{ed2d9f64-76e5-4654-8f61-3a363a9375c2}" scalemaxdenom="45000" label="10000 - 45000" scalemindenom="10000" symbol="36"/>
-   </rule>
-   <rule key="{812bf89b-6891-4729-b3af-e1939d41a225}" filter="highway IN (''path'', ''track'', ''path;track'', ''bridleway'', ''cycleway'', ''footway'', ''living_street'', ''pedestrian'',''trail'')" scalemaxdenom="45000" label="path" scalemindenom="1">
-    <rule key="{e657a292-492f-46c7-83f5-8f0e7c130716}" scalemaxdenom="2000" label="1 - 2000" scalemindenom="1" symbol="37"/>
-    <rule key="{62a46839-0bd2-4edc-bb3f-94ab581e0112}" scalemaxdenom="5000" label="2000 - 5000" scalemindenom="2000" symbol="38"/>
-    <rule key="{16ce9b1d-2f47-4860-b0ef-6f76fe694cc3}" scalemaxdenom="10000" label="5000 - 10000" scalemindenom="5000" symbol="39"/>
-    <rule key="{0acc795c-5988-4a2e-ad8c-ad828bb1d13b}" scalemaxdenom="25000" label="10000 - 25000" scalemindenom="10000" symbol="40"/>
-    <rule key="{3aaf2c57-ffa8-4444-8da0-67c615421ddb}" scalemaxdenom="45000" label="25000 - 45000" scalemindenom="25000" symbol="41"/>
-   </rule>
-   <rule key="{52f969e6-e22f-44fc-acfe-df2613f0a31a}" filter="highway = ''raceway''" label="raceway" symbol="42"/>
-   <rule key="{824522d7-3389-47e1-8a85-a88d5388f370}" filter="highway = ''steps''" scalemaxdenom="45000" label="steps" scalemindenom="1">
-    <rule key="{faf6821f-bbe9-411d-9aff-71e8f5ce770d}" scalemaxdenom="2000" label="1 - 2000" scalemindenom="1" symbol="43"/>
-    <rule key="{3c0c7182-81b8-4697-af2e-83952d9fcefe}" scalemaxdenom="5000" label="2000 - 5000" scalemindenom="2000" symbol="44"/>
-    <rule key="{871ba29f-cc71-4c97-9903-66aa748391b5}" scalemaxdenom="10000" label="5000 - 10000" scalemindenom="5000" symbol="45"/>
-    <rule key="{4f09a5a6-723a-42c5-abbd-839f0130dc7e}" scalemaxdenom="25000" label="10000 - 25000" scalemindenom="10000" symbol="46"/>
-    <rule key="{05caafa2-ffd1-4d04-97ad-c5a88e6d9fe7}" scalemaxdenom="45000" label="25000 - 45000" scalemindenom="25000" symbol="47"/>
-   </rule>
-  </rules>
-  <symbols>
-   <symbol name="0" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="250,0,254,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.26" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="1" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="5.46" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="20" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="94,146,148,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="5.03565" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="10" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.56" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="18" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.36" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="11" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.16" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="18" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.03865" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="12" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.56" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="18" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.47236" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="13" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.96" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="18" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.906067" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="14" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.5" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.2619" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="15" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.1" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.9" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="16" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.7" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.5381" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="17" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.1" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.995238" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="18" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.5" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.452381" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="19" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.7" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="2" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.86" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="20" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="94,146,148,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.56" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="20" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.5" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="21" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.3" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="22" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.9" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="23" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.7" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="24" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.7" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="25" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.3" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="26" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.9" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="27" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.3" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="28" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.5" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="29" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="7" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="80,80,80,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.16" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="14" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.09095" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="3" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.06" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="20" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="94,146,148,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.82218" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="30" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="7" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="80,80,80,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.66" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="14" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.620715" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="31" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="7" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="80,80,80,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.26" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="14" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.244524" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="32" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="7" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="80,80,80,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.26" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="14" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="233,150,91,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.244524" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="33" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="238,137,65,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.06" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="34" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="238,137,65,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.86" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="35" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="238,137,65,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.66" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="36" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="238,137,65,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="0.16" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="37" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.53" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="38" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.53" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="39" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.43" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="4" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.26" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="20" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="94,146,148,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.08436" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="40" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.23" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="41" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.13" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="42" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="0" enabled="1">
-     <prop v="square" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="208,110,40,255" k="line_color"/>
-     <prop v="dash dot" k="line_style"/>
-     <prop v="0.46" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="43" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="2;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.83" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="1" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="44" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="2;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.53" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="1" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="45" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="2;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.43" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="1" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="46" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="2;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.23" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="1" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="47" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="2" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="2;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="227,26,28,255" k="line_color"/>
-     <prop v="dot" k="line_style"/>
-     <prop v="0.13" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="1" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="5" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.6" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="100,165,165,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.48182" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="6" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.2" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="100,165,165,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2.1" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="7" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="2" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="100,165,165,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.90909" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="8" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="20,50,50,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.6" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="16" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="100,165,165,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="1.52727" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol name="9" alpha="1" type="line" clip_to_extent="1">
-    <layer class="SimpleLine" pass="0" locked="1" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="76,38,0,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.96" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-    <layer class="SimpleLine" pass="18" locked="0" enabled="1">
-     <prop v="round" k="capstyle"/>
-     <prop v="5;2" k="customdash"/>
-     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-     <prop v="MM" k="customdash_unit"/>
-     <prop v="0" k="draw_inside_polygon"/>
-     <prop v="round" k="joinstyle"/>
-     <prop v="255,206,128,255" k="line_color"/>
-     <prop v="solid" k="line_style"/>
-     <prop v="3.73753" k="line_width"/>
-     <prop v="MM" k="line_width_unit"/>
-     <prop v="0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0" k="use_custom_dash"/>
-     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </symbols>
- </renderer-v2>
- <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
-  <property key="variableNames"/>
-  <property key="variableValues"/>
- </customproperties>
- <blendMode>0</blendMode>
- <featureBlendMode>0</featureBlendMode>
- <layerOpacity>1</layerOpacity>
- <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Pie">
-  <DiagramCategory penColor="#000000" height="15" lineSizeType="MM" barWidth="5" scaleDependency="Area" maxScaleDenominator="25000" labelPlacementMethod="XHeight" minimumSize="0" minScaleDenominator="0" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" sizeType="MM" scaleBasedVisibility="0" width="15" backgroundAlpha="255" penWidth="0" enabled="0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1">
-   <fontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
-   <attribute field="" label="" color="#000000"/>
-  </DiagramCategory>
- </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings zIndex="0" placement="2" dist="0" priority="0" linePlacementFlags="2" showAll="1" obstacle="0">
-  <properties>
-   <Option type="Map">
-    <Option name="name" type="QString" value=""/>
-    <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
-   </Option>
-  </properties>
- </DiagramLayerSettings>
- <fieldConfiguration>
-  <field name="osm_id">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="name">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="?column?">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="highway">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="ref">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="code">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
- </fieldConfiguration>
- <aliases>
-  <alias index="0" field="osm_id" name=""/>
-  <alias index="1" field="name" name=""/>
-  <alias index="2" field="?column?" name=""/>
-  <alias index="3" field="highway" name=""/>
-  <alias index="4" field="ref" name=""/>
-  <alias index="5" field="code" name=""/>
- </aliases>
- <excludeAttributesWMS/>
- <excludeAttributesWFS/>
- <defaults>
-  <default field="osm_id" applyOnUpdate="0" expression=""/>
-  <default field="name" applyOnUpdate="0" expression=""/>
-  <default field="?column?" applyOnUpdate="0" expression=""/>
-  <default field="highway" applyOnUpdate="0" expression=""/>
-  <default field="ref" applyOnUpdate="0" expression=""/>
-  <default field="code" applyOnUpdate="0" expression=""/>
- </defaults>
- <constraints>
-  <constraint field="osm_id" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="name" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="?column?" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="highway" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="ref" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-  <constraint field="code" constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0"/>
- </constraints>
- <constraintExpressions>
-  <constraint field="osm_id" desc="" exp=""/>
-  <constraint field="name" desc="" exp=""/>
-  <constraint field="?column?" desc="" exp=""/>
-  <constraint field="highway" desc="" exp=""/>
-  <constraint field="ref" desc="" exp=""/>
-  <constraint field="code" desc="" exp=""/>
- </constraintExpressions>
- <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
- </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
-  <columns>
-   <column name="osm_id" type="field" hidden="0" width="-1"/>
-   <column name="name" type="field" hidden="0" width="-1"/>
-   <column name="?column?" type="field" hidden="0" width="-1"/>
-   <column name="highway" type="field" hidden="0" width="-1"/>
-   <column name="ref" type="field" hidden="0" width="-1"/>
-   <column name="code" type="field" hidden="0" width="-1"/>
-   <column type="actions" hidden="1" width="-1"/>
-  </columns>
- </attributetableconfig>
- <editform></editform>
- <editforminit/>
- <editforminitcodesource>0</editforminitcodesource>
- <editforminitfilepath></editforminitfilepath>
- <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
- <featformsuppress>0</featformsuppress>
- <editorlayout>generatedlayout</editorlayout>
- <editable>
-  <field name="?column?" editable="1"/>
-  <field name="code" editable="1"/>
-  <field name="highway" editable="1"/>
-  <field name="name" editable="1"/>
-  <field name="osm_id" editable="1"/>
-  <field name="ref" editable="1"/>
- </editable>
- <labelOnTop>
-  <field name="?column?" labelOnTop="0"/>
-  <field name="code" labelOnTop="0"/>
-  <field name="highway" labelOnTop="0"/>
-  <field name="name" labelOnTop="0"/>
-  <field name="osm_id" labelOnTop="0"/>
-  <field name="ref" labelOnTop="0"/>
- </labelOnTop>
- <widgets/>
- <conditionalstyles>
-  <rowstyles/>
-  <fieldstyles/>
- </conditionalstyles>
- <expressionfields/>
- <previewExpression>osm_id</previewExpression>
- <mapTip>addr:housename</mapTip>
- <layerGeometryType>1</layerGeometryType>
-</qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- <NamedLayer>
-  <se:Name>roads_line</se:Name>
-  <UserStyle>
-   <se:Name>roads_line</se:Name>
-   <se:FeatureTypeStyle>
-    <se:Rule>
-     <se:Name></se:Name>
-     <!--Parser Error: 
-syntax error, unexpected ELSE - Expression was: ELSE-->
-     <se:MinScaleDenominator>1</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#fa00fe</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Motorway &lt; 10k</se:Name>
-     <se:Description>
-      <se:Title>Motorway &lt; 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5111</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5112</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">20</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">18</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Motorway 10-40k</se:Name>
-     <se:Description>
-      <se:Title>Motorway 10-40k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5111</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5112</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">14</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Motorway 40-100k</se:Name>
-     <se:Description>
-      <se:Title>Motorway 40-100k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5111</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5112</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">11</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Motorway > 100k</se:Name>
-     <se:Description>
-      <se:Title>Motorway > 100k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5111</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5112</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>0 - 10000</se:Name>
-     <se:Description>
-      <se:Title>0 - 10000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5131</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5132</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>10000 - 40000</se:Name>
-     <se:Description>
-      <se:Title>10000 - 40000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5131</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5132</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>40000 - 100000</se:Name>
-     <se:Description>
-      <se:Title>40000 - 100000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5131</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5132</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>100000 - 0</se:Name>
-     <se:Description>
-      <se:Title>100000 - 0</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5131</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5132</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary &lt; 10k</se:Name>
-     <se:Description>
-      <se:Title>Primary &lt; 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5113</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">14</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary 10-40k</se:Name>
-     <se:Description>
-      <se:Title>Primary 10-40k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5113</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">12</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary 40-100k</se:Name>
-     <se:Description>
-      <se:Title>Primary 40-100k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5113</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary 100-150k</se:Name>
-     <se:Description>
-      <se:Title>Primary 100-150k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5113</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary > 150k</se:Name>
-     <se:Description>
-      <se:Title>Primary > 150k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5113</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>150000</se:MinScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary Link &lt; 10k</se:Name>
-     <se:Description>
-      <se:Title>Primary Link &lt; 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5133</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary Link 10-40k</se:Name>
-     <se:Description>
-      <se:Title>Primary Link 10-40k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5133</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary Link 40-100k</se:Name>
-     <se:Description>
-      <se:Title>Primary Link 40-100k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5133</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary Link 100-150k</se:Name>
-     <se:Description>
-      <se:Title>Primary Link 100-150k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5133</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Primary Link > 150k</se:Name>
-     <se:Description>
-      <se:Title>Primary Link > 150k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5133</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>150000</se:MinScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary &lt; 10k</se:Name>
-     <se:Description>
-      <se:Title>Secondary &lt; 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary 10-50k</se:Name>
-     <se:Description>
-      <se:Title>Secondary 10-50k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary 50-80k</se:Name>
-     <se:Description>
-      <se:Title>Secondary 50-80k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary 80-110k</se:Name>
-     <se:Description>
-      <se:Title>Secondary 80-110k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>80000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>110000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary 110-200k</se:Name>
-     <se:Description>
-      <se:Title>Secondary 110-200k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>110000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Secondary 200-350k</se:Name>
-     <se:Description>
-      <se:Title>Secondary 200-350k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5114</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5134</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>200000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Tertiary &lt; 50k</se:Name>
-     <se:Description>
-      <se:Title>Tertiary &lt; 50k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5115</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5135</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Tertiary 50-80k</se:Name>
-     <se:Description>
-      <se:Title>Tertiary 50-80k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5115</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5135</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Tertiary 80-110k</se:Name>
-     <se:Description>
-      <se:Title>Tertiary 80-110k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5115</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5135</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>80000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>110000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Tertiary 110-200k</se:Name>
-     <se:Description>
-      <se:Title>Tertiary 110-200k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5115</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>5135</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>110000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Residential &lt; 10k</se:Name>
-     <se:Description>
-      <se:Title>Residential &lt; 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5122</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Residential 10-25k</se:Name>
-     <se:Description>
-      <se:Title>Residential 10-25k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5122</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Residential 25-50k</se:Name>
-     <se:Description>
-      <se:Title>Residential 25-50k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5122</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Residential 50-100k</se:Name>
-     <se:Description>
-      <se:Title>Residential 50-100k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>5122</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>0 - 2000</se:Name>
-     <se:Description>
-      <se:Title>0 - 2000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>road</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>service</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>turning_circle</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2000 - 5000</se:Name>
-     <se:Description>
-      <se:Title>2000 - 5000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>road</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>service</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>turning_circle</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>5000 - 10000</se:Name>
-     <se:Description>
-      <se:Title>5000 - 10000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>road</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>service</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>turning_circle</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>10000 - 45000</se:Name>
-     <se:Description>
-      <se:Title>10000 - 45000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>road</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>service</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>turning_circle</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>1 - 2000</se:Name>
-     <se:Description>
-      <se:Title>1 - 2000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path;track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>bridleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>cycleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>footway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>living_street</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>pedestrian</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>trail</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2000 - 5000</se:Name>
-     <se:Description>
-      <se:Title>2000 - 5000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path;track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>bridleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>cycleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>footway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>living_street</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>pedestrian</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>trail</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>5000 - 10000</se:Name>
-     <se:Description>
-      <se:Title>5000 - 10000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path;track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>bridleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>cycleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>footway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>living_street</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>pedestrian</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>trail</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>10000 - 25000</se:Name>
-     <se:Description>
-      <se:Title>10000 - 25000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path;track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>bridleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>cycleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>footway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>living_street</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>pedestrian</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>trail</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>25000 - 45000</se:Name>
-     <se:Description>
-      <se:Title>25000 - 45000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>path;track</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>bridleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>cycleway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>footway</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>living_street</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>pedestrian</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>highway</ogc:PropertyName>
-        <ogc:Literal>trail</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>raceway</se:Name>
-     <se:Description>
-      <se:Title>raceway</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>raceway</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#d06e28</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">4 2 1 2</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>1 - 2000</se:Name>
-     <se:Description>
-      <se:Title>1 - 2000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>steps</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2000 - 5000</se:Name>
-     <se:Description>
-      <se:Title>2000 - 5000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>steps</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>5000 - 10000</se:Name>
-     <se:Description>
-      <se:Title>5000 - 10000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>steps</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>10000 - 25000</se:Name>
-     <se:Description>
-      <se:Title>10000 - 25000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>steps</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>25000 - 45000</se:Name>
-     <se:Description>
-      <se:Title>25000 - 45000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>highway</ogc:PropertyName>
-       <ogc:Literal>steps</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
-     <se:LineSymbolizer>
-      <se:Stroke>
-       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
-       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
-      </se:Stroke>
-     </se:LineSymbolizer>
-    </se:Rule>
-   </se:FeatureTypeStyle>
-  </UserStyle>
- </NamedLayer>
-</StyledLayerDescriptor>
-', true, 'Style for OpenStreetMap roads, full data layer.', NULL, NULL, '2019-04-27 08:01:55.855032');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (175, 'rustprooflabs', 'osm', 'waterways_line', 'way', 'osm_waterways_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (175, 'pgosm', 'osm', 'waterways_line', 'way', 'osm_waterways_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{d6ec8fe9-621f-4475-a60b-28d4de880dd5}">
@@ -22472,7 +17811,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap waterways line.  Rivers, streams, canals, drains', NULL, NULL, '2018-07-18 17:43:43.425349');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (176, 'rustprooflabs', 'osm', 'water_polygon', 'way', 'osm_water_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (176, 'pgosm', 'osm', 'water_polygon', 'way', 'osm_water_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 attr="code" symbollevels="0" forceraster="0" enableorderby="0" type="categorizedSymbol">
   <categories>
@@ -22984,7 +18323,4161 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap water polygons, including riverbanks and wetlands.', NULL, NULL, '2018-07-18 17:48:52.701685');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (177, 'rustprooflabs', 'osm', 'leisure_polygon', 'way', 'osm_leisure_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (185, 'pgosm', 'osm', 'road_line', 'way', 'osm_road_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyDrawingHints="1" simplifyLocal="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minScale="25000" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.8.1-Zanzibar" maxScale="0" simplifyMaxScale="1" labelsEnabled="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="RuleRenderer">
+  <rules key="{c13d8e6b-872c-4920-8225-706a00f6e061}">
+   <rule key="{ab70c36a-fd09-41e5-8e70-532cb4eaad4b}" filter="ELSE" scalemindenom="1" scalemaxdenom="20000" symbol="0">
+    <rule key="{5427a6ad-710c-4065-a64c-79668464c2ea}" filter="highway = ''raceway''" label="raceway" symbol="1"/>
+   </rule>
+   <rule key="{de720bdc-723c-42ed-9b1e-c1c160826a26}" filter="highway IN (''path'', ''track'', ''path;track'', ''bridleway'', ''cycleway'', ''footway'', ''living_street'', ''pedestrian'',''trail'')" scalemindenom="1" label="path" scalemaxdenom="45000">
+    <rule key="{e8fe8d22-69f2-4b42-9f30-b7b59ed0f9a3}" scalemindenom="1" label="1 - 2000" scalemaxdenom="2000" symbol="2"/>
+    <rule key="{93fffa17-6f55-4573-88f6-f4ff6acaae78}" scalemindenom="2000" label="2000 - 5000" scalemaxdenom="5000" symbol="3"/>
+    <rule key="{c630d415-792e-447e-bdc3-a773cf3652e8}" scalemindenom="5000" label="5000 - 10000" scalemaxdenom="10000" symbol="4"/>
+    <rule key="{78a07b06-f2cb-473b-9559-a605992359c6}" scalemindenom="10000" label="10000 - 25000" scalemaxdenom="25000" symbol="5"/>
+    <rule key="{b2890a26-ded8-451e-8e64-92cedf5d00bb}" scalemindenom="25000" label="25000 - 45000" scalemaxdenom="45000" symbol="6"/>
+   </rule>
+   <rule key="{8707c673-9d1d-4b13-98b0-ba157753d504}" filter="code IN (5111, 5112)" label="motorway">
+    <rule key="{6f1c216a-4518-4066-a9d8-091a2a75eb25}" label="Motorway &lt; 10k" scalemaxdenom="10000" symbol="7"/>
+    <rule key="{7b8f4c97-f1ef-4d3e-a36a-7c2001e5dd49}" scalemindenom="10000" label="Motorway 10-40k" scalemaxdenom="40000" symbol="8"/>
+    <rule key="{fe7a85e5-0188-468f-b79b-8b884fb780aa}" scalemindenom="40000" label="Motorway 40-100k" scalemaxdenom="100000" symbol="9"/>
+    <rule key="{fa6a489c-1af2-44f1-938f-50bad3b4f9b4}" scalemindenom="100000" label="Motorway 100-200k" scalemaxdenom="200000" symbol="10"/>
+    <rule key="{2a6c7f19-f94e-42fe-aa70-84e0a3c92f4d}" scalemindenom="200000" label="Motorway > 200k" symbol="11"/>
+   </rule>
+   <rule key="{9e4a609a-01d4-42a3-ae48-4f33d9e45ac5}" filter="code IN (5131, 5132)" label="motorway_link">
+    <rule key="{bad8d45a-40d1-4c29-b213-901adc869664}" label="0 - 10000" scalemaxdenom="10000" symbol="12"/>
+    <rule key="{a68b1236-ad96-4a55-b059-d5dcbdfa3652}" scalemindenom="10000" label="10000 - 40000" scalemaxdenom="40000" symbol="13"/>
+    <rule key="{34274842-afef-4734-af8a-253e0b2228d1}" scalemindenom="40000" label="40000 - 100000" scalemaxdenom="100000" symbol="14"/>
+    <rule key="{f3674b70-bfac-48f2-9f71-d9f752d4445e}" scalemindenom="100000" label="100000 - 0" symbol="15"/>
+   </rule>
+   <rule key="{5b935b53-ae8d-419e-8228-b4b4392a6b37}" filter="code = 5113" label="primary">
+    <rule key="{369477b2-9880-4796-b58f-2c4c5f6f518d}" label="Primary &lt; 10k" scalemaxdenom="10000" symbol="16"/>
+    <rule key="{ef331742-1684-4869-8ea8-d2f5fa242257}" scalemindenom="10000" label="Primary 10-20k" scalemaxdenom="20000" symbol="17"/>
+    <rule key="{7f70ea5b-00cb-41b3-90a2-fa75ebb824bd}" scalemindenom="20000" label="Primary 20-40k" scalemaxdenom="40000" symbol="18"/>
+    <rule key="{8b50862e-2e6c-4eaf-be9f-0ddb0bfb4634}" scalemindenom="40000" label="Primary 40-100k" scalemaxdenom="100000" symbol="19"/>
+    <rule key="{d625ec6a-6979-47a1-90f9-d35ddb15088e}" scalemindenom="100000" label="Primary 100-150k" scalemaxdenom="150000" symbol="20"/>
+    <rule key="{0d658ee9-20ba-492d-b932-de8e7e3be152}" scalemindenom="150000" label="Primary > 150k" symbol="21"/>
+   </rule>
+   <rule key="{7197a67a-ca50-464e-b4f3-8afc3c59ff5d}" filter="code = 5133" label="primary_link">
+    <rule key="{c2b8bfda-82bd-487b-8060-04ae1835835d}" label="Primary Link &lt; 10k" scalemaxdenom="10000" symbol="22"/>
+    <rule key="{91953c2d-0604-40ef-943e-4875b060e82a}" scalemindenom="10000" label="Primary Link 10-40k" scalemaxdenom="40000" symbol="23"/>
+    <rule key="{e43c2650-bf61-4186-8e37-425bcce08107}" scalemindenom="40000" label="Primary Link 40-100k" scalemaxdenom="100000" symbol="24"/>
+    <rule key="{3f114110-93d4-4da6-bc24-99957cac9515}" scalemindenom="100000" label="Primary Link 100-150k" scalemaxdenom="150000" symbol="25"/>
+    <rule key="{92e1ffa0-c49a-48c7-b6d0-aa9c9f909e35}" scalemindenom="150000" label="Primary Link > 150k" symbol="26"/>
+   </rule>
+   <rule key="{0728bd93-0b98-41c3-b647-d31cb2ce8db5}" filter="code IN (5114,5134)" label="secondary">
+    <rule key="{cfe3f623-cac3-440f-be77-e83712c39f15}" scalemindenom="1" label="Secondary &lt; 10k" scalemaxdenom="50000" symbol="27"/>
+    <rule key="{3fab97bc-9167-47a4-8fca-e2e684bd1c87}" scalemindenom="10000" label="Secondary 10-50k" scalemaxdenom="80000" symbol="28"/>
+    <rule key="{4f7642a8-1ff2-4842-b4c6-ba838e70d03e}" scalemindenom="50000" label="Secondary 50-80k" scalemaxdenom="80000" symbol="29"/>
+    <rule key="{6a70e768-2ef4-4220-aecd-1c6587aae6b3}" scalemindenom="80000" label="Secondary 80-110k" scalemaxdenom="110000" symbol="30"/>
+    <rule key="{95f3d6fa-492c-4d91-990a-d77e1b024b00}" scalemindenom="110000" label="Secondary 110-200k" scalemaxdenom="200000" symbol="31"/>
+    <rule key="{431d94f7-d124-4f65-befd-68b41505e964}" scalemindenom="200000" label="Secondary 200-350k" scalemaxdenom="500000" symbol="32"/>
+   </rule>
+   <rule key="{3256c075-5558-4372-90ef-644809d9e34d}" filter="code IN (5115, 5135)" label="tertiary">
+    <rule key="{80b32985-3c90-4979-9659-1d85580febac}" scalemindenom="1" label="Tertiary &lt; 5k" scalemaxdenom="5000" symbol="33"/>
+    <rule key="{27986bb1-9828-4238-b228-206c19bbd27b}" scalemindenom="5000" label="Tertiary 5-15k" scalemaxdenom="15000" symbol="34"/>
+    <rule key="{c77b14b3-7153-488b-ac60-e73d4479cee8}" scalemindenom="15000" label="Tertiary 15-30k" scalemaxdenom="30000" symbol="35"/>
+    <rule key="{a5090a49-568f-4191-85dc-4d52e98c8f77}" scalemindenom="30000" label="Tertiary 30-50k" scalemaxdenom="50000" symbol="36"/>
+    <rule key="{0fb6169a-0c12-4d2a-bdbc-80deddc2fe28}" scalemindenom="50000" label="Tertiary 50-80k" scalemaxdenom="80000" symbol="37"/>
+    <rule key="{72c67a60-4c0b-4af1-bce5-dfdeb024b12b}" scalemindenom="80000" label="Tertiary 80-110k" scalemaxdenom="110000" symbol="38"/>
+    <rule key="{fb814aab-a56d-427e-bc44-43c87e5d1335}" scalemindenom="110000" label="Tertiary 110-200k" scalemaxdenom="200000" symbol="39"/>
+   </rule>
+   <rule key="{25426803-5277-4c7c-a8d6-0124fdee071c}" filter="code = 5122" label="residential">
+    <rule key="{2a6f4968-3485-4f89-b70c-1db564e105cc}" label="Residential &lt; 2.5k" scalemaxdenom="2500" symbol="40"/>
+    <rule key="{c7d0ce2b-c31b-4ed9-b555-7a5e1719ce7e}" scalemindenom="2500" label="Residential 2.5-5k" scalemaxdenom="5000" symbol="41"/>
+    <rule key="{ec678a4f-4cd4-4a18-af8d-09ac1e99dafd}" scalemindenom="5000" label="Residential 5-10k" scalemaxdenom="10000" symbol="42"/>
+    <rule key="{ae0199aa-9b1c-4021-b120-e9a5e06fa587}" scalemindenom="10000" label="Residential 10-25k" scalemaxdenom="25000" symbol="43"/>
+    <rule key="{6af53b1a-e56a-48be-b575-8596856acd77}" scalemindenom="25000" label="Residential 25-50k" scalemaxdenom="50000" symbol="44"/>
+    <rule key="{ed8f165f-27d5-4a64-8e12-178f6786f588}" scalemindenom="50000" label="Residential 50-100k" scalemaxdenom="100000" symbol="45"/>
+   </rule>
+   <rule key="{dac688bd-df49-42ac-a84b-1d17e3ff09be}" filter="highway IN (''road'',''service'',''turning_circle'')" label="road">
+    <rule key="{46fe9598-92e3-4116-aabb-39681a57998d}" label="0 - 2000" scalemaxdenom="2000" symbol="46"/>
+    <rule key="{f10c485e-87e7-4232-b4cc-d55621b9685a}" scalemindenom="2000" label="2000 - 5000" scalemaxdenom="5000" symbol="47"/>
+    <rule key="{fbee0ebf-9a27-4596-bc59-475f420ca4bc}" scalemindenom="5000" label="5000 - 10000" scalemaxdenom="10000" symbol="48"/>
+    <rule key="{ed2d9f64-76e5-4654-8f61-3a363a9375c2}" scalemindenom="10000" label="10000 - 45000" scalemaxdenom="45000" symbol="49"/>
+   </rule>
+   <rule key="{824522d7-3389-47e1-8a85-a88d5388f370}" filter="highway = ''steps''" scalemindenom="1" label="steps" scalemaxdenom="45000">
+    <rule key="{faf6821f-bbe9-411d-9aff-71e8f5ce770d}" scalemindenom="1" label="1 - 2000" scalemaxdenom="2000" symbol="50"/>
+    <rule key="{3c0c7182-81b8-4697-af2e-83952d9fcefe}" scalemindenom="2000" label="2000 - 5000" scalemaxdenom="5000" symbol="51"/>
+    <rule key="{871ba29f-cc71-4c97-9903-66aa748391b5}" scalemindenom="5000" label="5000 - 10000" scalemaxdenom="10000" symbol="52"/>
+    <rule key="{4f09a5a6-723a-42c5-abbd-839f0130dc7e}" scalemindenom="10000" label="10000 - 25000" scalemaxdenom="25000" symbol="53"/>
+    <rule key="{05caafa2-ffd1-4d04-97ad-c5a88e6d9fe7}" scalemindenom="25000" label="25000 - 45000" scalemaxdenom="45000" symbol="54"/>
+   </rule>
+  </rules>
+  <symbols>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="0">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="250,0,254,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="1">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="208,110,40,255" k="line_color"/>
+     <prop v="dash dot" k="line_style"/>
+     <prop v="0.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="10">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.86" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="20">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="94,146,148,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.6102" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="11">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="20">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="94,146,148,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.04925" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="12">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.6" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="100,165,165,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.48182" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="13">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.2" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="100,165,165,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.1" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="14">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="100,165,165,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.90909" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="15">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.6" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="100,165,165,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.52727" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="16">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.76" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.54877" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="17">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.96" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.79371" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="18">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.96" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.84989" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="19">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.96" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.84989" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="2">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="1.13" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="20">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.96" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.772822" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="21">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.56" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="18">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.437412" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="22">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.5" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.2619" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="23">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.1" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.9" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="24">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.7" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.5381" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="25">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.1" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.995238" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="26">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="76,38,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.5" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="255,206,128,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.452381" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="27">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.7" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="28">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.5" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="29">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.3" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="3">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.53" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="30">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.9" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="31">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.6" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="32">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="16">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="191,112,59,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.3" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="33">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.1" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="34">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.4" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="35">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="36">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.6" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="37">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.5" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="38">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.3" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="39">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.15" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="4">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.43" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="40">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.96" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.7838" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="41">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.31358" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="42">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.3731" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="43">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.06" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.996906" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="44">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.244524" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="45">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="7">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="80,80,80,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="14">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="233,150,91,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.244524" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="46">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="238,137,65,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="1.06" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="47">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="238,137,65,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.86" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="48">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="238,137,65,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.66" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="49">
+    <layer enabled="1" class="SimpleLine" locked="0" pass="0">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="238,137,65,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.16" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="5">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.23" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="50">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="2;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.83" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="1" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="51">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="2;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.53" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="1" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="52">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="2;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.43" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="1" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="53">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="2;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.23" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="1" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="54">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="2;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.13" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="1" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="6">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="2">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="227,26,28,255" k="line_color"/>
+     <prop v="dot" k="line_style"/>
+     <prop v="0.13" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="7">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.66" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="20">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="94,146,148,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.25627" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="8">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="3.06" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="20">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="94,146,148,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.68315" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="9">
+    <layer enabled="1" class="SimpleLine" locked="1" pass="0">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="20,50,50,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.46" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+    <layer enabled="1" class="SimpleLine" locked="0" pass="20">
+     <prop v="round" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="round" k="joinstyle"/>
+     <prop v="94,146,148,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="2.12962" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+ </renderer-v2>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory scaleDependency="Area" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" width="15" scaleBasedVisibility="0" opacity="1" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" penAlpha="255" barWidth="5" backgroundColor="#ffffff" rotationOffset="270" lineSizeType="MM" maxScaleDenominator="1e+08" penWidth="0" enabled="0" minScaleDenominator="0" height="15">
+   <fontProperties style="" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings obstacle="0" placement="2" priority="0" zIndex="0" linePlacementFlags="18" showAll="1" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="traffic">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="highway">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="ref">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="traffic" name=""/>
+  <alias index="3" field="highway" name=""/>
+  <alias index="4" field="ref" name=""/>
+  <alias index="5" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default field="osm_id" applyOnUpdate="0" expression=""/>
+  <default field="name" applyOnUpdate="0" expression=""/>
+  <default field="traffic" applyOnUpdate="0" expression=""/>
+  <default field="highway" applyOnUpdate="0" expression=""/>
+  <default field="ref" applyOnUpdate="0" expression=""/>
+  <default field="code" applyOnUpdate="0" expression=""/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" field="osm_id" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="name" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="traffic" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="highway" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="ref" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="code" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="osm_id" exp="" desc=""/>
+  <constraint field="name" exp="" desc=""/>
+  <constraint field="traffic" exp="" desc=""/>
+  <constraint field="highway" exp="" desc=""/>
+  <constraint field="ref" exp="" desc=""/>
+  <constraint field="code" exp="" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column hidden="0" width="-1" type="field" name="osm_id"/>
+   <column hidden="0" width="-1" type="field" name="name"/>
+   <column hidden="0" width="-1" type="field" name="highway"/>
+   <column hidden="0" width="-1" type="field" name="ref"/>
+   <column hidden="0" width="-1" type="field" name="code"/>
+   <column hidden="1" width="-1" type="actions"/>
+   <column hidden="0" width="-1" type="field" name="traffic"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="?column?"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="highway"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+  <field editable="1" name="ref"/>
+  <field editable="1" name="traffic"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="?column?"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="highway"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+  <field labelOnTop="0" name="ref"/>
+  <field labelOnTop="0" name="traffic"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>osm_id</previewExpression>
+ <mapTip>addr:housename</mapTip>
+ <layerGeometryType>1</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>road_line</se:Name>
+  <UserStyle>
+   <se:Name>road_line</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name></se:Name>
+     <!--Parser Error: 
+syntax error, unexpected ELSE - Expression was: ELSE-->
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#fa00fe</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>raceway</se:Name>
+     <se:Description>
+      <se:Title>raceway</se:Title>
+     </se:Description>
+     <!--Parser Error: 
+syntax error, unexpected ELSE - Expression was: ELSE AND highway = ''raceway''-->
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#d06e28</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">4 2 1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1 - 2000</se:Name>
+     <se:Description>
+      <se:Title>1 - 2000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path;track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>bridleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>cycleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>footway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>living_street</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>pedestrian</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>trail</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2000 - 5000</se:Name>
+     <se:Description>
+      <se:Title>2000 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path;track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>bridleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>cycleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>footway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>living_street</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>pedestrian</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>trail</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>5000 - 10000</se:Name>
+     <se:Description>
+      <se:Title>5000 - 10000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path;track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>bridleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>cycleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>footway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>living_street</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>pedestrian</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>trail</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>10000 - 25000</se:Name>
+     <se:Description>
+      <se:Title>10000 - 25000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path;track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>bridleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>cycleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>footway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>living_street</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>pedestrian</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>trail</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>25000 - 45000</se:Name>
+     <se:Description>
+      <se:Title>25000 - 45000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>path;track</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>bridleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>cycleway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>footway</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>living_street</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>pedestrian</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>trail</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motorway &lt; 10k</se:Name>
+     <se:Description>
+      <se:Title>Motorway &lt; 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5111</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5112</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">12</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motorway 10-40k</se:Name>
+     <se:Description>
+      <se:Title>Motorway 10-40k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5111</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5112</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">11</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motorway 40-100k</se:Name>
+     <se:Description>
+      <se:Title>Motorway 40-100k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5111</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5112</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motorway 100-200k</se:Name>
+     <se:Description>
+      <se:Title>Motorway 100-200k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5111</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5112</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motorway > 200k</se:Name>
+     <se:Description>
+      <se:Title>Motorway > 200k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5111</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5112</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>200000</se:MinScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#5e9294</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>0 - 10000</se:Name>
+     <se:Description>
+      <se:Title>0 - 10000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5131</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5132</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>10000 - 40000</se:Name>
+     <se:Description>
+      <se:Title>10000 - 40000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5131</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5132</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>40000 - 100000</se:Name>
+     <se:Description>
+      <se:Title>40000 - 100000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5131</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5132</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>100000 - 0</se:Name>
+     <se:Description>
+      <se:Title>100000 - 0</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5131</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5132</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#143232</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#64a5a5</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary &lt; 10k</se:Name>
+     <se:Description>
+      <se:Title>Primary &lt; 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">13</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary 10-20k</se:Name>
+     <se:Description>
+      <se:Title>Primary 10-20k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">11</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary 20-40k</se:Name>
+     <se:Description>
+      <se:Title>Primary 20-40k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>20000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary 40-100k</se:Name>
+     <se:Description>
+      <se:Title>Primary 40-100k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary 100-150k</se:Name>
+     <se:Description>
+      <se:Title>Primary 100-150k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary > 150k</se:Name>
+     <se:Description>
+      <se:Title>Primary > 150k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5113</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>150000</se:MinScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary Link &lt; 10k</se:Name>
+     <se:Description>
+      <se:Title>Primary Link &lt; 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5133</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary Link 10-40k</se:Name>
+     <se:Description>
+      <se:Title>Primary Link 10-40k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5133</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>40000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">7</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary Link 40-100k</se:Name>
+     <se:Description>
+      <se:Title>Primary Link 40-100k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5133</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>40000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">6</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary Link 100-150k</se:Name>
+     <se:Description>
+      <se:Title>Primary Link 100-150k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5133</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>100000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Primary Link > 150k</se:Name>
+     <se:Description>
+      <se:Title>Primary Link > 150k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5133</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>150000</se:MinScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#4c2600</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ffce80</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary &lt; 10k</se:Name>
+     <se:Description>
+      <se:Title>Secondary &lt; 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary 10-50k</se:Name>
+     <se:Description>
+      <se:Title>Secondary 10-50k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary 50-80k</se:Name>
+     <se:Description>
+      <se:Title>Secondary 50-80k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary 80-110k</se:Name>
+     <se:Description>
+      <se:Title>Secondary 80-110k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>80000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>110000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary 110-200k</se:Name>
+     <se:Description>
+      <se:Title>Secondary 110-200k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>110000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Secondary 200-350k</se:Name>
+     <se:Description>
+      <se:Title>Secondary 200-350k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5114</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5134</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>200000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#bf703b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary &lt; 5k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary &lt; 5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">11</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 5-15k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 5-15k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>15000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 15-30k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 15-30k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>15000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 30-50k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 30-50k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>30000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 50-80k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 50-80k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>80000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 80-110k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 80-110k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>80000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>110000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Tertiary 110-200k</se:Name>
+     <se:Description>
+      <se:Title>Tertiary 110-200k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5115</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>5135</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>110000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential &lt; 2.5k</se:Name>
+     <se:Description>
+      <se:Title>Residential &lt; 2.5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">11</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential 2.5-5k</se:Name>
+     <se:Description>
+      <se:Title>Residential 2.5-5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">9</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">8</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential 5-10k</se:Name>
+     <se:Description>
+      <se:Title>Residential 5-10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential 10-25k</se:Name>
+     <se:Description>
+      <se:Title>Residential 10-25k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential 25-50k</se:Name>
+     <se:Description>
+      <se:Title>Residential 25-50k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential 50-100k</se:Name>
+     <se:Description>
+      <se:Title>Residential 50-100k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>5122</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>50000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e9965b</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>0 - 2000</se:Name>
+     <se:Description>
+      <se:Title>0 - 2000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>road</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>service</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>turning_circle</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2000 - 5000</se:Name>
+     <se:Description>
+      <se:Title>2000 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>road</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>service</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>turning_circle</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>5000 - 10000</se:Name>
+     <se:Description>
+      <se:Title>5000 - 10000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>road</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>service</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>turning_circle</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>10000 - 45000</se:Name>
+     <se:Description>
+      <se:Title>10000 - 45000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>road</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>service</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>highway</ogc:PropertyName>
+        <ogc:Literal>turning_circle</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#ee8941</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1 - 2000</se:Name>
+     <se:Description>
+      <se:Title>1 - 2000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>highway</ogc:PropertyName>
+       <ogc:Literal>steps</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2000 - 5000</se:Name>
+     <se:Description>
+      <se:Title>2000 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>highway</ogc:PropertyName>
+       <ogc:Literal>steps</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>5000 - 10000</se:Name>
+     <se:Description>
+      <se:Title>5000 - 10000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>highway</ogc:PropertyName>
+       <ogc:Literal>steps</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>10000 - 25000</se:Name>
+     <se:Description>
+      <se:Title>10000 - 25000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>highway</ogc:PropertyName>
+       <ogc:Literal>steps</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>25000 - 45000</se:Name>
+     <se:Description>
+      <se:Title>25000 - 45000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>highway</ogc:PropertyName>
+       <ogc:Literal>steps</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+       <se:SvgParameter name="stroke-dasharray">7 7</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', false, 'Updated again, 10/30/2019', 'rpl_db_admin', NULL, '2019-10-31 01:55:09.127448');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (177, 'pgosm', 'osm', 'leisure_polygon', 'way', 'osm_leisure_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -23783,7 +23276,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap leisure polygon style.  Playgrounds, swimming pools, golf courses, etc.', NULL, NULL, '2018-07-19 21:11:33.599921');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (178, 'rustprooflabs', 'osm', 'power_polygon', 'way', 'osm_power_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (178, 'pgosm', 'osm', 'power_polygon', 'way', 'osm_power_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -24222,7 +23715,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power polygon layer.  Power stations, solar panels, transformers, etc.', NULL, NULL, '2018-07-19 21:15:23.476352');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (179, 'rustprooflabs', 'osm', 'powerlines_line', 'way', 'osm_powerlines_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (179, 'pgosm', 'osm', 'powerlines_line', 'way', 'osm_powerlines_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -24568,7 +24061,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power lines layer.', NULL, NULL, '2018-07-19 21:18:38.648917');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (180, 'rustprooflabs', 'osm', 'power_point', 'way', 'osm_power_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (180, 'pgosm', 'osm', 'power_point', 'way', 'osm_power_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
   <rules key="{3f7b10c8-05d5-42ea-9cc3-612d6df52c23}">
@@ -25474,7 +24967,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power points.  Towers, sub stations, transformers, etc.', NULL, NULL, '2018-07-19 21:22:33.272345');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (181, 'rustprooflabs', 'osm', 'places_point', 'way', 'osm_places_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (181, 'pgosm', 'osm', 'places_point', 'way', 'osm_places_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="1" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -26237,7 +25730,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap places points.  City, town, suburb, etc.', NULL, NULL, '2018-07-19 21:27:04.466648');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (182, 'rustprooflabs', 'osm', 'boundaries_polygon', 'way', 'osm_boundaries_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (182, 'pgosm', 'osm', 'boundaries_polygon', 'way', 'osm_boundaries_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="-4.65661e-10" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
   <rules key="{4110adc7-d471-4caa-9fb8-de1ac1710ab9}">
@@ -26496,7 +25989,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap boundaries in polygon format.  e.g. County and City', NULL, NULL, '2018-07-19 21:35:57.044477');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (168, 'rustprooflabs', 'osm', 'building_polygon', 'way', 'osm_building_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (168, 'pgosm', 'osm', 'building_polygon', 'way', 'osm_building_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{c2c73c7d-59b0-44da-9930-178fe0f6a20c}">
@@ -27038,13 +26531,969 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap buildings layer, fades in with zoom.', NULL, NULL, '2019-04-27 08:10:33.948188');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (186, 'pgosm', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyDrawingHints="1" simplifyLocal="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minScale="1e+08" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.8.1-Zanzibar" maxScale="0" simplifyMaxScale="1" labelsEnabled="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol">
+  <categories>
+   <category render="true" label="Forest" value="7201" symbol="0"/>
+   <category render="true" label="Park" value="7202" symbol="1"/>
+   <category render="true" label="Residential" value="7203" symbol="2"/>
+   <category render="true" label="Industrial" value="7204" symbol="3"/>
+   <category render="true" label="Farm" value="7205" symbol="4"/>
+   <category render="true" label="Cemetary" value="7206" symbol="5"/>
+   <category render="true" label="Meadow" value="7208" symbol="6"/>
+   <category render="true" label="Commercial" value="7209" symbol="7"/>
+   <category render="true" label="Recreation" value="7211" symbol="8"/>
+   <category render="true" label="Retail" value="7212" symbol="9"/>
+   <category render="true" label="Military" value="7213" symbol="10"/>
+   <category render="true" label="Quarry" value="7214" symbol="11"/>
+   <category render="true" label="Orchard" value="7215" symbol="12"/>
+   <category render="true" label="Scrub" value="7217" symbol="13"/>
+   <category render="true" label="Grass" value="7218" symbol="14"/>
+   <category render="true" label="" value="" symbol="15"/>
+  </categories>
+  <symbols>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="44,190,31,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="1">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="190,245,186,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="10">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="158,76,0,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="11">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="96,126,235,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="12">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="83,222,123,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="13">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="42,174,33,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="14">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="144,216,0,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="15">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="133,221,125,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="2">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="208,208,208,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="3">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="230,182,220,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="4">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="109,225,15,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="5">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="173,233,168,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="6">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="186,221,105,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="7">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="209,230,232,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="8">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="35,130,28,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="9">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="230,182,220,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="35,139,33,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory scaleDependency="Area" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" width="15" scaleBasedVisibility="0" opacity="1" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" penAlpha="255" barWidth="5" backgroundColor="#ffffff" rotationOffset="270" lineSizeType="MM" maxScaleDenominator="1e+08" penWidth="0" enabled="0" minScaleDenominator="0" height="15">
+   <fontProperties style="" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings obstacle="0" placement="1" priority="0" zIndex="0" linePlacementFlags="18" showAll="1" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="natural">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="leisure">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="boundary">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="landuse" name=""/>
+  <alias index="3" field="natural" name=""/>
+  <alias index="4" field="leisure" name=""/>
+  <alias index="5" field="boundary" name=""/>
+  <alias index="6" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default field="osm_id" applyOnUpdate="0" expression=""/>
+  <default field="name" applyOnUpdate="0" expression=""/>
+  <default field="landuse" applyOnUpdate="0" expression=""/>
+  <default field="natural" applyOnUpdate="0" expression=""/>
+  <default field="leisure" applyOnUpdate="0" expression=""/>
+  <default field="boundary" applyOnUpdate="0" expression=""/>
+  <default field="code" applyOnUpdate="0" expression=""/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" field="osm_id" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="name" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="landuse" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="natural" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="leisure" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="boundary" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="code" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="osm_id" exp="" desc=""/>
+  <constraint field="name" exp="" desc=""/>
+  <constraint field="landuse" exp="" desc=""/>
+  <constraint field="natural" exp="" desc=""/>
+  <constraint field="leisure" exp="" desc=""/>
+  <constraint field="boundary" exp="" desc=""/>
+  <constraint field="code" exp="" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column hidden="0" width="-1" type="field" name="osm_id"/>
+   <column hidden="0" width="-1" type="field" name="name"/>
+   <column hidden="0" width="-1" type="field" name="landuse"/>
+   <column hidden="0" width="-1" type="field" name="natural"/>
+   <column hidden="0" width="-1" type="field" name="leisure"/>
+   <column hidden="0" width="-1" type="field" name="boundary"/>
+   <column hidden="0" width="-1" type="field" name="code"/>
+   <column hidden="1" width="-1" type="actions"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="boundary"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="leisure"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="natural"/>
+  <field editable="1" name="osm_id"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="boundary"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="leisure"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="natural"/>
+  <field labelOnTop="0" name="osm_id"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>landuse_polygon</se:Name>
+  <UserStyle>
+   <se:Name>landuse_polygon</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Forest</se:Name>
+     <se:Description>
+      <se:Title>Forest</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7201</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#2cbe1f</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Park</se:Name>
+     <se:Description>
+      <se:Title>Park</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7202</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#bef5ba</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential</se:Name>
+     <se:Description>
+      <se:Title>Residential</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7203</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#d0d0d0</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Industrial</se:Name>
+     <se:Description>
+      <se:Title>Industrial</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7204</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Farm</se:Name>
+     <se:Description>
+      <se:Title>Farm</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7205</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#6de10f</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Cemetary</se:Name>
+     <se:Description>
+      <se:Title>Cemetary</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7206</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ade9a8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Meadow</se:Name>
+     <se:Description>
+      <se:Title>Meadow</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7208</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#badd69</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Commercial</se:Name>
+     <se:Description>
+      <se:Title>Commercial</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7209</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#d1e6e8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Recreation</se:Name>
+     <se:Description>
+      <se:Title>Recreation</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7211</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#23821c</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Retail</se:Name>
+     <se:Description>
+      <se:Title>Retail</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7212</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Military</se:Name>
+     <se:Description>
+      <se:Title>Military</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7213</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#9e4c00</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Quarry</se:Name>
+     <se:Description>
+      <se:Title>Quarry</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7214</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#607eeb</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Orchard</se:Name>
+     <se:Description>
+      <se:Title>Orchard</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7215</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#53de7b</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Scrub</se:Name>
+     <se:Description>
+      <se:Title>Scrub</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7217</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#2aae21</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Grass</se:Name>
+     <se:Description>
+      <se:Title>Grass</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7218</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#90d800</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#85dd7d</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', false, 'Updated 10/30/2019', 'rpl_db_admin', NULL, '2019-10-31 02:08:22.22066');
 
 
 --
 -- Name: layer_styles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.layer_styles_id_seq', 184, true);
+SELECT pg_catalog.setval('public.layer_styles_id_seq', 186, true);
 
 
 --

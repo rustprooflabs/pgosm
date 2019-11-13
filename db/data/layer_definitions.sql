@@ -8,7 +8,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2000','2099','public','osm_id, name, amenity, landuse, way','government offices, post office, police, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2100','2199','health','osm_id, name, amenity, landuse, way','Hospitals, pharmacies');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2200','2299','leisure','osm_id, name, amenity, landuse, leisure, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2300','2399','food','osm_id, name, amenity, landuse, leisure, tourism, way','Restaurants, pubs, cafes');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2300','2399','food','osm_id, name, amenity, tags -> ''cuisine'' AS cuisine, tags -> ''takeaway'' AS takeaway, tags -> ''capacity'' AS capacity, tags -> ''opening_hours'' AS opening_hours, tags -> ''outdoor_seating'' AS outdoor_seating, "addr:housename" AS housename, "addr:housenumber" AS housenumber, tags -> ''addr:street'' AS street, tags -> ''addr:unit'' AS addr_unit, tags -> ''addr:suite'' AS addr_suite, COALESCE(tags -> ''website'', tags -> ''contact:website'', tags -> ''url'', '''') AS website, COALESCE(tags -> ''email'', tags -> ''contact:email'', '''') AS email, way','Restaurants, pubs, cafes');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2400','2499','accomodation','osm_id, name, landuse, leisure, tourism, way','Hotel, motel, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2500','2599','shopping','osm_id, name, shop, amenity, tags -> ''vending'' AS vending, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2600','2899','tourism','osm_id, name, tourism, amenity, tags -> ''information'' AS information, way','I am not so sure about this range….');
@@ -16,7 +16,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, way','Place of Worship');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, REPLACE(tags -> ''maxspeed'', '' mph'', '''') AS maxspeed, oneway, tracktype, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5200','5299','traffic','osm_id, name, tags -> ''traffic''  AS traffic, highway, ref, way','');
 
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6100','6199','railway','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, way','');
@@ -112,6 +112,9 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2305','bar','TRUE','FALSE','TRUE','amenity=''bar''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2306','food_court','TRUE','FALSE','TRUE','amenity=''food_court''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2307','biergarten','TRUE','FALSE','TRUE','amenity=''biergarten''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2308','bbq','TRUE','FALSE','TRUE','amenity=''bbq''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2310','ice_cream','TRUE','FALSE','TRUE','amenity=''ice_cream'' ','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2311','catering','TRUE','FALSE','TRUE','amenity=''catering'' ','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2401','hotel','TRUE','FALSE','TRUE','tourism=''hotel''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2402','motel','TRUE','FALSE','TRUE','tourism=''motel''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2403','bed_and_breakfast','TRUE','FALSE','TRUE','tourism=''bed_and_breakfast''','');
