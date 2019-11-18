@@ -33,9 +33,9 @@ The RustProof Labs blog has a two-part post explaining how to load OpenStreetMap
 
 When data is loaded from `osm2pgsql` into your database you're left with a set of three (3) `planet_osm_*` tables split based on type of geometry, not by type of data.
 
-* public.planet_osm_point
-* public.planet_osm_line
-* public.planet_osm_polygon
+* `public.planet_osm_point`
+* `public.planet_osm_line`
+* `public.planet_osm_polygon`
 
 This means that all the data representing waterways are found in the table `public.planet_osm_line`.  So are all the roads, sidewalks, rivers, railways, and administrative boundaries. This setup makes it impossible for an analyst used to a properly normalized relational database to simply connect to the database and be productive.
 
