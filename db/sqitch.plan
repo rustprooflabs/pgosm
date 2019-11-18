@@ -3,3 +3,4 @@
 %uri=https://bitbucket.org/rplinternal/pgosm
 
 001 2018-12-10T21:20:08Z Ryan Lambert <ryan@rustprooflabs.com> # Initial DB structures, cleaning up original version.
+002 [001] 2019-11-18T01:06:28Z Ryan Lambert <ryan@rustprooflabs.com> # Add table for routing details per detail code
