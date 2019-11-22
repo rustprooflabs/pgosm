@@ -17,10 +17,10 @@ def return_dataframe(sql_query, params = list(), **kwargs):
     return df
 
 
-def execute_no_results(sql_query):
+def execute_no_results(sql_query, params=None):
     conn = _get_conn()
     cur = conn.cursor()
-    cur.execute(sql_query)
+    cur.execute(sql_query, params)
     conn.commit()
     conn.close()
 
