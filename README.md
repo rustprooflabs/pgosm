@@ -9,7 +9,7 @@ See included `LICENSE` file for more details about licensing.
 
 In a nutshell, the process looks like this:
 
-* Download OSM PDF file
+* Download OSM PBF file
 * `osm2pgsql` loads PBF -> Postgres
 * `pgosm` converts into user-defined layer tables
 * Happy spatial data analysis!
