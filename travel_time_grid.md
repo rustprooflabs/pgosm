@@ -1,5 +1,43 @@
 # PgOSM:  Travel time grid
 
+Use OSM roads data to generate drive time grid around a central point.
+
+Assumes starting data is in SRID 3857, end result is 3857.
+
+Assumes OSM data has already been ran
+through the main PgOSM process with data saved in the default
+`osm` schema.  If you loaded data into a different schema you 
+must the following code accordingly.
+
+## Determine radius for grid
+
+First you must determine how far out to create the grid from
+the center point.   Converting max MPH to max number of meters able to travel in given amount of minutes.
+
+This step handles converting a target max MPH (assuming U.S.)
+and converts that into the number of meters that could be traveled
+in a given time.
+
+```sql
+-- Determine how far to make grid for 15 minute travel time
+SELECT 75 /*mph*/ 
+    * 0.25 /* Convert to miles per 15 min */
+    * 1.609344 /* Convert to km */
+    * 1000 /* Convert to meters */
+;
+-- 30175 is the max # of meters to travel in 15 minutes at 75 mph.
+```
+
+Now convert into # of grids, based on prior result and distance between grid points.  Reduced by a percentage of total distance, constant max speed is unlikely in most analysis.
+
+```sql
+-- # OF grids to extend, result goes into generate_series as min (-) and max (+)
+SELECT 30175 /* Result from prior query */
+    / 250 /* meters between points in grid, value re-used later */
+    * .90 /* Only go out 90% of max, optional time-saving reduction */
+;
+```
+
 ## Setup
 
 
@@ -153,6 +191,8 @@ DELETE FROM pgosm.routing_roads_noded WHERE cost_minutes IS NULL;
 
 
 ## Run
+
+
 
 ```bash
 python -c "import pgosm; pgosm.travel_time_grid.run();" 
