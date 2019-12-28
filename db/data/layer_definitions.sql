@@ -4,7 +4,10 @@
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1000','1099','place','osm_id, name, place, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary,  way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1200','1299','admin_area','osm_id, name, admin_level, boundary, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, COALESCE(tags -> ''building:levels'', ''1'') AS levels, regexp_replace(COALESCE(tags -> ''building:height'', ''4''), ''[^0-9\.]+'', '''', ''g'')::NUMERIC AS height, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, COALESCE(tags -> ''building:levels'', ''1'') AS levels, regexp_replace(COALESCE(tags -> ''building:height'', ''4''), ''[^0-9\.]+'', '''', ''g'')::NUMERIC AS height, operator, tags, way','');
+
+INSERT INTO pgosm.layer_group (code_start, code_end, class,	osm_columns, description) VALUES ('1600','1699','indoor','osm_id, name, ref, COALESCE(tags -> ''indoor'', ''area'') AS indoor, area, COALESCE(tags -> ''room'', '''') AS room, amenity, COALESCE(tags -> ''level'', ''1'') AS level, tags, way','Indoor areas, typically within buildings.  Roughly conforms to https://wiki.openstreetmap.org/wiki/Simple_Indoor_Tagging');
+
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2000','2099','public','osm_id, name, amenity, landuse, way','government offices, post office, police, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2100','2199','health','osm_id, name, amenity, landuse, way','Hospitals, pharmacies');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2200','2299','leisure','osm_id, name, amenity, landuse, leisure, way','');
@@ -63,6 +66,12 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1551','entrance','TRUE','FALSE','FALSE','building = ''entrance'' OR (tags -> ''entrance'' IN (''main'',''yes'' ))','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1552','exit','TRUE','FALSE','FALSE','building = ''exit''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1553','emergency_exit','TRUE','FALSE','FALSE','tags -> ''entrance'' = ''emergency''','');
+
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1600', 'area','FALSE','FALSE','TRUE', ' tags -> ''indoor'' = ''area''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1601', 'door','TRUE','FALSE','FALSE', ' tags -> ''indoor'' = ''door''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1602', 'wall','FALSE','TRUE','TRUE', ' tags -> ''indoor'' = ''wall''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1603', 'corridor','FALSE','FALSE','TRUE', ' tags -> ''indoor'' = ''corridor''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1610', 'room','FALSE','FALSE','TRUE', ' tags -> ''indoor'' = ''room''','');
 
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2001','police','TRUE','FALSE','TRUE','amenity=''police''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('2002','fire_station','TRUE','FALSE','TRUE','amenity=''fire_station''','');
