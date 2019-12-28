@@ -82,6 +82,10 @@ SELECT ROW_NUMBER() OVER () AS id,
     JOIN generate_series(-10, 10, 1) AS s(a) ON True
 ;
 
+ALTER TABLE pgosm.travel_grid
+    ADD CONSTRAINT PK_pgosm_travel_grid 
+    PRIMARY KEY (id);
+
 CREATE INDEX GIX_pgosm_travel_grid ON pgosm.travel_grid
     USING GIST (way);
 ```
@@ -98,6 +102,8 @@ ALTER TABLE pgosm.travel_grid ADD not_claimed BOOLEAN DEFAULT True;
 
 
 ## Roads for Routing
+
+> Note:  Load data from `db/data/routable.sql` before running this code!
 
 ```sql
 DROP TABLE IF EXISTS pgosm.routing_roads;
@@ -122,7 +128,7 @@ CREATE INDEX GIX_pgosm_routing_roads ON pgosm.routing_roads
 
 
 Identify obvious non-route
-Numeric value in ST_DWithin() is distance between grid minus 1.
+Numeric value in `ST_DWithin()` is distance between grid minus 1.
 
 ```sql
 -- Find not-routable roads
