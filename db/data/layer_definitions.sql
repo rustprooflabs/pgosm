@@ -15,7 +15,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2400','2499','accomodation','osm_id, name, landuse, leisure, tourism, way','Hotel, motel, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2500','2599','shopping','osm_id, name, shop, amenity, tags -> ''vending'' AS vending, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2600','2899','tourism','osm_id, name, tourism, amenity, tags -> ''information'' AS information, way','I am not so sure about this range….');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2900','2999','miscpoi','osm_id, name, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2900','2999','miscpoi','osm_id, name, tags, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, way','Place of Worship');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref way','');
