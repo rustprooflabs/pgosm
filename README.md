@@ -20,10 +20,10 @@ In a nutshell, the process looks like this:
 
 ## Using PgOSM
 
-The RustProof Labs blog has a two-part post explaining how to load OpenStreetMap data to PostGIS using PgOSM
+The RustProof Labs blog has a two-part post explaining how to load OpenStreetMap data to PostGIS using PgOSM.
 
 
-* Step 1: [Load OSM PBF to PostGIS](https://blog.rustprooflabs.com/2019/01/postgis-osm-load)
+* Step 1: [Load OSM PBF to PostGIS](https://blog.rustprooflabs.com/2020/01/postgis-osm-load-2020)
 * Step 2: [Transform OpenStreetMap data in PostGIS](https://blog.rustprooflabs.com/2019/01/postgis-pgosm)
 
 
