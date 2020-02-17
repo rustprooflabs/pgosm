@@ -185,7 +185,7 @@ UPDATE pgosm.routing_roads_noded rn
     ;
 ```
 
-Remove notes without routes or costs
+Remove nodes without routes (missing source) or costs.
 
 
 ```sql
