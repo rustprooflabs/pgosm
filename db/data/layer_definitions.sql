@@ -2,7 +2,7 @@
 
 
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1000','1099','place','osm_id, name, place, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary,  way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary,  way','Administrative boundaries, roughly follows https://wiki.openstreetmap.org/wiki/Tag%3aboundary=administrative');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1200','1299','admin_area','osm_id, name, admin_level, boundary, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, COALESCE(tags -> ''building:levels'', ''1'') AS levels, regexp_replace(COALESCE(tags -> ''building:height'', ''4''), ''[^0-9\.]+'', '''', ''g'')::NUMERIC AS height, operator, tags, way','');
 
@@ -15,7 +15,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2400','2499','accomodation','osm_id, name, landuse, leisure, tourism, way','Hotel, motel, etc.');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2500','2599','shopping','osm_id, name, shop, amenity, tags -> ''vending'' AS vending, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2600','2899','tourism','osm_id, name, tourism, amenity, tags -> ''information'' AS information, way','I am not so sure about this range….');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2900','2999','miscpoi','osm_id, name, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2900','2999','miscpoi','osm_id, name, tags, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, way','Place of Worship');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref way','');
@@ -37,7 +37,7 @@ INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, descrip
 ---------------------------------------------------------------
 
 
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1001','city','TRUE','FALSE','TRUE','place=''city''','see also 1005');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1001','city','TRUE','FALSE','TRUE','place=''city''','Largest urban areas.  See also 1005');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1002','town','TRUE','FALSE','TRUE','place=''town''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1003','village','TRUE','FALSE','TRUE','place=''village''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1004','hamlet','TRUE','FALSE','TRUE','place=''hamlet''','');
@@ -49,23 +49,23 @@ INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_poly
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1040','region','TRUE','FALSE','TRUE','place=''region''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1041','county','TRUE','FALSE','TRUE','place=''county''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1050','locality','TRUE','FALSE','TRUE','place=''locality''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1099','named_place','TRUE','FALSE','TRUE','name IS NOT NULL','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1101','admin_level1','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''1''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1099','named_place','TRUE','FALSE','TRUE','name IS NOT NULL','Includes all named objects.  Duplicates a large number of objects found in other, more specific subclasses.');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1101','admin_level1','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''1''','Unknown/unused');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1102','admin_level2','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''2''','National Border');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1103','admin_level3','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''3''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1104','admin_level4','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''4''','State???');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1105','admin_level5','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''5''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1106','admin_level6','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''6''','Maybe county??');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1107','admin_level7','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''7''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1108','admin_level8','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''8''','City or borough');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1109','admin_level9','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''9''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1110','admin_level10','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''10''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1111','admin_level11','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''11''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1500','building','FALSE','FALSE','TRUE','building IS NOT NULL','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1104','admin_level4','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''4''','U.S. State, 	Commonwealths, and similar');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1105','admin_level5','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''5''','New York City (unique in USA as an agglomerate of multiple county equivalents)');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1106','admin_level6','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''6''','U.S. County and similar');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1107','admin_level7','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''7''','Civil townships');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1108','admin_level8','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''8''','City, borough, town, village');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1109','admin_level9','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''9''','Wards (rare)');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1110','admin_level10','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''10''','Neighborhoods');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1111','admin_level11','FALSE','TRUE','TRUE','boundary=''administrative'' AND admin_level=''11''','Non-U.S. usages.');
 
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1551','entrance','TRUE','FALSE','FALSE','building = ''entrance'' OR (tags -> ''entrance'' IN (''main'',''yes'' ))','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1552','exit','TRUE','FALSE','FALSE','building = ''exit''','');
-INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1553','emergency_exit','TRUE','FALSE','FALSE','tags -> ''entrance'' = ''emergency''','');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1500','building','FALSE','FALSE','TRUE','building IS NOT NULL','All building polygon objects.');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1551','entrance','TRUE','FALSE','FALSE','building = ''entrance'' OR (tags -> ''entrance'' IN (''main'',''yes'' ))','Building entrances.');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1552','exit','TRUE','FALSE','FALSE','building = ''exit''','Building exits.');
+INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1553','emergency_exit','TRUE','FALSE','FALSE','tags -> ''entrance'' = ''emergency''','Building emergency exits.');
 
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1600', 'area','FALSE','FALSE','TRUE', ' tags -> ''indoor'' = ''area''','');
 INSERT INTO pgosm.layer_detail (code, subclass, geom_point, geom_line, geom_polygon, osm_tag_filter, description) VALUES ('1601', 'door','TRUE','FALSE','FALSE', ' tags -> ''indoor'' = ''door''','');
