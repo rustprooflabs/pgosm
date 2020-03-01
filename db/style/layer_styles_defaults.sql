@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.1 (Ubuntu 12.1-1.pgdg18.04+1)
--- Dumped by pg_dump version 12.0 (Ubuntu 12.0-2.pgdg18.04+1)
+-- Dumped from database version 12.2 (Ubuntu 12.2-2.pgdg18.04+1)
+-- Dumped by pg_dump version 12.2 (Ubuntu 12.2-2.pgdg18.04+1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,6 +20,4615 @@ SET row_security = off;
 -- Data for Name: layer_styles; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (186, 'pgosm', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyDrawingHints="1" simplifyLocal="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minScale="1e+08" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.8.1-Zanzibar" maxScale="0" simplifyMaxScale="1" labelsEnabled="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol">
+  <categories>
+   <category render="true" label="Forest" value="7201" symbol="0"/>
+   <category render="true" label="Park" value="7202" symbol="1"/>
+   <category render="true" label="Residential" value="7203" symbol="2"/>
+   <category render="true" label="Industrial" value="7204" symbol="3"/>
+   <category render="true" label="Farm" value="7205" symbol="4"/>
+   <category render="true" label="Cemetary" value="7206" symbol="5"/>
+   <category render="true" label="Meadow" value="7208" symbol="6"/>
+   <category render="true" label="Commercial" value="7209" symbol="7"/>
+   <category render="true" label="Recreation" value="7211" symbol="8"/>
+   <category render="true" label="Retail" value="7212" symbol="9"/>
+   <category render="true" label="Military" value="7213" symbol="10"/>
+   <category render="true" label="Quarry" value="7214" symbol="11"/>
+   <category render="true" label="Orchard" value="7215" symbol="12"/>
+   <category render="true" label="Scrub" value="7217" symbol="13"/>
+   <category render="true" label="Grass" value="7218" symbol="14"/>
+   <category render="true" label="" value="" symbol="15"/>
+  </categories>
+  <symbols>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="44,190,31,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="1">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="190,245,186,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="10">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="158,76,0,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="11">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="96,126,235,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="12">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="83,222,123,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="13">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="42,174,33,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="14">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="144,216,0,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="15">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="133,221,125,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="2">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="208,208,208,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="3">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="230,182,220,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="4">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="109,225,15,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="5">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="173,233,168,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="6">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="186,221,105,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="7">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="209,230,232,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="8">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="35,130,28,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="9">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="230,182,220,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="35,139,33,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory scaleDependency="Area" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" width="15" scaleBasedVisibility="0" opacity="1" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" penAlpha="255" barWidth="5" backgroundColor="#ffffff" rotationOffset="270" lineSizeType="MM" maxScaleDenominator="1e+08" penWidth="0" enabled="0" minScaleDenominator="0" height="15">
+   <fontProperties style="" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings obstacle="0" placement="1" priority="0" zIndex="0" linePlacementFlags="18" showAll="1" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="natural">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="leisure">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="boundary">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="landuse" name=""/>
+  <alias index="3" field="natural" name=""/>
+  <alias index="4" field="leisure" name=""/>
+  <alias index="5" field="boundary" name=""/>
+  <alias index="6" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default field="osm_id" applyOnUpdate="0" expression=""/>
+  <default field="name" applyOnUpdate="0" expression=""/>
+  <default field="landuse" applyOnUpdate="0" expression=""/>
+  <default field="natural" applyOnUpdate="0" expression=""/>
+  <default field="leisure" applyOnUpdate="0" expression=""/>
+  <default field="boundary" applyOnUpdate="0" expression=""/>
+  <default field="code" applyOnUpdate="0" expression=""/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" field="osm_id" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="name" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="landuse" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="natural" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="leisure" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="boundary" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" field="code" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="osm_id" exp="" desc=""/>
+  <constraint field="name" exp="" desc=""/>
+  <constraint field="landuse" exp="" desc=""/>
+  <constraint field="natural" exp="" desc=""/>
+  <constraint field="leisure" exp="" desc=""/>
+  <constraint field="boundary" exp="" desc=""/>
+  <constraint field="code" exp="" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column hidden="0" width="-1" type="field" name="osm_id"/>
+   <column hidden="0" width="-1" type="field" name="name"/>
+   <column hidden="0" width="-1" type="field" name="landuse"/>
+   <column hidden="0" width="-1" type="field" name="natural"/>
+   <column hidden="0" width="-1" type="field" name="leisure"/>
+   <column hidden="0" width="-1" type="field" name="boundary"/>
+   <column hidden="0" width="-1" type="field" name="code"/>
+   <column hidden="1" width="-1" type="actions"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="boundary"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="leisure"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="natural"/>
+  <field editable="1" name="osm_id"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="boundary"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="leisure"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="natural"/>
+  <field labelOnTop="0" name="osm_id"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>landuse_polygon</se:Name>
+  <UserStyle>
+   <se:Name>landuse_polygon</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Forest</se:Name>
+     <se:Description>
+      <se:Title>Forest</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7201</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#2cbe1f</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Park</se:Name>
+     <se:Description>
+      <se:Title>Park</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7202</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#bef5ba</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Residential</se:Name>
+     <se:Description>
+      <se:Title>Residential</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7203</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#d0d0d0</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Industrial</se:Name>
+     <se:Description>
+      <se:Title>Industrial</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7204</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Farm</se:Name>
+     <se:Description>
+      <se:Title>Farm</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7205</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#6de10f</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Cemetary</se:Name>
+     <se:Description>
+      <se:Title>Cemetary</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7206</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ade9a8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Meadow</se:Name>
+     <se:Description>
+      <se:Title>Meadow</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7208</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#badd69</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Commercial</se:Name>
+     <se:Description>
+      <se:Title>Commercial</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7209</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#d1e6e8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Recreation</se:Name>
+     <se:Description>
+      <se:Title>Recreation</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7211</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#23821c</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Retail</se:Name>
+     <se:Description>
+      <se:Title>Retail</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7212</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Military</se:Name>
+     <se:Description>
+      <se:Title>Military</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7213</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#9e4c00</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Quarry</se:Name>
+     <se:Description>
+      <se:Title>Quarry</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7214</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#607eeb</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Orchard</se:Name>
+     <se:Description>
+      <se:Title>Orchard</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7215</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#53de7b</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Scrub</se:Name>
+     <se:Description>
+      <se:Title>Scrub</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7217</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#2aae21</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Grass</se:Name>
+     <se:Description>
+      <se:Title>Grass</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>7218</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#90d800</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#85dd7d</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', false, 'OpenStreetMap landuse polygons.  Residential, commercial, industrial, grass, etc.', 'postgres', NULL, '2019-11-15 10:31:07.283089');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (188, 'pgosm', 'osm', 'building_point', 'way', 'osm_building_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
+  <rules key="{16f69e29-2055-4d9e-b380-607da6a7bef0}">
+   <rule filter="&quot;code&quot; = 1500" key="{c5ff30e2-8045-4bbd-b08f-4e313a46a412}" label="Building">
+    <rule scalemaxdenom="5000" symbol="0" key="{a090c2cb-d8b1-4fe4-bbcf-d84706a453f6}" label="Building &lt; 5k"/>
+    <rule scalemindenom="5000" scalemaxdenom="10000" symbol="1" key="{d436723a-f9f5-4f39-b20a-e2b799638459}" label="Building 5 - 10k"/>
+    <rule scalemindenom="10000" scalemaxdenom="30000" symbol="2" key="{2e72f266-3805-425b-9a79-e41e733af607}" label="Building 10 - 30k"/>
+   </rule>
+   <rule filter="&quot;code&quot; = 1551" key="{8f9dc883-a836-499c-a2d1-a6ab7915e94a}" label="Entrance">
+    <rule scalemaxdenom="1000" symbol="3" key="{f5e9a54e-3537-41d2-b2e0-fd45bf7162c9}" label="Entrance &lt;1k"/>
+    <rule scalemindenom="1000" scalemaxdenom="2000" symbol="4" key="{1a0e5474-f320-431b-b432-4c685ff83e8b}" label="Entrance 1 - 2k"/>
+    <rule scalemindenom="2000" scalemaxdenom="3000" symbol="5" key="{51977cb8-8fd8-4bbb-abc9-d8083021d159}" label="Entrance 2- 3k"/>
+    <rule scalemindenom="3000" scalemaxdenom="10000" symbol="6" key="{9bbd300c-b2d0-4170-b3e9-ea7ff379e323}" label="Entrance 3 - 10k"/>
+   </rule>
+   <rule filter="ELSE" checkstate="0" symbol="7" key="{bd5dc5b0-a9ae-4d3b-92a9-a7d9352f3723}"/>
+  </rules>
+  <symbols>
+   <symbol alpha="1" type="marker" name="0" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="142,142,142,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="1" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="142,142,142,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="2" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="142,142,142,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="1.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="3" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="transport/barrier_enterance.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="4.8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="4" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="transport/barrier_enterance.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="3.8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="5" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="transport/barrier_enterance.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2.2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="6" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="0.4"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="7" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="124,211,95,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+ </renderer-v2>
+ <customproperties>
+  <property key="dualview/previewExpressions">
+   <value>"housename"</value>
+  </property>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory enabled="0" penAlpha="255" minimumSize="0" lineSizeType="MM" penColor="#000000" labelPlacementMethod="XHeight" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" minScaleDenominator="0" sizeType="MM" penWidth="0" height="15" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" width="15" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" scaleBasedVisibility="0" barWidth="5">
+   <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings zIndex="0" placement="0" dist="0" linePlacementFlags="18" showAll="1" priority="0" obstacle="0">
+  <properties>
+   <Option type="Map">
+    <Option type="QString" name="name" value=""/>
+    <Option name="properties"/>
+    <Option type="QString" name="type" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="housename">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="housenumber">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="building">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="place">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="levels">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="height">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="tags">
+   <editWidget type="KeyValue">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias name="" index="0" field="osm_id"/>
+  <alias name="" index="1" field="housename"/>
+  <alias name="" index="2" field="housenumber"/>
+  <alias name="" index="3" field="building"/>
+  <alias name="" index="4" field="name"/>
+  <alias name="" index="5" field="place"/>
+  <alias name="" index="6" field="levels"/>
+  <alias name="" index="7" field="height"/>
+  <alias name="" index="8" field="tags"/>
+  <alias name="" index="9" field="code"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="housename"/>
+  <default applyOnUpdate="0" expression="" field="housenumber"/>
+  <default applyOnUpdate="0" expression="" field="building"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="place"/>
+  <default applyOnUpdate="0" expression="" field="levels"/>
+  <default applyOnUpdate="0" expression="" field="height"/>
+  <default applyOnUpdate="0" expression="" field="tags"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_id"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="housename"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="housenumber"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="building"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="place"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="levels"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="height"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="tags"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="code"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" desc="" field="osm_id"/>
+  <constraint exp="" desc="" field="housename"/>
+  <constraint exp="" desc="" field="housenumber"/>
+  <constraint exp="" desc="" field="building"/>
+  <constraint exp="" desc="" field="name"/>
+  <constraint exp="" desc="" field="place"/>
+  <constraint exp="" desc="" field="levels"/>
+  <constraint exp="" desc="" field="height"/>
+  <constraint exp="" desc="" field="tags"/>
+  <constraint exp="" desc="" field="code"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <columns>
+   <column type="field" width="-1" name="osm_id" hidden="0"/>
+   <column type="field" width="-1" name="housename" hidden="0"/>
+   <column type="field" width="-1" name="housenumber" hidden="0"/>
+   <column type="field" width="-1" name="building" hidden="0"/>
+   <column type="field" width="-1" name="name" hidden="0"/>
+   <column type="field" width="-1" name="place" hidden="0"/>
+   <column type="field" width="-1" name="levels" hidden="0"/>
+   <column type="field" width="-1" name="height" hidden="0"/>
+   <column type="field" width="-1" name="tags" hidden="0"/>
+   <column type="field" width="-1" name="code" hidden="0"/>
+   <column type="actions" width="-1" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="building"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="height"/>
+  <field editable="1" name="housename"/>
+  <field editable="1" name="housenumber"/>
+  <field editable="1" name="levels"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+  <field editable="1" name="place"/>
+  <field editable="1" name="tags"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="building"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="height"/>
+  <field labelOnTop="0" name="housename"/>
+  <field labelOnTop="0" name="housenumber"/>
+  <field labelOnTop="0" name="levels"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+  <field labelOnTop="0" name="place"/>
+  <field labelOnTop="0" name="tags"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>housename</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0">
+ <NamedLayer>
+  <se:Name>building_point</se:Name>
+  <UserStyle>
+   <se:Name>building_point</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Building &lt; 5k</se:Name>
+     <se:Description>
+      <se:Title>Building &lt; 5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1500</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>9</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Building 5 - 10k</se:Name>
+     <se:Description>
+      <se:Title>Building 5 - 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1500</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Building 10 - 30k</se:Name>
+     <se:Description>
+      <se:Title>Building 10 - 30k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1500</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>6</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Entrance &lt;1k</se:Name>
+     <se:Description>
+      <se:Title>Entrance &lt;1k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1551</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>17</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Entrance 1 - 2k</se:Name>
+     <se:Description>
+      <se:Title>Entrance 1 - 2k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1551</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>14</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Entrance 2- 3k</se:Name>
+     <se:Description>
+      <se:Title>Entrance 2- 3k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1551</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>3000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>8</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Entrance 3 - 10k</se:Name>
+     <se:Description>
+      <se:Title>Entrance 3 - 10k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1551</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>3000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>1</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <!--Parser Error: 
+syntax error, unexpected ELSE - Expression was: ELSE-->
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#7cd35f</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'OpenStreetMap building point layer.  Building points and enterances.', 'postgres', NULL, '2019-11-15 17:48:39.01566');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (189, 'pgosm', 'osm', 'food_point', 'way', 'osm_food_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
+  <rules key="{c4c9b2bf-7d2b-4633-9647-f05be03174cb}">
+   <rule filter="&quot;code&quot; = 2301" key="{69c09b9e-5191-4897-b767-7e4fb29649cc}" label="Restaurant">
+    <rule scalemaxdenom="1000" symbol="0" key="{e2299bbd-7aa9-453a-a3da-19cef7f84354}" label="0 - 1000"/>
+    <rule scalemindenom="1000" scalemaxdenom="2000" symbol="1" key="{a7b949bb-30db-437c-a921-cd3d47ac874f}" label="1 - 2k"/>
+    <rule scalemindenom="2000" scalemaxdenom="3000" symbol="2" key="{9c3c44a8-a901-4cd4-99cd-fdb5a33b0500}" label="2 - 3k"/>
+    <rule scalemindenom="3000" scalemaxdenom="5000" symbol="3" key="{75d2ddca-74a8-4724-994f-d152ebe6ff29}" label="3 - 5k"/>
+   </rule>
+   <rule filter="&quot;code&quot; = 2302" key="{39185bb3-c16f-400e-942f-7c99a965ff3a}" label="Fast Food">
+    <rule scalemaxdenom="1000" symbol="4" key="{cdc795dd-b279-411a-b98e-9eb77715091b}" label="&lt; 1000"/>
+    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="5" key="{17420df3-f14e-486f-aab6-ebfeca964139}" label="1000 - 2500"/>
+    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="6" key="{9f6b9013-b4ab-42ff-a3de-8da28a6a514c}" label="2.5 - 5k"/>
+   </rule>
+   <rule filter="&quot;code&quot; = 2303" key="{b8f2ac70-843b-459a-9176-12f9a5a76d12}" label="Café">
+    <rule scalemaxdenom="1000" symbol="7" key="{f19bd497-b94f-4822-8609-3a5cef7033b6}" label="&lt; 1k"/>
+    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="8" key="{b2643126-d57b-40ff-83ab-0b6fc07f21dc}" label="1 - 2.5k"/>
+    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="9" key="{3d2eebcb-0468-4e13-ad1d-a5105a243d33}" label="2.5 - 5k"/>
+   </rule>
+   <rule filter="&quot;code&quot; IN (''2304'', ''2305'', ''2307'')" key="{d67e94f7-2eaf-42da-83d5-89e23c101a1b}" label="Pub / Bar">
+    <rule scalemaxdenom="1000" symbol="10" key="{060bb804-d57d-4b73-9ec7-351611ac2b8f}" label="&lt; 1k"/>
+    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="11" key="{9c2640a5-f22d-4d6a-8151-a84e157ea3af}" label="1 - 2.5k"/>
+    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="12" key="{e84afd8b-e63c-4f78-afa4-32edf38c060e}" label="2500 - 5000"/>
+   </rule>
+   <rule filter="&quot;code&quot; = 2306" checkstate="0" symbol="13" key="{daaada7a-a71f-48fc-b7ac-09f2e58a7ff5}" label="Food Court">
+    <rule scalemaxdenom="1000" symbol="14" key="{231a4dac-8db6-4d77-8a58-f4c373a3b81a}" label="0 - 1000"/>
+    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="15" key="{8ceb342b-bd05-4c6e-b3fe-58698bf753fd}" label="1000 - 2500"/>
+    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="16" key="{b19ce4be-5f5b-42bf-baae-defc5f4fd379}" label="2500 - 5000"/>
+    <rule scalemindenom="5000" scalemaxdenom="10000" symbol="17" key="{ecc73bf7-7b39-45ae-8461-3d07abad54ea}" label="5000 - 10000"/>
+    <rule scalemindenom="10000" symbol="18" key="{ef3292f4-7393-4619-9800-372c90bca0e0}" label="10000 - 0"/>
+   </rule>
+   <rule filter="ELSE" checkstate="0" symbol="19" key="{9e3f2764-8dc0-4a2d-bca5-530d4ec183f2}"/>
+  </rules>
+  <symbols>
+   <symbol alpha="1" type="marker" name="0" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_restaurant.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8.2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="1" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_restaurant.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="10" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_pub.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="7"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="11" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_pub.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="12" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_pub.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="3.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="13" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="14" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="15" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="16" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="17" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="18" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="58,205,139,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="19" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="96,206,68,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="2" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_restaurant.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="4"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="3" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_restaurant.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2.2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="4" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_fastfood.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8.2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="5" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_fastfood.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="6" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_fastfood.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2.8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="7" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_cafe.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="7.8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="8" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_cafe.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6.8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol alpha="1" type="marker" name="9" clip_to_extent="1" force_rhr="0">
+    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="food/food_cafe.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="3.6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" name="name" value=""/>
+       <Option name="properties"/>
+       <Option type="QString" name="type" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+ </renderer-v2>
+ <customproperties>
+  <property key="dualview/previewExpressions">
+   <value>"name"</value>
+  </property>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory enabled="0" penAlpha="255" minimumSize="0" lineSizeType="MM" penColor="#000000" labelPlacementMethod="XHeight" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" minScaleDenominator="0" sizeType="MM" penWidth="0" height="15" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" width="15" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" scaleBasedVisibility="0" barWidth="5">
+   <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings zIndex="0" placement="0" dist="0" linePlacementFlags="18" showAll="1" priority="0" obstacle="0">
+  <properties>
+   <Option type="Map">
+    <Option type="QString" name="name" value=""/>
+    <Option name="properties"/>
+    <Option type="QString" name="type" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="amenity">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="leisure">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="tourism">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias name="" index="0" field="osm_id"/>
+  <alias name="" index="1" field="name"/>
+  <alias name="" index="2" field="amenity"/>
+  <alias name="" index="3" field="landuse"/>
+  <alias name="" index="4" field="leisure"/>
+  <alias name="" index="5" field="tourism"/>
+  <alias name="" index="6" field="code"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="amenity"/>
+  <default applyOnUpdate="0" expression="" field="landuse"/>
+  <default applyOnUpdate="0" expression="" field="leisure"/>
+  <default applyOnUpdate="0" expression="" field="tourism"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_id"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="amenity"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="landuse"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="leisure"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="tourism"/>
+  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="code"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" desc="" field="osm_id"/>
+  <constraint exp="" desc="" field="name"/>
+  <constraint exp="" desc="" field="amenity"/>
+  <constraint exp="" desc="" field="landuse"/>
+  <constraint exp="" desc="" field="leisure"/>
+  <constraint exp="" desc="" field="tourism"/>
+  <constraint exp="" desc="" field="code"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <columns>
+   <column type="field" width="-1" name="osm_id" hidden="0"/>
+   <column type="field" width="-1" name="name" hidden="0"/>
+   <column type="field" width="-1" name="amenity" hidden="0"/>
+   <column type="field" width="-1" name="landuse" hidden="0"/>
+   <column type="field" width="-1" name="leisure" hidden="0"/>
+   <column type="field" width="-1" name="tourism" hidden="0"/>
+   <column type="field" width="-1" name="code" hidden="0"/>
+   <column type="actions" width="-1" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="amenity"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="leisure"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+  <field editable="1" name="tourism"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="amenity"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="leisure"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+  <field labelOnTop="0" name="tourism"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0">
+ <NamedLayer>
+  <se:Name>food_point - EDITING</se:Name>
+  <UserStyle>
+   <se:Name>food_point - EDITING</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>0 - 1000</se:Name>
+     <se:Description>
+      <se:Title>0 - 1000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2301</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1 - 2k</se:Name>
+     <se:Description>
+      <se:Title>1 - 2k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2301</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>24</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2 - 3k</se:Name>
+     <se:Description>
+      <se:Title>2 - 3k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2301</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>3000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>14</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>3 - 5k</se:Name>
+     <se:Description>
+      <se:Title>3 - 5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2301</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>3000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>8</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>&lt; 1000</se:Name>
+     <se:Description>
+      <se:Title>&lt; 1000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2302</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1000 - 2500</se:Name>
+     <se:Description>
+      <se:Title>1000 - 2500</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2302</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>24</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2.5 - 5k</se:Name>
+     <se:Description>
+      <se:Title>2.5 - 5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2302</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>10</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>&lt; 1k</se:Name>
+     <se:Description>
+      <se:Title>&lt; 1k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2303</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>28</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1 - 2.5k</se:Name>
+     <se:Description>
+      <se:Title>1 - 2.5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2303</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>24</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2.5 - 5k</se:Name>
+     <se:Description>
+      <se:Title>2.5 - 5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2303</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>13</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>&lt; 1k</se:Name>
+     <se:Description>
+      <se:Title>&lt; 1k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2304</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2305</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2307</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>25</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1 - 2.5k</se:Name>
+     <se:Description>
+      <se:Title>1 - 2.5k</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2304</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2305</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2307</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2500 - 5000</se:Name>
+     <se:Description>
+      <se:Title>2500 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2304</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2305</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal>2307</ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>13</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Food Court</se:Name>
+     <se:Description>
+      <se:Title>Food Court</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>0 - 1000</se:Name>
+     <se:Description>
+      <se:Title>0 - 1000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>1000 - 2500</se:Name>
+     <se:Description>
+      <se:Title>1000 - 2500</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>2500 - 5000</se:Name>
+     <se:Description>
+      <se:Title>2500 - 5000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>5000 - 10000</se:Name>
+     <se:Description>
+      <se:Title>5000 - 10000</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>10000 - 0</se:Name>
+     <se:Description>
+      <se:Title>10000 - 0</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2306</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <!--Parser Error: 
+syntax error, unexpected ELSE - Expression was: ELSE-->
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#60ce44</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'OpenStreetMap food points, e.g. Restaurant, fast food, cafe, pub.', 'postgres', NULL, '2019-11-15 18:11:35.230289');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (193, 'pgosm', 'osm', 'tourism_point', 'way', 'osm_tourism_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol" forceraster="0">
+  <categories>
+   <category render="true" symbol="0" value="2601" label="Bank"/>
+   <category render="true" symbol="1" value="2602" label="ATM"/>
+   <category render="true" symbol="2" value="2701" label="Info"/>
+   <category render="true" symbol="3" value="2721" label="Attraction"/>
+   <category render="true" symbol="4" value="2722" label="Mueseum"/>
+   <category render="true" symbol="5" value="2723" label="Monument"/>
+   <category render="true" symbol="6" value="2724" label="Memorial"/>
+   <category render="true" symbol="7" value="2725" label="Art"/>
+   <category render="true" symbol="8" value="2731" label="Castle"/>
+   <category render="true" symbol="9" value="2732" label="Ruins"/>
+   <category render="true" symbol="10" value="2733" label="Archaeological"/>
+   <category render="true" symbol="11" value="2735" label="Wayside Shrine"/>
+   <category render="true" symbol="12" value="2736" label="Battlefield"/>
+   <category render="true" symbol="13" value="2741" label="Picnic Site"/>
+   <category render="true" symbol="14" value="2742" label="Viewpoint"/>
+   <category render="true" symbol="15" value="2743" label="Zoo"/>
+   <category render="true" symbol="16" value="2744" label="Theme Park"/>
+   <category render="true" symbol="17" value="" label=""/>
+  </categories>
+  <symbols>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,131,46,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="money/money_bank2.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="1" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,131,46,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="money/money_atm.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="10" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="223,235,42,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="11" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="208,162,36,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="12" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="202,91,193,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="13" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="accommodation/accommodation_shelter2.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="14" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="81,158,209,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_view_point.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="2" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="15" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="227,140,134,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="16" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="67,110,229,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="17" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="223,151,103,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="2" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="56,44,215,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="amenity/amenity_information.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="3" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="46,227,58,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="4" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="landmark/tourism=museum.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="7.2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="5" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_monument.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="10" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="6" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="-4.5" k="angle"/>
+     <prop v="10,117,125,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="2" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_memorial.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="7" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="228,19,221,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_art_gallery2.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="7" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="8" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_castle.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="9" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SvgMarker">
+     <prop v="0" k="angle"/>
+     <prop v="161,13,25,255" k="color"/>
+     <prop v="0" k="fixedAspectRatio"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="tourist/tourist_ruin.svg" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="8" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="marker">
+    <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="231,113,72,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp name="[source]" type="randomcolors"/>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory penWidth="0" sizeType="MM" lineSizeType="MM" width="15" backgroundColor="#ffffff" height="15" barWidth="5" opacity="1" backgroundAlpha="255" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" enabled="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" diagramOrientation="Up" penAlpha="255" scaleDependency="Area" labelPlacementMethod="XHeight">
+   <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings priority="0" showAll="1" zIndex="0" dist="0" placement="0" obstacle="0" linePlacementFlags="18">
+  <properties>
+   <Option type="Map">
+    <Option value="" name="name" type="QString"/>
+    <Option name="properties"/>
+    <Option value="collection" name="type" type="QString"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="tourism">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="amenity">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="information">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" name="" field="osm_id"/>
+  <alias index="1" name="" field="name"/>
+  <alias index="2" name="" field="tourism"/>
+  <alias index="3" name="" field="amenity"/>
+  <alias index="4" name="" field="information"/>
+  <alias index="5" name="" field="code"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="tourism"/>
+  <default applyOnUpdate="0" expression="" field="amenity"/>
+  <default applyOnUpdate="0" expression="" field="information"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="name"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="tourism"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="amenity"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="information"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="code"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint desc="" exp="" field="osm_id"/>
+  <constraint desc="" exp="" field="name"/>
+  <constraint desc="" exp="" field="tourism"/>
+  <constraint desc="" exp="" field="amenity"/>
+  <constraint desc="" exp="" field="information"/>
+  <constraint desc="" exp="" field="code"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column width="-1" name="osm_id" type="field" hidden="0"/>
+   <column width="-1" name="name" type="field" hidden="0"/>
+   <column width="-1" name="tourism" type="field" hidden="0"/>
+   <column width="-1" name="amenity" type="field" hidden="0"/>
+   <column width="-1" name="information" type="field" hidden="0"/>
+   <column width="-1" name="code" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="amenity" editable="1"/>
+  <field name="code" editable="1"/>
+  <field name="information" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="osm_id" editable="1"/>
+  <field name="tourism" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field name="amenity" labelOnTop="0"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="information" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+  <field name="tourism" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>tourism_point</se:Name>
+  <UserStyle>
+   <se:Name>tourism_point</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Bank</se:Name>
+     <se:Description>
+      <se:Title>Bank</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2601</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//money/money_bank2.svg?fill=%2300832e&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="money/money_bank2.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#00832e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>ATM</se:Name>
+     <se:Description>
+      <se:Title>ATM</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2602</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//money/money_atm.svg?fill=%2300832e&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="money/money_atm.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#00832e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Info</se:Name>
+     <se:Description>
+      <se:Title>Info</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2701</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//amenity/amenity_information.svg?fill=%23382cd7&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="amenity/amenity_information.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#382cd7</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Attraction</se:Name>
+     <se:Description>
+      <se:Title>Attraction</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2721</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#2ee33a</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Mueseum</se:Name>
+     <se:Description>
+      <se:Title>Mueseum</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2722</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//landmark/tourism=museum.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="landmark/tourism=museum.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>26</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Monument</se:Name>
+     <se:Description>
+      <se:Title>Monument</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2723</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_monument.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_monument.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>36</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Memorial</se:Name>
+     <se:Description>
+      <se:Title>Memorial</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2724</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_memorial.svg?fill=%230a757d&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_memorial.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#0a757d</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+       <se:Rotation/>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Art</se:Name>
+     <se:Description>
+      <se:Title>Art</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2725</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_art_gallery2.svg?fill=%23e413dd&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_art_gallery2.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#e413dd</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>25</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Castle</se:Name>
+     <se:Description>
+      <se:Title>Castle</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2731</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_castle.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_castle.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Ruins</se:Name>
+     <se:Description>
+      <se:Title>Ruins</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2732</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_ruin.svg?fill=%23a10d19&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_ruin.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#a10d19</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Archaeological</se:Name>
+     <se:Description>
+      <se:Title>Archaeological</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2733</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#dfeb2a</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Wayside Shrine</se:Name>
+     <se:Description>
+      <se:Title>Wayside Shrine</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2735</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#d0a224</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Battlefield</se:Name>
+     <se:Description>
+      <se:Title>Battlefield</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2736</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#ca5bc1</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Picnic Site</se:Name>
+     <se:Description>
+      <se:Title>Picnic Site</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2741</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//accommodation/accommodation_shelter2.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="accommodation/accommodation_shelter2.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Viewpoint</se:Name>
+     <se:Description>
+      <se:Title>Viewpoint</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2742</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//tourist/tourist_view_point.svg?fill=%23519ed1&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:href="tourist/tourist_view_point.svg" xlink:type="simple"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#519ed1</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Zoo</se:Name>
+     <se:Description>
+      <se:Title>Zoo</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2743</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#e38c86</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Theme Park</se:Name>
+     <se:Description>
+      <se:Title>Theme Park</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2744</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#436ee5</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#df9767</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Initial pass, classified most codes, gave many SVG styles.', 'postgres', NULL, '2020-02-27 21:00:28.424012');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (169, 'pgosm', 'osm', 'natural_point', 'way', 'osm_natural_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="1" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="0">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -1104,7 +5713,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap natural points, e.g. Peak and Tree.', NULL, NULL, '2018-07-18 17:01:58.698118');
+', true, 'OpenStreetMap natural points, e.g. Peak and Tree.', 'postgres', NULL, '2018-07-18 17:01:58.698118');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (171, 'pgosm', 'osm', 'natural_polygon', 'way', 'osm_natural_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -3386,7 +7995,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap layer', NULL, NULL, '2018-07-18 17:12:59.829246');
+', true, 'OpenStreetMap layer', 'postgres', NULL, '2018-07-18 17:12:59.829246');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (170, 'pgosm', 'osm', 'natural_line', 'way', 'osm_natural_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="25000" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -4112,7 +8721,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreeMap natural lines.  e.g Cliffs', NULL, NULL, '2018-07-18 17:08:05.222986');
+', true, 'OpenStreeMap natural lines.  e.g Cliffs', 'postgres', NULL, '2018-07-18 17:08:05.222986');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (173, 'pgosm', 'osm', 'traffic_polygon', 'way', 'osm_traffic_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -4706,7 +9315,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap traffic polygons.  Parking, fences, etc.', NULL, NULL, '2018-07-18 17:28:40.331348');
+', true, 'OpenStreetMap traffic polygons.  Parking, fences, etc.', 'postgres', NULL, '2018-07-18 17:28:40.331348');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (175, 'pgosm', 'osm', 'waterways_line', 'way', 'osm_waterways_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -5719,7 +10328,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap waterways line.  Rivers, streams, canals, drains', NULL, NULL, '2018-07-18 17:43:43.425349');
+', true, 'OpenStreetMap waterways line.  Rivers, streams, canals, drains', 'postgres', NULL, '2018-07-18 17:43:43.425349');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (176, 'pgosm', 'osm', 'water_polygon', 'way', 'osm_water_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 attr="code" symbollevels="0" forceraster="0" enableorderby="0" type="categorizedSymbol">
@@ -6231,7 +10840,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap water polygons, including riverbanks and wetlands.', NULL, NULL, '2018-07-18 17:48:52.701685');
+', true, 'OpenStreetMap water polygons, including riverbanks and wetlands.', 'postgres', NULL, '2018-07-18 17:48:52.701685');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (172, 'pgosm', 'osm', 'miscpoi_point', 'way', 'osm_miscpoi_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="-4.65661e-10" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
@@ -9764,7 +14373,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap extra points of interest (POI).  e.g. Fire hydrants, benches, toilets, fountains, towers, etc.', 'rpl_db_admin', NULL, '2019-11-15 08:58:40.775784');
+', true, 'OpenStreetMap extra points of interest (POI).  e.g. Fire hydrants, benches, toilets, fountains, towers, etc.', 'postgres', NULL, '2019-11-15 08:58:40.775784');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (185, 'pgosm', 'osm', 'road_line', 'way', 'osm_road_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyLocal="1" styleCategories="AllStyleCategories" minScale="25000" simplifyDrawingTol="1" simplifyMaxScale="1" maxScale="0" version="3.8.1-Zanzibar" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyAlgorithm="0" readOnly="0" labelsEnabled="0">
  <flags>
@@ -14460,7 +19069,497 @@ syntax error, unexpected ELSE - Expression was: ELSE AND highway = ''raceway''--
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap road lines.  Highways, footways, paths, etc.', 'rpl_db_admin', NULL, '2019-11-22 10:25:26.957335');
+', true, 'OpenStreetMap road lines.  Highways, footways, paths, etc.', 'postgres', NULL, '2019-11-22 10:25:26.957335');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (201, 'pgosm', 'osm', 'health_polygon', 'way', 'osm_health_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" symbollevels="0" forceraster="0" type="categorizedSymbol" enableorderby="0">
+  <categories>
+   <category value="2101" label="Pharmacy" symbol="0" render="true"/>
+   <category value="2110" label="Hospital" symbol="1" render="true"/>
+   <category value="2120" label="Doctor" symbol="2" render="true"/>
+   <category value="2121" label="Dentist" symbol="3" render="true"/>
+   <category value="2129" label="Veterinary" symbol="4" render="true"/>
+   <category value="" label="" symbol="5" render="true"/>
+  </categories>
+  <symbols>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="1" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="2" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="3" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="4" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="5" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="198,198,198,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="152,125,183,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp type="preset" name="[source]">
+   <prop k="preset_color_0" v="198,198,198,255"/>
+   <prop k="preset_color_name_0" v="#fa4b3c"/>
+   <prop k="rampType" v="preset"/>
+  </colorramp>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory barWidth="5" rotationOffset="270" minimumSize="0" enabled="0" width="15" penAlpha="255" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" diagramOrientation="Up" labelPlacementMethod="XHeight" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" minScaleDenominator="0" opacity="1" sizeType="MM" scaleDependency="Area" maxScaleDenominator="1e+08" height="15" backgroundColor="#ffffff">
+   <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings placement="1" linePlacementFlags="18" showAll="1" obstacle="0" zIndex="0" priority="0" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration type="Map">
+   <Option type="Map" name="QgsGeometryGapCheck">
+    <Option value="0" type="double" name="allowedGapsBuffer"/>
+    <Option value="false" type="bool" name="allowedGapsEnabled"/>
+    <Option value="" type="QString" name="allowedGapsLayer"/>
+   </Option>
+  </checkConfiguration>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="amenity">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="amenity" name=""/>
+  <alias index="3" field="landuse" name=""/>
+  <alias index="4" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default expression="" applyOnUpdate="0" field="osm_id"/>
+  <default expression="" applyOnUpdate="0" field="name"/>
+  <default expression="" applyOnUpdate="0" field="amenity"/>
+  <default expression="" applyOnUpdate="0" field="landuse"/>
+  <default expression="" applyOnUpdate="0" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="osm_id" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="name" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="amenity" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="landuse" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="code" exp_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" field="osm_id" desc=""/>
+  <constraint exp="" field="name" desc=""/>
+  <constraint exp="" field="amenity" desc=""/>
+  <constraint exp="" field="landuse" desc=""/>
+  <constraint exp="" field="code" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+  <columns>
+   <column hidden="0" type="field" width="-1" name="osm_id"/>
+   <column hidden="0" type="field" width="-1" name="name"/>
+   <column hidden="0" type="field" width="-1" name="amenity"/>
+   <column hidden="0" type="field" width="-1" name="landuse"/>
+   <column hidden="0" type="field" width="-1" name="code"/>
+   <column hidden="1" type="actions" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="amenity"/>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="amenity"/>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se">
+ <NamedLayer>
+  <se:Name>health_polygon</se:Name>
+  <UserStyle>
+   <se:Name>health_polygon</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Pharmacy</se:Name>
+     <se:Description>
+      <se:Title>Pharmacy</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2101</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Hospital</se:Name>
+     <se:Description>
+      <se:Title>Hospital</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2110</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Doctor</se:Name>
+     <se:Description>
+      <se:Title>Doctor</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2120</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Dentist</se:Name>
+     <se:Description>
+      <se:Title>Dentist</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2121</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Veterinary</se:Name>
+     <se:Description>
+      <se:Title>Veterinary</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2129</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#c6c6c6</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Basic codes established, simple gray polygons.', 'postgres', NULL, '2020-02-28 21:07:52.113078');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (177, 'pgosm', 'osm', 'leisure_polygon', 'way', 'osm_leisure_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
@@ -15259,7 +20358,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap leisure polygon style.  Playgrounds, swimming pools, golf courses, etc.', NULL, NULL, '2018-07-19 21:11:33.599921');
+', true, 'OpenStreetMap leisure polygon style.  Playgrounds, swimming pools, golf courses, etc.', 'postgres', NULL, '2018-07-19 21:11:33.599921');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (178, 'pgosm', 'osm', 'power_polygon', 'way', 'osm_power_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
@@ -15698,7 +20797,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap power polygon layer.  Power stations, solar panels, transformers, etc.', NULL, NULL, '2018-07-19 21:15:23.476352');
+', true, 'OpenStreetMap power polygon layer.  Power stations, solar panels, transformers, etc.', 'postgres', NULL, '2018-07-19 21:15:23.476352');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (179, 'pgosm', 'osm', 'powerlines_line', 'way', 'osm_powerlines_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
@@ -16044,7 +21143,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap power lines layer.', NULL, NULL, '2018-07-19 21:18:38.648917');
+', true, 'OpenStreetMap power lines layer.', 'postgres', NULL, '2018-07-19 21:18:38.648917');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (180, 'pgosm', 'osm', 'power_point', 'way', 'osm_power_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
@@ -16950,7 +22049,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap power points.  Towers, sub stations, transformers, etc.', NULL, NULL, '2018-07-19 21:22:33.272345');
+', true, 'OpenStreetMap power points.  Towers, sub stations, transformers, etc.', 'postgres', NULL, '2018-07-19 21:22:33.272345');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (181, 'pgosm', 'osm', 'places_point', 'way', 'osm_places_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="1" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
@@ -17713,7 +22812,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap places points.  City, town, suburb, etc.', NULL, NULL, '2018-07-19 21:27:04.466648');
+', true, 'OpenStreetMap places points.  City, town, suburb, etc.', 'postgres', NULL, '2018-07-19 21:27:04.466648');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (182, 'pgosm', 'osm', 'boundaries_polygon', 'way', 'osm_boundaries_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="-4.65661e-10" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
@@ -17972,7 +23071,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap boundaries in polygon format.  e.g. County and City', NULL, NULL, '2018-07-19 21:35:57.044477');
+', true, 'OpenStreetMap boundaries in polygon format.  e.g. County and City', 'postgres', NULL, '2018-07-19 21:35:57.044477');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (168, 'pgosm', 'osm', 'building_polygon', 'way', 'osm_building_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
@@ -18514,7 +23613,7 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap buildings layer, fades in with zoom.', NULL, NULL, '2019-04-27 08:10:33.948188');
+', true, 'OpenStreetMap buildings layer, fades in with zoom.', 'postgres', NULL, '2019-04-27 08:10:33.948188');
 INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (187, 'pgosm', 'osm', 'traffic_point', 'way', 'osm_traffic_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
@@ -27024,416 +32123,440 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap traffic points.  Stop signs, lights, calming, barriers, gates, etc.', 'rpl_db_admin', NULL, '2019-11-15 16:46:53.289898');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (186, 'pgosm', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyDrawingHints="1" simplifyLocal="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minScale="1e+08" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.8.1-Zanzibar" maxScale="0" simplifyMaxScale="1" labelsEnabled="0">
+', true, 'OpenStreetMap traffic points.  Stop signs, lights, calming, barriers, gates, etc.', 'postgres', NULL, '2019-11-15 16:46:53.289898');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (194, 'pgosm', 'osm', 'tourism_polygon', 'way', 'osm_tourism_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 forceraster="0" attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol">
+ <renderer-v2 attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol" forceraster="0">
   <categories>
-   <category render="true" label="Forest" value="7201" symbol="0"/>
-   <category render="true" label="Park" value="7202" symbol="1"/>
-   <category render="true" label="Residential" value="7203" symbol="2"/>
-   <category render="true" label="Industrial" value="7204" symbol="3"/>
-   <category render="true" label="Farm" value="7205" symbol="4"/>
-   <category render="true" label="Cemetary" value="7206" symbol="5"/>
-   <category render="true" label="Meadow" value="7208" symbol="6"/>
-   <category render="true" label="Commercial" value="7209" symbol="7"/>
-   <category render="true" label="Recreation" value="7211" symbol="8"/>
-   <category render="true" label="Retail" value="7212" symbol="9"/>
-   <category render="true" label="Military" value="7213" symbol="10"/>
-   <category render="true" label="Quarry" value="7214" symbol="11"/>
-   <category render="true" label="Orchard" value="7215" symbol="12"/>
-   <category render="true" label="Scrub" value="7217" symbol="13"/>
-   <category render="true" label="Grass" value="7218" symbol="14"/>
-   <category render="true" label="" value="" symbol="15"/>
+   <category render="true" symbol="0" value="2601" label="Bank"/>
+   <category render="true" symbol="1" value="2602" label="ATM"/>
+   <category render="true" symbol="2" value="2701" label="Info"/>
+   <category render="true" symbol="3" value="2721" label="Attraction"/>
+   <category render="true" symbol="4" value="2722" label="Mueseum"/>
+   <category render="true" symbol="5" value="2723" label="Monument"/>
+   <category render="true" symbol="6" value="2724" label="Memorial"/>
+   <category render="true" symbol="7" value="2725" label="Art"/>
+   <category render="true" symbol="8" value="2731" label="Castle"/>
+   <category render="true" symbol="9" value="2732" label="Ruins"/>
+   <category render="true" symbol="10" value="2733" label="Archaeological"/>
+   <category render="true" symbol="11" value="2735" label="Wayside Shrine"/>
+   <category render="true" symbol="12" value="2741" label="Picnic Site"/>
+   <category render="true" symbol="13" value="2742" label="Viewpoint"/>
+   <category render="true" symbol="14" value="2743" label="Zoo"/>
+   <category render="true" symbol="15" value="2744" label="Theme Park"/>
+   <category render="true" symbol="16" value="" label=""/>
   </categories>
   <symbols>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="44,190,31,255" k="color"/>
+     <prop v="37,58,240,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="1">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="1" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="190,245,186,255" k="color"/>
+     <prop v="96,158,233,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="10">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="10" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="158,76,0,255" k="color"/>
+     <prop v="101,193,216,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="11">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="11" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="96,126,235,255" k="color"/>
+     <prop v="153,211,83,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="12">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="12" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="83,222,123,255" k="color"/>
+     <prop v="212,90,174,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="13">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="13" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="42,174,33,255" k="color"/>
+     <prop v="57,204,182,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="14">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="14" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="144,216,0,255" k="color"/>
+     <prop v="216,128,157,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="15">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="15" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="133,221,125,255" k="color"/>
+     <prop v="86,238,162,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="2">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="16" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="208,208,208,255" k="color"/>
+     <prop v="212,76,74,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="3">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="2" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="230,182,220,255" k="color"/>
+     <prop v="133,104,215,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="4">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="3" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="109,225,15,255" k="color"/>
+     <prop v="164,69,223,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="5">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="4" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="173,233,168,255" k="color"/>
+     <prop v="190,200,76,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="6">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="5" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="186,221,105,255" k="color"/>
+     <prop v="24,238,56,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="7">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="6" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="209,230,232,255" k="color"/>
+     <prop v="199,95,202,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="8">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="7" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="35,130,28,255" k="color"/>
+     <prop v="201,177,116,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="9">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="8" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="230,182,220,255" k="color"/>
+     <prop v="238,160,114,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="9" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="123,205,102,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
   </symbols>
   <source-symbol>
-   <symbol force_rhr="0" clip_to_extent="1" alpha="0.387" type="fill" name="0">
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="35,139,33,255" k="color"/>
+     <prop v="213,180,60,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
      <prop v="0,0" k="offset"/>
      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
      <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="35,35,35,255" k="outline_color"/>
      <prop v="solid" k="outline_style"/>
      <prop v="0.26" k="outline_width"/>
      <prop v="MM" k="outline_width_unit"/>
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" type="QString" name="name"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option value="collection" type="QString" name="type"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
   </source-symbol>
+  <colorramp name="[source]" type="randomcolors"/>
   <rotation/>
   <sizescale/>
  </renderer-v2>
  <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
+  <property value="0" key="embeddedWidgets/count"/>
   <property key="variableNames"/>
   <property key="variableValues"/>
  </customproperties>
@@ -27441,22 +32564,28 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory scaleDependency="Area" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" width="15" scaleBasedVisibility="0" opacity="1" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" penAlpha="255" barWidth="5" backgroundColor="#ffffff" rotationOffset="270" lineSizeType="MM" maxScaleDenominator="1e+08" penWidth="0" enabled="0" minScaleDenominator="0" height="15">
-   <fontProperties style="" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0"/>
+  <DiagramCategory penWidth="0" sizeType="MM" lineSizeType="MM" width="15" backgroundColor="#ffffff" height="15" barWidth="5" opacity="1" backgroundAlpha="255" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" enabled="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" diagramOrientation="Up" penAlpha="255" scaleDependency="Area" labelPlacementMethod="XHeight">
+   <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings obstacle="0" placement="1" priority="0" zIndex="0" linePlacementFlags="18" showAll="1" dist="0">
+ <DiagramLayerSettings priority="0" showAll="1" zIndex="0" dist="0" placement="1" obstacle="0" linePlacementFlags="18">
   <properties>
    <Option type="Map">
-    <Option value="" type="QString" name="name"/>
+    <Option value="" name="name" type="QString"/>
     <Option name="properties"/>
-    <Option value="collection" type="QString" name="type"/>
+    <Option value="collection" name="type" type="QString"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
   <activeChecks/>
-  <checkConfiguration/>
+  <checkConfiguration type="Map">
+   <Option name="QgsGeometryGapCheck" type="Map">
+    <Option value="0" name="allowedGapsBuffer" type="double"/>
+    <Option value="false" name="allowedGapsEnabled" type="bool"/>
+    <Option value="" name="allowedGapsLayer" type="QString"/>
+   </Option>
+  </checkConfiguration>
  </geometryOptions>
  <fieldConfiguration>
   <field name="osm_id">
@@ -27473,28 +32602,21 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
     </config>
    </editWidget>
   </field>
-  <field name="landuse">
+  <field name="tourism">
    <editWidget type="TextEdit">
     <config>
      <Option/>
     </config>
    </editWidget>
   </field>
-  <field name="natural">
+  <field name="amenity">
    <editWidget type="TextEdit">
     <config>
      <Option/>
     </config>
    </editWidget>
   </field>
-  <field name="leisure">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="boundary">
+  <field name="information">
    <editWidget type="TextEdit">
     <config>
      <Option/>
@@ -27510,63 +32632,59 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias index="0" field="osm_id" name=""/>
-  <alias index="1" field="name" name=""/>
-  <alias index="2" field="landuse" name=""/>
-  <alias index="3" field="natural" name=""/>
-  <alias index="4" field="leisure" name=""/>
-  <alias index="5" field="boundary" name=""/>
-  <alias index="6" field="code" name=""/>
+  <alias index="0" name="" field="osm_id"/>
+  <alias index="1" name="" field="name"/>
+  <alias index="2" name="" field="tourism"/>
+  <alias index="3" name="" field="amenity"/>
+  <alias index="4" name="" field="information"/>
+  <alias index="5" name="" field="code"/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default field="osm_id" applyOnUpdate="0" expression=""/>
-  <default field="name" applyOnUpdate="0" expression=""/>
-  <default field="landuse" applyOnUpdate="0" expression=""/>
-  <default field="natural" applyOnUpdate="0" expression=""/>
-  <default field="leisure" applyOnUpdate="0" expression=""/>
-  <default field="boundary" applyOnUpdate="0" expression=""/>
-  <default field="code" applyOnUpdate="0" expression=""/>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="tourism"/>
+  <default applyOnUpdate="0" expression="" field="amenity"/>
+  <default applyOnUpdate="0" expression="" field="information"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
  </defaults>
  <constraints>
-  <constraint constraints="0" field="osm_id" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="name" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="landuse" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="natural" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="leisure" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="boundary" exp_strength="0" notnull_strength="0" unique_strength="0"/>
-  <constraint constraints="0" field="code" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="name"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="tourism"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="amenity"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="information"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="code"/>
  </constraints>
  <constraintExpressions>
-  <constraint field="osm_id" exp="" desc=""/>
-  <constraint field="name" exp="" desc=""/>
-  <constraint field="landuse" exp="" desc=""/>
-  <constraint field="natural" exp="" desc=""/>
-  <constraint field="leisure" exp="" desc=""/>
-  <constraint field="boundary" exp="" desc=""/>
-  <constraint field="code" exp="" desc=""/>
+  <constraint desc="" exp="" field="osm_id"/>
+  <constraint desc="" exp="" field="name"/>
+  <constraint desc="" exp="" field="tourism"/>
+  <constraint desc="" exp="" field="amenity"/>
+  <constraint desc="" exp="" field="information"/>
+  <constraint desc="" exp="" field="code"/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
  </attributeactions>
  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
   <columns>
-   <column hidden="0" width="-1" type="field" name="osm_id"/>
-   <column hidden="0" width="-1" type="field" name="name"/>
-   <column hidden="0" width="-1" type="field" name="landuse"/>
-   <column hidden="0" width="-1" type="field" name="natural"/>
-   <column hidden="0" width="-1" type="field" name="leisure"/>
-   <column hidden="0" width="-1" type="field" name="boundary"/>
-   <column hidden="0" width="-1" type="field" name="code"/>
-   <column hidden="1" width="-1" type="actions"/>
+   <column width="-1" name="osm_id" type="field" hidden="0"/>
+   <column width="-1" name="name" type="field" hidden="0"/>
+   <column width="-1" name="tourism" type="field" hidden="0"/>
+   <column width="-1" name="amenity" type="field" hidden="0"/>
+   <column width="-1" name="information" type="field" hidden="0"/>
+   <column width="-1" name="code" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
   <rowstyles/>
   <fieldstyles/>
  </conditionalstyles>
+ <storedexpressions/>
  <editform tolerant="1"></editform>
  <editforminit/>
  <editforminitcodesource>0</editforminitcodesource>
@@ -27591,359 +32709,379 @@ def my_form_open(dialog, layer, feature):
  <featformsuppress>0</featformsuppress>
  <editorlayout>generatedlayout</editorlayout>
  <editable>
-  <field editable="1" name="boundary"/>
-  <field editable="1" name="code"/>
-  <field editable="1" name="landuse"/>
-  <field editable="1" name="leisure"/>
-  <field editable="1" name="name"/>
-  <field editable="1" name="natural"/>
-  <field editable="1" name="osm_id"/>
+  <field name="amenity" editable="1"/>
+  <field name="code" editable="1"/>
+  <field name="information" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="osm_id" editable="1"/>
+  <field name="tourism" editable="1"/>
  </editable>
  <labelOnTop>
-  <field labelOnTop="0" name="boundary"/>
-  <field labelOnTop="0" name="code"/>
-  <field labelOnTop="0" name="landuse"/>
-  <field labelOnTop="0" name="leisure"/>
-  <field labelOnTop="0" name="name"/>
-  <field labelOnTop="0" name="natural"/>
-  <field labelOnTop="0" name="osm_id"/>
+  <field name="amenity" labelOnTop="0"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="information" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+  <field name="tourism" labelOnTop="0"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>name</previewExpression>
  <mapTip></mapTip>
  <layerGeometryType>2</layerGeometryType>
 </qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <NamedLayer>
-  <se:Name>landuse_polygon</se:Name>
+  <se:Name>tourism_polygon</se:Name>
   <UserStyle>
-   <se:Name>landuse_polygon</se:Name>
+   <se:Name>tourism_polygon</se:Name>
    <se:FeatureTypeStyle>
     <se:Rule>
-     <se:Name>Forest</se:Name>
+     <se:Name>Bank</se:Name>
      <se:Description>
-      <se:Title>Forest</se:Title>
+      <se:Title>Bank</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7201</ogc:Literal>
+       <ogc:Literal>2601</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#2cbe1f</se:SvgParameter>
+       <se:SvgParameter name="fill">#253af0</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Park</se:Name>
+     <se:Name>ATM</se:Name>
      <se:Description>
-      <se:Title>Park</se:Title>
+      <se:Title>ATM</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7202</ogc:Literal>
+       <ogc:Literal>2602</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#bef5ba</se:SvgParameter>
+       <se:SvgParameter name="fill">#609ee9</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Residential</se:Name>
+     <se:Name>Info</se:Name>
      <se:Description>
-      <se:Title>Residential</se:Title>
+      <se:Title>Info</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7203</ogc:Literal>
+       <ogc:Literal>2701</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#d0d0d0</se:SvgParameter>
+       <se:SvgParameter name="fill">#8568d7</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Industrial</se:Name>
+     <se:Name>Attraction</se:Name>
      <se:Description>
-      <se:Title>Industrial</se:Title>
+      <se:Title>Attraction</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7204</ogc:Literal>
+       <ogc:Literal>2721</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+       <se:SvgParameter name="fill">#a445df</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Farm</se:Name>
+     <se:Name>Mueseum</se:Name>
      <se:Description>
-      <se:Title>Farm</se:Title>
+      <se:Title>Mueseum</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7205</ogc:Literal>
+       <ogc:Literal>2722</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#6de10f</se:SvgParameter>
+       <se:SvgParameter name="fill">#bec84c</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Cemetary</se:Name>
+     <se:Name>Monument</se:Name>
      <se:Description>
-      <se:Title>Cemetary</se:Title>
+      <se:Title>Monument</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7206</ogc:Literal>
+       <ogc:Literal>2723</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#ade9a8</se:SvgParameter>
+       <se:SvgParameter name="fill">#18ee38</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Meadow</se:Name>
+     <se:Name>Memorial</se:Name>
      <se:Description>
-      <se:Title>Meadow</se:Title>
+      <se:Title>Memorial</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7208</ogc:Literal>
+       <ogc:Literal>2724</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#badd69</se:SvgParameter>
+       <se:SvgParameter name="fill">#c75fca</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Commercial</se:Name>
+     <se:Name>Art</se:Name>
      <se:Description>
-      <se:Title>Commercial</se:Title>
+      <se:Title>Art</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7209</ogc:Literal>
+       <ogc:Literal>2725</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#d1e6e8</se:SvgParameter>
+       <se:SvgParameter name="fill">#c9b174</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Recreation</se:Name>
+     <se:Name>Castle</se:Name>
      <se:Description>
-      <se:Title>Recreation</se:Title>
+      <se:Title>Castle</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7211</ogc:Literal>
+       <ogc:Literal>2731</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#23821c</se:SvgParameter>
+       <se:SvgParameter name="fill">#eea072</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Retail</se:Name>
+     <se:Name>Ruins</se:Name>
      <se:Description>
-      <se:Title>Retail</se:Title>
+      <se:Title>Ruins</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7212</ogc:Literal>
+       <ogc:Literal>2732</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#e6b6dc</se:SvgParameter>
+       <se:SvgParameter name="fill">#7bcd66</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Military</se:Name>
+     <se:Name>Archaeological</se:Name>
      <se:Description>
-      <se:Title>Military</se:Title>
+      <se:Title>Archaeological</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7213</ogc:Literal>
+       <ogc:Literal>2733</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#9e4c00</se:SvgParameter>
+       <se:SvgParameter name="fill">#65c1d8</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Quarry</se:Name>
+     <se:Name>Wayside Shrine</se:Name>
      <se:Description>
-      <se:Title>Quarry</se:Title>
+      <se:Title>Wayside Shrine</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7214</ogc:Literal>
+       <ogc:Literal>2735</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#607eeb</se:SvgParameter>
+       <se:SvgParameter name="fill">#99d353</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Orchard</se:Name>
+     <se:Name>Picnic Site</se:Name>
      <se:Description>
-      <se:Title>Orchard</se:Title>
+      <se:Title>Picnic Site</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7215</ogc:Literal>
+       <ogc:Literal>2741</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#53de7b</se:SvgParameter>
+       <se:SvgParameter name="fill">#d45aae</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Scrub</se:Name>
+     <se:Name>Viewpoint</se:Name>
      <se:Description>
-      <se:Title>Scrub</se:Title>
+      <se:Title>Viewpoint</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7217</ogc:Literal>
+       <ogc:Literal>2742</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#2aae21</se:SvgParameter>
+       <se:SvgParameter name="fill">#39ccb6</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
      </se:PolygonSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>Grass</se:Name>
+     <se:Name>Zoo</se:Name>
      <se:Description>
-      <se:Title>Grass</se:Title>
+      <se:Title>Zoo</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>7218</ogc:Literal>
+       <ogc:Literal>2743</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#90d800</se:SvgParameter>
+       <se:SvgParameter name="fill">#d8809d</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Theme Park</se:Name>
+     <se:Description>
+      <se:Title>Theme Park</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2744</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#56eea2</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
@@ -27967,10 +33105,10 @@ def my_form_open(dialog, layer, feature):
      </ogc:Filter>
      <se:PolygonSymbolizer>
       <se:Fill>
-       <se:SvgParameter name="fill">#85dd7d</se:SvgParameter>
+       <se:SvgParameter name="fill">#d44c4a</se:SvgParameter>
       </se:Fill>
       <se:Stroke>
-       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
        <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
       </se:Stroke>
@@ -27980,265 +33118,357 @@ def my_form_open(dialog, layer, feature):
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', false, 'OpenStreetMap landuse polygons.  Residential, commercial, industrial, grass, etc.', 'rpl_db_admin', NULL, '2019-11-15 10:31:07.283089');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (188, 'pgosm', 'osm', 'building_point', 'way', 'osm_building_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
+', true, 'Initial pass, classified main codes.', 'postgres', NULL, '2020-02-27 21:05:16.466433');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (195, 'pgosm', 'osm', 'place_polygon', 'way', 'osm_place_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="1">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
-  <rules key="{16f69e29-2055-4d9e-b380-607da6a7bef0}">
-   <rule filter="&quot;code&quot; = 1500" key="{c5ff30e2-8045-4bbd-b08f-4e313a46a412}" label="Building">
-    <rule scalemaxdenom="5000" symbol="0" key="{a090c2cb-d8b1-4fe4-bbcf-d84706a453f6}" label="Building &lt; 5k"/>
-    <rule scalemindenom="5000" scalemaxdenom="10000" symbol="1" key="{d436723a-f9f5-4f39-b20a-e2b799638459}" label="Building 5 - 10k"/>
-    <rule scalemindenom="10000" scalemaxdenom="30000" symbol="2" key="{2e72f266-3805-425b-9a79-e41e733af607}" label="Building 10 - 30k"/>
-   </rule>
-   <rule filter="&quot;code&quot; = 1551" key="{8f9dc883-a836-499c-a2d1-a6ab7915e94a}" label="Entrance">
-    <rule scalemaxdenom="1000" symbol="3" key="{f5e9a54e-3537-41d2-b2e0-fd45bf7162c9}" label="Entrance &lt;1k"/>
-    <rule scalemindenom="1000" scalemaxdenom="2000" symbol="4" key="{1a0e5474-f320-431b-b432-4c685ff83e8b}" label="Entrance 1 - 2k"/>
-    <rule scalemindenom="2000" scalemaxdenom="3000" symbol="5" key="{51977cb8-8fd8-4bbb-abc9-d8083021d159}" label="Entrance 2- 3k"/>
-    <rule scalemindenom="3000" scalemaxdenom="10000" symbol="6" key="{9bbd300c-b2d0-4170-b3e9-ea7ff379e323}" label="Entrance 3 - 10k"/>
-   </rule>
-   <rule filter="ELSE" checkstate="0" symbol="7" key="{bd5dc5b0-a9ae-4d3b-92a9-a7d9352f3723}"/>
+ <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
+  <rules key="{1b9981ae-920a-4df0-a1a7-2244218b0ef9}">
+   <rule filter="ELSE" checkstate="0" symbol="0" key="{e136cc50-48dd-482d-9014-c2b9696828d1}"/>
+   <rule filter="&quot;code&quot; = 1001" symbol="1" scalemaxdenom="10000000" scalemindenom="1" key="{46fc99f4-4d5d-4b6b-89ad-98e5a51703a3}" label="City"/>
+   <rule filter="&quot;code&quot; = 1041" checkstate="0" symbol="2" key="{24d5aa9d-d9e9-4999-83f1-54b13404e0ca}" label="County"/>
+   <rule filter="&quot;code&quot; = 1030" symbol="3" scalemaxdenom="50000" scalemindenom="1" key="{022400ee-b04c-406c-bff5-c98d9162b8eb}" label="Farm"/>
+   <rule filter="&quot;code&quot; = 1020" symbol="4" scalemaxdenom="3000000" scalemindenom="1" key="{b2ebd9c3-66d1-408e-a13a-da4dc0ff4ece}" label="Island"/>
+   <rule filter="&quot;code&quot; = 1050" symbol="5" scalemaxdenom="1000000" scalemindenom="1" key="{18c22591-e2af-476b-b82d-3816305183f0}" label="Locality"/>
+   <rule filter="&quot;code&quot; = 1099" symbol="6" scalemaxdenom="50000" scalemindenom="1" key="{a5b19521-e77a-413d-9a12-6e6efd11a784}" label="Named Place"/>
+   <rule filter="&quot;code&quot; = 1011" symbol="7" scalemaxdenom="1000000" scalemindenom="1" key="{711252c6-014e-4860-bc50-304b0c405816}" label="Neighborhood"/>
+   <rule filter="&quot;code&quot; = 1010" symbol="8" scalemaxdenom="100000" scalemindenom="1" key="{edd06716-b6b8-4aa3-954e-55082beb3fbe}" label="Suburb"/>
+   <rule filter="&quot;code&quot; = 1002" symbol="9" scalemaxdenom="1000000" scalemindenom="1" key="{c9a98744-12b6-42c0-8616-53befec40327}" label="Town"/>
+   <rule filter="&quot;code&quot; = 1003" symbol="10" scalemaxdenom="1000000" scalemindenom="1" key="{f4ff2435-15a2-483b-8428-94118a372e89}" label="Village"/>
   </rules>
   <symbols>
-   <symbol alpha="1" type="marker" name="0" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="142,142,142,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="1" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="142,142,142,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="1" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="2" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="142,142,142,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="1.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="10" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="3" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="transport/barrier_enterance.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="4.8"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="2" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="4" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="transport/barrier_enterance.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="3.8"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="3" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="5" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="transport/barrier_enterance.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2.2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="4" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="6" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="0.4"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="0.368627" name="5" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="7" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="124,211,95,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="6" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,33" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="0.368627" name="7" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="0.368627" name="8" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="0.368627" name="9" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,225,155,57" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
   </symbols>
  </renderer-v2>
+ <labeling type="rule-based">
+  <rules key="{f7f1ae75-80d7-437d-8763-9c383d6e4df5}">
+   <rule filter="code = ''1001''" scalemaxdenom="1000000" active="0" scalemindenom="1000" description="Cities Sparse Borders" key="{2e37b457-e175-435e-bc5a-40dc6d3492d4}">
+    <settings calloutType="simple">
+     <text-style fieldName="name" fontStrikeout="0" fontWordSpacing="0" fontWeight="63" fontUnderline="0" useSubstitutions="0" multilineHeight="1" isExpression="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" previewBkgrdColor="255,255,255,255" fontKerning="1" textColor="0,0,0,255" fontFamily="Lucida Sans" textOrientation="horizontal" fontSizeUnit="Point" fontItalic="1" blendMode="0" namedStyle="Demibold Italic" fontLetterSpacing="0" fontSize="12" fontCapitals="0">
+      <text-buffer bufferNoFill="1" bufferSize="0.4" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferColor="166,166,166,255" bufferBlendMode="0"/>
+      <background shapeRadiiY="0" shapeSizeType="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeType="0" shapeBlendMode="0" shapeOffsetX="0" shapeOffsetUnit="MM" shapeRadiiUnit="MM" shapeSizeY="0" shapeSVGFile="" shapeOffsetY="0" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeJoinStyle="64" shapeOpacity="1">
+       <symbol force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1" type="marker">
+        <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+         <prop v="0" k="angle"/>
+         <prop v="231,113,72,255" k="color"/>
+         <prop v="1" k="horizontal_anchor_point"/>
+         <prop v="bevel" k="joinstyle"/>
+         <prop v="circle" k="name"/>
+         <prop v="0,0" k="offset"/>
+         <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+         <prop v="MM" k="offset_unit"/>
+         <prop v="35,35,35,255" k="outline_color"/>
+         <prop v="solid" k="outline_style"/>
+         <prop v="0" k="outline_width"/>
+         <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+         <prop v="MM" k="outline_width_unit"/>
+         <prop v="diameter" k="scale_method"/>
+         <prop v="2" k="size"/>
+         <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+         <prop v="MM" k="size_unit"/>
+         <prop v="1" k="vertical_anchor_point"/>
+         <data_defined_properties>
+          <Option type="Map">
+           <Option value="" name="name" type="QString"/>
+           <Option name="properties"/>
+           <Option value="collection" name="type" type="QString"/>
+          </Option>
+         </data_defined_properties>
+        </layer>
+       </symbol>
+      </background>
+      <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowDraw="0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowOpacity="0.7" shadowRadiusUnit="MM"/>
+      <dd_properties>
+       <Option type="Map">
+        <Option value="" name="name" type="QString"/>
+        <Option name="properties"/>
+        <Option value="collection" name="type" type="QString"/>
+       </Option>
+      </dd_properties>
+      <substitutions/>
+     </text-style>
+     <text-format rightDirectionSymbol=">" formatNumbers="0" wrapChar="" autoWrapLength="0" multilineAlign="0" placeDirectionSymbol="0" decimals="3" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0"/>
+     <placement overrunDistanceUnit="MM" offsetType="0" maxCurvedCharAngleOut="-25" priority="0" repeatDistanceUnits="MM" distUnits="MM" yOffset="0" offsetUnits="MM" centroidInside="0" placement="2" centroidWhole="0" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" xOffset="0" layerType="PolygonGeometry" placementFlags="9" fitInPolygonOnly="0" geometryGeneratorType="PointGeometry" quadOffset="4" dist="0" repeatDistance="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" maxCurvedCharAngleIn="25" rotationAngle="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
+     <rendering scaleVisibility="0" obstacleFactor="1" upsidedownLabels="0" drawLabels="1" limitNumLabels="1" labelPerPart="0" minFeatureSize="0" fontMaxPixelSize="10000" displayAll="0" obstacleType="1" zIndex="0" fontLimitPixelSize="0" scaleMin="0" fontMinPixelSize="3" scaleMax="0" obstacle="1" maxNumLabels="5" mergeLines="0"/>
+     <dd_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </dd_properties>
+     <callout type="simple">
+      <Option type="Map">
+       <Option value="pole_of_inaccessibility" name="anchorPoint" type="QString"/>
+       <Option name="ddProperties" type="Map">
+        <Option value="" name="name" type="QString"/>
+        <Option name="properties"/>
+        <Option value="collection" name="type" type="QString"/>
+       </Option>
+       <Option value="false" name="drawToAllParts" type="bool"/>
+       <Option value="0" name="enabled" type="QString"/>
+       <Option value="&lt;symbol force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+       <Option value="0" name="minLength" type="double"/>
+       <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
+       <Option value="MM" name="minLengthUnit" type="QString"/>
+       <Option value="0" name="offsetFromAnchor" type="double"/>
+       <Option value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale" type="QString"/>
+       <Option value="MM" name="offsetFromAnchorUnit" type="QString"/>
+       <Option value="0" name="offsetFromLabel" type="double"/>
+       <Option value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale" type="QString"/>
+       <Option value="MM" name="offsetFromLabelUnit" type="QString"/>
+      </Option>
+     </callout>
+    </settings>
+   </rule>
+  </rules>
+ </labeling>
  <customproperties>
-  <property key="dualview/previewExpressions">
-   <value>"housename"</value>
-  </property>
   <property value="0" key="embeddedWidgets/count"/>
   <property key="variableNames"/>
   <property key="variableValues"/>
@@ -28247,46 +33477,31 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory enabled="0" penAlpha="255" minimumSize="0" lineSizeType="MM" penColor="#000000" labelPlacementMethod="XHeight" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" minScaleDenominator="0" sizeType="MM" penWidth="0" height="15" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" width="15" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" scaleBasedVisibility="0" barWidth="5">
+  <DiagramCategory penWidth="0" sizeType="MM" lineSizeType="MM" width="15" backgroundColor="#ffffff" height="15" barWidth="5" opacity="1" backgroundAlpha="255" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" enabled="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" diagramOrientation="Up" penAlpha="255" scaleDependency="Area" labelPlacementMethod="XHeight">
    <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings zIndex="0" placement="0" dist="0" linePlacementFlags="18" showAll="1" priority="0" obstacle="0">
+ <DiagramLayerSettings priority="0" showAll="1" zIndex="0" dist="0" placement="1" obstacle="0" linePlacementFlags="18">
   <properties>
    <Option type="Map">
-    <Option type="QString" name="name" value=""/>
+    <Option value="" name="name" type="QString"/>
     <Option name="properties"/>
-    <Option type="QString" name="type" value="collection"/>
+    <Option value="collection" name="type" type="QString"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
   <activeChecks/>
-  <checkConfiguration/>
+  <checkConfiguration type="Map">
+   <Option name="QgsGeometryGapCheck" type="Map">
+    <Option value="0" name="allowedGapsBuffer" type="double"/>
+    <Option value="false" name="allowedGapsEnabled" type="bool"/>
+    <Option value="" name="allowedGapsLayer" type="QString"/>
+   </Option>
+  </checkConfiguration>
  </geometryOptions>
  <fieldConfiguration>
   <field name="osm_id">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="housename">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="housenumber">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="building">
    <editWidget type="TextEdit">
     <config>
      <Option/>
@@ -28307,27 +33522,6 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
     </config>
    </editWidget>
   </field>
-  <field name="levels">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="height">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="tags">
-   <editWidget type="KeyValue">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
   <field name="code">
    <editWidget type="TextEdit">
     <config>
@@ -28337,78 +33531,49 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias name="" index="0" field="osm_id"/>
-  <alias name="" index="1" field="housename"/>
-  <alias name="" index="2" field="housenumber"/>
-  <alias name="" index="3" field="building"/>
-  <alias name="" index="4" field="name"/>
-  <alias name="" index="5" field="place"/>
-  <alias name="" index="6" field="levels"/>
-  <alias name="" index="7" field="height"/>
-  <alias name="" index="8" field="tags"/>
-  <alias name="" index="9" field="code"/>
+  <alias index="0" name="" field="osm_id"/>
+  <alias index="1" name="" field="name"/>
+  <alias index="2" name="" field="place"/>
+  <alias index="3" name="" field="code"/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
   <default applyOnUpdate="0" expression="" field="osm_id"/>
-  <default applyOnUpdate="0" expression="" field="housename"/>
-  <default applyOnUpdate="0" expression="" field="housenumber"/>
-  <default applyOnUpdate="0" expression="" field="building"/>
   <default applyOnUpdate="0" expression="" field="name"/>
   <default applyOnUpdate="0" expression="" field="place"/>
-  <default applyOnUpdate="0" expression="" field="levels"/>
-  <default applyOnUpdate="0" expression="" field="height"/>
-  <default applyOnUpdate="0" expression="" field="tags"/>
   <default applyOnUpdate="0" expression="" field="code"/>
  </defaults>
  <constraints>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_id"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="housename"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="housenumber"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="building"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="place"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="levels"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="height"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="tags"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="code"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="name"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="place"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="code"/>
  </constraints>
  <constraintExpressions>
-  <constraint exp="" desc="" field="osm_id"/>
-  <constraint exp="" desc="" field="housename"/>
-  <constraint exp="" desc="" field="housenumber"/>
-  <constraint exp="" desc="" field="building"/>
-  <constraint exp="" desc="" field="name"/>
-  <constraint exp="" desc="" field="place"/>
-  <constraint exp="" desc="" field="levels"/>
-  <constraint exp="" desc="" field="height"/>
-  <constraint exp="" desc="" field="tags"/>
-  <constraint exp="" desc="" field="code"/>
+  <constraint desc="" exp="" field="osm_id"/>
+  <constraint desc="" exp="" field="name"/>
+  <constraint desc="" exp="" field="place"/>
+  <constraint desc="" exp="" field="code"/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
   <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
   <columns>
-   <column type="field" width="-1" name="osm_id" hidden="0"/>
-   <column type="field" width="-1" name="housename" hidden="0"/>
-   <column type="field" width="-1" name="housenumber" hidden="0"/>
-   <column type="field" width="-1" name="building" hidden="0"/>
-   <column type="field" width="-1" name="name" hidden="0"/>
-   <column type="field" width="-1" name="place" hidden="0"/>
-   <column type="field" width="-1" name="levels" hidden="0"/>
-   <column type="field" width="-1" name="height" hidden="0"/>
-   <column type="field" width="-1" name="tags" hidden="0"/>
-   <column type="field" width="-1" name="code" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
+   <column width="-1" name="osm_id" type="field" hidden="0"/>
+   <column width="-1" name="name" type="field" hidden="0"/>
+   <column width="-1" name="place" type="field" hidden="0"/>
+   <column width="-1" name="code" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
   <rowstyles/>
   <fieldstyles/>
  </conditionalstyles>
+ <storedexpressions/>
  <editform tolerant="1"></editform>
  <editforminit/>
  <editforminitcodesource>0</editforminitcodesource>
@@ -28433,912 +33598,568 @@ def my_form_open(dialog, layer, feature):
  <featformsuppress>0</featformsuppress>
  <editorlayout>generatedlayout</editorlayout>
  <editable>
-  <field editable="1" name="building"/>
-  <field editable="1" name="code"/>
-  <field editable="1" name="height"/>
-  <field editable="1" name="housename"/>
-  <field editable="1" name="housenumber"/>
-  <field editable="1" name="levels"/>
-  <field editable="1" name="name"/>
-  <field editable="1" name="osm_id"/>
-  <field editable="1" name="place"/>
-  <field editable="1" name="tags"/>
+  <field name="code" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="osm_id" editable="1"/>
+  <field name="place" editable="1"/>
  </editable>
  <labelOnTop>
-  <field labelOnTop="0" name="building"/>
-  <field labelOnTop="0" name="code"/>
-  <field labelOnTop="0" name="height"/>
-  <field labelOnTop="0" name="housename"/>
-  <field labelOnTop="0" name="housenumber"/>
-  <field labelOnTop="0" name="levels"/>
-  <field labelOnTop="0" name="name"/>
-  <field labelOnTop="0" name="osm_id"/>
-  <field labelOnTop="0" name="place"/>
-  <field labelOnTop="0" name="tags"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+  <field name="place" labelOnTop="0"/>
  </labelOnTop>
  <widgets/>
- <previewExpression>housename</previewExpression>
+ <previewExpression>name</previewExpression>
  <mapTip></mapTip>
- <layerGeometryType>0</layerGeometryType>
+ <layerGeometryType>2</layerGeometryType>
 </qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0">
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <NamedLayer>
-  <se:Name>building_point</se:Name>
+  <se:Name>place_polygon</se:Name>
   <UserStyle>
-   <se:Name>building_point</se:Name>
+   <se:Name>place_polygon</se:Name>
    <se:FeatureTypeStyle>
-    <se:Rule>
-     <se:Name>Building &lt; 5k</se:Name>
-     <se:Description>
-      <se:Title>Building &lt; 5k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1500</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>9</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Building 5 - 10k</se:Name>
-     <se:Description>
-      <se:Title>Building 5 - 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1500</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Building 10 - 30k</se:Name>
-     <se:Description>
-      <se:Title>Building 10 - 30k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1500</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#8e8e8e</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>6</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Entrance &lt;1k</se:Name>
-     <se:Description>
-      <se:Title>Entrance &lt;1k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1551</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>17</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Entrance 1 - 2k</se:Name>
-     <se:Description>
-      <se:Title>Entrance 1 - 2k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1551</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>14</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Entrance 2- 3k</se:Name>
-     <se:Description>
-      <se:Title>Entrance 2- 3k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1551</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>3000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg/transport/barrier_enterance.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="transport/barrier_enterance.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>8</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Entrance 3 - 10k</se:Name>
-     <se:Description>
-      <se:Title>Entrance 3 - 10k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>1551</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>3000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>1</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
     <se:Rule>
      <se:Name></se:Name>
      <!--Parser Error: 
 syntax error, unexpected ELSE - Expression was: ELSE-->
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#7cd35f</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>City</se:Name>
+     <se:Description>
+      <se:Title>City</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1001</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>10000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>County</se:Name>
+     <se:Description>
+      <se:Title>County</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1041</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Farm</se:Name>
+     <se:Description>
+      <se:Title>Farm</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1030</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Island</se:Name>
+     <se:Description>
+      <se:Title>Island</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1020</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>3000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Locality</se:Name>
+     <se:Description>
+      <se:Title>Locality</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1050</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Named Place</se:Name>
+     <se:Description>
+      <se:Title>Named Place</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1099</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.13</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Neighborhood</se:Name>
+     <se:Description>
+      <se:Title>Neighborhood</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1011</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Suburb</se:Name>
+     <se:Description>
+      <se:Title>Suburb</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1010</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Town</se:Name>
+     <se:Description>
+      <se:Title>Town</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1002</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Village</se:Name>
+     <se:Description>
+      <se:Title>Village</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1003</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#ffe19b</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.22</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1001</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+     <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+     <se:TextSymbolizer>
+      <se:Label>
+       <ogc:PropertyName>name</ogc:PropertyName>
+      </se:Label>
+      <se:Font>
+       <se:SvgParameter name="font-family">Lucida Sans</se:SvgParameter>
+       <se:SvgParameter name="font-size">15</se:SvgParameter>
+       <se:SvgParameter name="font-style">italic</se:SvgParameter>
+       <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+      </se:Font>
+      <se:LabelPlacement>
+       <se:LinePlacement>
+        <se:GeneralizeLine>true</se:GeneralizeLine>
+       </se:LinePlacement>
+      </se:LabelPlacement>
+      <se:Halo>
+       <se:Radius>0.5</se:Radius>
+       <se:Fill>
+        <se:SvgParameter name="fill">#a6a6a6</se:SvgParameter>
+       </se:Fill>
+      </se:Halo>
+      <se:Fill>
+       <se:SvgParameter name="fill">#000000</se:SvgParameter>
+      </se:Fill>
+      <se:Priority>0</se:Priority>
+     </se:TextSymbolizer>
     </se:Rule>
    </se:FeatureTypeStyle>
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap building point layer.  Building points and enterances.', 'rpl_db_admin', NULL, '2019-11-15 17:48:39.01566');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (189, 'pgosm', 'osm', 'food_point', 'way', 'osm_food_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
-<qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
+', true, 'Simple rule based polygons.  Mostly transparent fill wilt borders.', 'postgres', NULL, '2020-02-27 22:14:37.061751');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (196, 'pgosm', 'osm', 'boundary_polygon', 'way', 'osm_boundary_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="1">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" enableorderby="0">
-  <rules key="{c4c9b2bf-7d2b-4633-9647-f05be03174cb}">
-   <rule filter="&quot;code&quot; = 2301" key="{69c09b9e-5191-4897-b767-7e4fb29649cc}" label="Restaurant">
-    <rule scalemaxdenom="1000" symbol="0" key="{e2299bbd-7aa9-453a-a3da-19cef7f84354}" label="0 - 1000"/>
-    <rule scalemindenom="1000" scalemaxdenom="2000" symbol="1" key="{a7b949bb-30db-437c-a921-cd3d47ac874f}" label="1 - 2k"/>
-    <rule scalemindenom="2000" scalemaxdenom="3000" symbol="2" key="{9c3c44a8-a901-4cd4-99cd-fdb5a33b0500}" label="2 - 3k"/>
-    <rule scalemindenom="3000" scalemaxdenom="5000" symbol="3" key="{75d2ddca-74a8-4724-994f-d152ebe6ff29}" label="3 - 5k"/>
-   </rule>
-   <rule filter="&quot;code&quot; = 2302" key="{39185bb3-c16f-400e-942f-7c99a965ff3a}" label="Fast Food">
-    <rule scalemaxdenom="1000" symbol="4" key="{cdc795dd-b279-411a-b98e-9eb77715091b}" label="&lt; 1000"/>
-    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="5" key="{17420df3-f14e-486f-aab6-ebfeca964139}" label="1000 - 2500"/>
-    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="6" key="{9f6b9013-b4ab-42ff-a3de-8da28a6a514c}" label="2.5 - 5k"/>
-   </rule>
-   <rule filter="&quot;code&quot; = 2303" key="{b8f2ac70-843b-459a-9176-12f9a5a76d12}" label="Café">
-    <rule scalemaxdenom="1000" symbol="7" key="{f19bd497-b94f-4822-8609-3a5cef7033b6}" label="&lt; 1k"/>
-    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="8" key="{b2643126-d57b-40ff-83ab-0b6fc07f21dc}" label="1 - 2.5k"/>
-    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="9" key="{3d2eebcb-0468-4e13-ad1d-a5105a243d33}" label="2.5 - 5k"/>
-   </rule>
-   <rule filter="&quot;code&quot; IN (''2304'', ''2305'', ''2307'')" key="{d67e94f7-2eaf-42da-83d5-89e23c101a1b}" label="Pub / Bar">
-    <rule scalemaxdenom="1000" symbol="10" key="{060bb804-d57d-4b73-9ec7-351611ac2b8f}" label="&lt; 1k"/>
-    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="11" key="{9c2640a5-f22d-4d6a-8151-a84e157ea3af}" label="1 - 2.5k"/>
-    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="12" key="{e84afd8b-e63c-4f78-afa4-32edf38c060e}" label="2500 - 5000"/>
-   </rule>
-   <rule filter="&quot;code&quot; = 2306" checkstate="0" symbol="13" key="{daaada7a-a71f-48fc-b7ac-09f2e58a7ff5}" label="Food Court">
-    <rule scalemaxdenom="1000" symbol="14" key="{231a4dac-8db6-4d77-8a58-f4c373a3b81a}" label="0 - 1000"/>
-    <rule scalemindenom="1000" scalemaxdenom="2500" symbol="15" key="{8ceb342b-bd05-4c6e-b3fe-58698bf753fd}" label="1000 - 2500"/>
-    <rule scalemindenom="2500" scalemaxdenom="5000" symbol="16" key="{b19ce4be-5f5b-42bf-baae-defc5f4fd379}" label="2500 - 5000"/>
-    <rule scalemindenom="5000" scalemaxdenom="10000" symbol="17" key="{ecc73bf7-7b39-45ae-8461-3d07abad54ea}" label="5000 - 10000"/>
-    <rule scalemindenom="10000" symbol="18" key="{ef3292f4-7393-4619-9800-372c90bca0e0}" label="10000 - 0"/>
-   </rule>
-   <rule filter="ELSE" checkstate="0" symbol="19" key="{9e3f2764-8dc0-4a2d-bca5-530d4ec183f2}"/>
-  </rules>
+ <renderer-v2 attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol" forceraster="0">
+  <categories>
+   <category render="false" symbol="0" value="1104" label="State"/>
+   <category render="true" symbol="1" value="1106" label="County"/>
+   <category render="false" symbol="2" value="1108" label="City"/>
+   <category render="false" symbol="3" value="1109" label="Wards"/>
+   <category render="false" symbol="4" value="" label=""/>
+  </categories>
   <symbols>
-   <symbol alpha="1" type="marker" name="0" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_restaurant.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="8.2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="213,125,115,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="1" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_restaurant.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="6.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="1" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="203,215,234,84" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="10" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_pub.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="7"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="2" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="223,82,238,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="11" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_pub.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="3" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="162,212,55,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" type="marker" name="12" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_pub.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="3.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
+   <symbol force_rhr="0" alpha="1" name="4" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="73,112,202,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option type="QString" name="name" value=""/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="13" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="14" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="15" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="16" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="17" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="18" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="58,205,139,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="19" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="96,206,68,255"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="name" v="circle"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="2" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_restaurant.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="4"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="3" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_restaurant.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2.2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="4" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_fastfood.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="8.2"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="5" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_fastfood.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="6.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="6" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_fastfood.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="2.8"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="7" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_cafe.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="7.8"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="8" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_cafe.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="6.8"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-   <symbol alpha="1" type="marker" name="9" clip_to_extent="1" force_rhr="0">
-    <layer enabled="1" locked="0" pass="0" class="SvgMarker">
-     <prop k="angle" v="0"/>
-     <prop k="color" v="0,0,0,255"/>
-     <prop k="fixedAspectRatio" v="0"/>
-     <prop k="horizontal_anchor_point" v="1"/>
-     <prop k="name" v="food/food_cafe.svg"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_width" v="0"/>
-     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="scale_method" v="diameter"/>
-     <prop k="size" v="3.6"/>
-     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="size_unit" v="MM"/>
-     <prop k="vertical_anchor_point" v="1"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option type="QString" name="name" value=""/>
-       <Option name="properties"/>
-       <Option type="QString" name="type" value="collection"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
   </symbols>
+  <source-symbol>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="fill">
+    <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="145,82,45,255" k="color"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp name="[source]" type="randomcolors"/>
+  <rotation/>
+  <sizescale/>
  </renderer-v2>
+ <labeling type="simple">
+  <settings calloutType="simple">
+   <text-style fieldName="name" fontStrikeout="0" fontWordSpacing="0" fontWeight="50" fontUnderline="0" useSubstitutions="0" multilineHeight="1" isExpression="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" previewBkgrdColor="255,255,255,255" fontKerning="1" textColor="0,0,0,255" fontFamily="Franklin Gothic Demi" textOrientation="horizontal" fontSizeUnit="Point" fontItalic="0" blendMode="0" namedStyle="Regular" fontLetterSpacing="0" fontSize="10" fontCapitals="0">
+    <text-buffer bufferNoFill="1" bufferSize="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferColor="255,255,255,255" bufferBlendMode="0"/>
+    <background shapeRadiiY="0" shapeSizeType="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeType="0" shapeBlendMode="0" shapeOffsetX="0" shapeOffsetUnit="MM" shapeRadiiUnit="MM" shapeSizeY="0" shapeSVGFile="" shapeOffsetY="0" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeJoinStyle="64" shapeOpacity="1">
+     <symbol force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1" type="marker">
+      <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+       <prop v="0" k="angle"/>
+       <prop v="243,166,178,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="circle" k="name"/>
+       <prop v="0,0" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="35,35,35,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="diameter" k="scale_method"/>
+       <prop v="2" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option value="" name="name" type="QString"/>
+         <Option name="properties"/>
+         <Option value="collection" name="type" type="QString"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </background>
+    <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowDraw="0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowOpacity="0.7" shadowRadiusUnit="MM"/>
+    <dd_properties>
+     <Option type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+     </Option>
+    </dd_properties>
+    <substitutions/>
+   </text-style>
+   <text-format rightDirectionSymbol=">" formatNumbers="0" wrapChar=" " autoWrapLength="0" multilineAlign="1" placeDirectionSymbol="0" decimals="3" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0"/>
+   <placement overrunDistanceUnit="MM" offsetType="0" maxCurvedCharAngleOut="-25" priority="5" repeatDistanceUnits="MM" distUnits="MM" yOffset="0" offsetUnits="MM" centroidInside="0" placement="0" centroidWhole="0" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" xOffset="0" layerType="PolygonGeometry" placementFlags="10" fitInPolygonOnly="0" geometryGeneratorType="PointGeometry" quadOffset="4" dist="0" repeatDistance="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" maxCurvedCharAngleIn="25" rotationAngle="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
+   <rendering scaleVisibility="0" obstacleFactor="1" upsidedownLabels="0" drawLabels="1" limitNumLabels="0" labelPerPart="0" minFeatureSize="0" fontMaxPixelSize="10000" displayAll="0" obstacleType="0" zIndex="0" fontLimitPixelSize="0" scaleMin="0" fontMinPixelSize="3" scaleMax="0" obstacle="1" maxNumLabels="2000" mergeLines="0"/>
+   <dd_properties>
+    <Option type="Map">
+     <Option value="" name="name" type="QString"/>
+     <Option name="properties"/>
+     <Option value="collection" name="type" type="QString"/>
+    </Option>
+   </dd_properties>
+   <callout type="simple">
+    <Option type="Map">
+     <Option value="pole_of_inaccessibility" name="anchorPoint" type="QString"/>
+     <Option name="ddProperties" type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+     </Option>
+     <Option value="false" name="drawToAllParts" type="bool"/>
+     <Option value="0" name="enabled" type="QString"/>
+     <Option value="&lt;symbol force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+     <Option value="0" name="minLength" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
+     <Option value="MM" name="minLengthUnit" type="QString"/>
+     <Option value="0" name="offsetFromAnchor" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale" type="QString"/>
+     <Option value="MM" name="offsetFromAnchorUnit" type="QString"/>
+     <Option value="0" name="offsetFromLabel" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale" type="QString"/>
+     <Option value="MM" name="offsetFromLabelUnit" type="QString"/>
+    </Option>
+   </callout>
+  </settings>
+ </labeling>
  <customproperties>
-  <property key="dualview/previewExpressions">
-   <value>"name"</value>
-  </property>
   <property value="0" key="embeddedWidgets/count"/>
   <property key="variableNames"/>
   <property key="variableValues"/>
@@ -29347,20 +34168,626 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory enabled="0" penAlpha="255" minimumSize="0" lineSizeType="MM" penColor="#000000" labelPlacementMethod="XHeight" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" minScaleDenominator="0" sizeType="MM" penWidth="0" height="15" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" width="15" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" scaleBasedVisibility="0" barWidth="5">
+  <DiagramCategory penWidth="0" sizeType="MM" lineSizeType="MM" width="15" backgroundColor="#ffffff" height="15" barWidth="5" opacity="1" backgroundAlpha="255" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" enabled="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" diagramOrientation="Up" penAlpha="255" scaleDependency="Area" labelPlacementMethod="XHeight">
    <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings zIndex="0" placement="0" dist="0" linePlacementFlags="18" showAll="1" priority="0" obstacle="0">
+ <DiagramLayerSettings priority="0" showAll="1" zIndex="0" dist="0" placement="1" obstacle="0" linePlacementFlags="18">
   <properties>
    <Option type="Map">
-    <Option type="QString" name="name" value=""/>
+    <Option value="" name="name" type="QString"/>
     <Option name="properties"/>
-    <Option type="QString" name="type" value="collection"/>
+    <Option value="collection" name="type" type="QString"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <activeChecks/>
+  <checkConfiguration type="Map">
+   <Option name="QgsGeometryGapCheck" type="Map">
+    <Option value="0" name="allowedGapsBuffer" type="double"/>
+    <Option value="false" name="allowedGapsEnabled" type="bool"/>
+    <Option value="" name="allowedGapsLayer" type="QString"/>
+   </Option>
+  </checkConfiguration>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="admin_level">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="boundary">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" name="" field="osm_id"/>
+  <alias index="1" name="" field="name"/>
+  <alias index="2" name="" field="admin_level"/>
+  <alias index="3" name="" field="boundary"/>
+  <alias index="4" name="" field="code"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="admin_level"/>
+  <default applyOnUpdate="0" expression="" field="boundary"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="name"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="admin_level"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="boundary"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="code"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint desc="" exp="" field="osm_id"/>
+  <constraint desc="" exp="" field="name"/>
+  <constraint desc="" exp="" field="admin_level"/>
+  <constraint desc="" exp="" field="boundary"/>
+  <constraint desc="" exp="" field="code"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column width="-1" name="osm_id" type="field" hidden="0"/>
+   <column width="-1" name="name" type="field" hidden="0"/>
+   <column width="-1" name="admin_level" type="field" hidden="0"/>
+   <column width="-1" name="boundary" type="field" hidden="0"/>
+   <column width="-1" name="code" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="admin_level" editable="1"/>
+  <field name="boundary" editable="1"/>
+  <field name="code" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="osm_id" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field name="admin_level" labelOnTop="0"/>
+  <field name="boundary" labelOnTop="0"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>boundary_polygon</se:Name>
+  <UserStyle>
+   <se:Name>boundary_polygon</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>State</se:Name>
+     <se:Description>
+      <se:Title>State</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1104</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#d57d73</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>County</se:Name>
+     <se:Description>
+      <se:Title>County</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1106</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#cbd7ea</se:SvgParameter>
+       <se:SvgParameter name="fill-opacity">0.33</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>City</se:Name>
+     <se:Description>
+      <se:Title>City</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1108</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#df52ee</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Wards</se:Name>
+     <se:Description>
+      <se:Title>Wards</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1109</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#a2d437</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#4970ca</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:TextSymbolizer>
+      <se:Label>
+       <ogc:PropertyName>name</ogc:PropertyName>
+      </se:Label>
+      <se:Font>
+       <se:SvgParameter name="font-family">Franklin Gothic Demi</se:SvgParameter>
+       <se:SvgParameter name="font-size">13</se:SvgParameter>
+      </se:Font>
+      <se:LabelPlacement>
+       <se:PointPlacement>
+        <se:AnchorPoint>
+         <se:AnchorPointX>0</se:AnchorPointX>
+         <se:AnchorPointY>0.5</se:AnchorPointY>
+        </se:AnchorPoint>
+       </se:PointPlacement>
+      </se:LabelPlacement>
+      <se:Fill>
+       <se:SvgParameter name="fill">#000000</se:SvgParameter>
+      </se:Fill>
+      <se:VendorOption name="maxDisplacement">1</se:VendorOption>
+     </se:TextSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Basic formatting, defaults to only displaying County polygons with basic labels.', 'postgres', NULL, '2020-02-28 00:48:06.540966');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (197, 'pgosm', 'osm', 'boundary_line', 'way', 'osm_boundary_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" enableorderby="0" symbollevels="0" type="categorizedSymbol" forceraster="0">
+  <categories>
+   <category render="true" symbol="0" value="" label=""/>
+   <category render="false" symbol="1" value="1104" label="State"/>
+   <category render="true" symbol="2" value="1106" label="County"/>
+   <category render="false" symbol="3" value="1107" label="Civil Township"/>
+   <category render="false" symbol="4" value="1108" label="City"/>
+   <category render="false" symbol="5" value="1109" label="Ward"/>
+  </categories>
+  <symbols>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="1" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="2" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="3" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="4" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol force_rhr="0" alpha="1" name="5" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="218,175,0,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="line">
+    <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+     <prop v="square" k="capstyle"/>
+     <prop v="5;2" k="customdash"/>
+     <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+     <prop v="MM" k="customdash_unit"/>
+     <prop v="0" k="draw_inside_polygon"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="164,113,88,255" k="line_color"/>
+     <prop v="solid" k="line_style"/>
+     <prop v="0.26" k="line_width"/>
+     <prop v="MM" k="line_width_unit"/>
+     <prop v="0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0" k="ring_filter"/>
+     <prop v="0" k="use_custom_dash"/>
+     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" name="name" type="QString"/>
+       <Option name="properties"/>
+       <Option value="collection" name="type" type="QString"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp name="[source]" type="preset">
+   <prop v="218,175,0,255" k="preset_color_0"/>
+   <prop v="#fa4b3c" k="preset_color_name_0"/>
+   <prop v="preset" k="rampType"/>
+  </colorramp>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <labeling type="simple">
+  <settings calloutType="simple">
+   <text-style fieldName="name" fontStrikeout="0" fontWordSpacing="0" fontWeight="50" fontUnderline="0" useSubstitutions="0" multilineHeight="1" isExpression="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" previewBkgrdColor="255,255,255,255" fontKerning="1" textColor="0,0,0,255" fontFamily="MS Shell Dlg 2" textOrientation="horizontal" fontSizeUnit="Point" fontItalic="0" blendMode="0" namedStyle="Regular" fontLetterSpacing="0" fontSize="10" fontCapitals="0">
+    <text-buffer bufferNoFill="1" bufferSize="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferColor="255,255,255,255" bufferBlendMode="0"/>
+    <background shapeRadiiY="0" shapeSizeType="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeType="0" shapeBlendMode="0" shapeOffsetX="0" shapeOffsetUnit="MM" shapeRadiiUnit="MM" shapeSizeY="0" shapeSVGFile="" shapeOffsetY="0" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeRotationType="0" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeJoinStyle="64" shapeOpacity="1">
+     <symbol force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1" type="marker">
+      <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
+       <prop v="0" k="angle"/>
+       <prop v="225,89,137,255" k="color"/>
+       <prop v="1" k="horizontal_anchor_point"/>
+       <prop v="bevel" k="joinstyle"/>
+       <prop v="circle" k="name"/>
+       <prop v="0,0" k="offset"/>
+       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+       <prop v="MM" k="offset_unit"/>
+       <prop v="35,35,35,255" k="outline_color"/>
+       <prop v="solid" k="outline_style"/>
+       <prop v="0" k="outline_width"/>
+       <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+       <prop v="MM" k="outline_width_unit"/>
+       <prop v="diameter" k="scale_method"/>
+       <prop v="2" k="size"/>
+       <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+       <prop v="MM" k="size_unit"/>
+       <prop v="1" k="vertical_anchor_point"/>
+       <data_defined_properties>
+        <Option type="Map">
+         <Option value="" name="name" type="QString"/>
+         <Option name="properties"/>
+         <Option value="collection" name="type" type="QString"/>
+        </Option>
+       </data_defined_properties>
+      </layer>
+     </symbol>
+    </background>
+    <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowDraw="0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowOpacity="0.7" shadowRadiusUnit="MM"/>
+    <dd_properties>
+     <Option type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+     </Option>
+    </dd_properties>
+    <substitutions/>
+   </text-style>
+   <text-format rightDirectionSymbol=">" formatNumbers="0" wrapChar="" autoWrapLength="0" multilineAlign="0" placeDirectionSymbol="0" decimals="3" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0"/>
+   <placement overrunDistanceUnit="MM" offsetType="0" maxCurvedCharAngleOut="-25" priority="5" repeatDistanceUnits="MM" distUnits="MM" yOffset="0" offsetUnits="MM" centroidInside="0" placement="2" centroidWhole="0" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" xOffset="0" layerType="LineGeometry" placementFlags="9" fitInPolygonOnly="0" geometryGeneratorType="PointGeometry" quadOffset="4" dist="0" repeatDistance="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" maxCurvedCharAngleIn="25" rotationAngle="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
+   <rendering scaleVisibility="0" obstacleFactor="1" upsidedownLabels="0" drawLabels="1" limitNumLabels="0" labelPerPart="0" minFeatureSize="0" fontMaxPixelSize="10000" displayAll="0" obstacleType="0" zIndex="0" fontLimitPixelSize="0" scaleMin="0" fontMinPixelSize="3" scaleMax="0" obstacle="1" maxNumLabels="2000" mergeLines="1"/>
+   <dd_properties>
+    <Option type="Map">
+     <Option value="" name="name" type="QString"/>
+     <Option name="properties"/>
+     <Option value="collection" name="type" type="QString"/>
+    </Option>
+   </dd_properties>
+   <callout type="simple">
+    <Option type="Map">
+     <Option value="pole_of_inaccessibility" name="anchorPoint" type="QString"/>
+     <Option name="ddProperties" type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+     </Option>
+     <Option value="false" name="drawToAllParts" type="bool"/>
+     <Option value="0" name="enabled" type="QString"/>
+     <Option value="&lt;symbol force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+     <Option value="0" name="minLength" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
+     <Option value="MM" name="minLengthUnit" type="QString"/>
+     <Option value="0" name="offsetFromAnchor" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale" type="QString"/>
+     <Option value="MM" name="offsetFromAnchorUnit" type="QString"/>
+     <Option value="0" name="offsetFromLabel" type="double"/>
+     <Option value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale" type="QString"/>
+     <Option value="MM" name="offsetFromLabelUnit" type="QString"/>
+    </Option>
+   </callout>
+  </settings>
+ </labeling>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory penWidth="0" sizeType="MM" lineSizeType="MM" width="15" backgroundColor="#ffffff" height="15" barWidth="5" opacity="1" backgroundAlpha="255" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" enabled="0" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" diagramOrientation="Up" penAlpha="255" scaleDependency="Area" labelPlacementMethod="XHeight">
+   <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings priority="0" showAll="1" zIndex="0" dist="0" placement="2" obstacle="0" linePlacementFlags="18">
+  <properties>
+   <Option type="Map">
+    <Option value="" name="name" type="QString"/>
+    <Option name="properties"/>
+    <Option value="collection" name="type" type="QString"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
   <activeChecks/>
   <checkConfiguration/>
  </geometryOptions>
@@ -29379,7 +34806,657 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
     </config>
    </editWidget>
   </field>
-  <field name="amenity">
+  <field name="admin_level">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="boundary">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" name="" field="osm_id"/>
+  <alias index="1" name="" field="name"/>
+  <alias index="2" name="" field="admin_level"/>
+  <alias index="3" name="" field="boundary"/>
+  <alias index="4" name="" field="code"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="osm_id"/>
+  <default applyOnUpdate="0" expression="" field="name"/>
+  <default applyOnUpdate="0" expression="" field="admin_level"/>
+  <default applyOnUpdate="0" expression="" field="boundary"/>
+  <default applyOnUpdate="0" expression="" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="name"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="admin_level"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="boundary"/>
+  <constraint notnull_strength="0" exp_strength="0" constraints="0" unique_strength="0" field="code"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint desc="" exp="" field="osm_id"/>
+  <constraint desc="" exp="" field="name"/>
+  <constraint desc="" exp="" field="admin_level"/>
+  <constraint desc="" exp="" field="boundary"/>
+  <constraint desc="" exp="" field="code"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column width="-1" name="osm_id" type="field" hidden="0"/>
+   <column width="-1" name="name" type="field" hidden="0"/>
+   <column width="-1" name="admin_level" type="field" hidden="0"/>
+   <column width="-1" name="boundary" type="field" hidden="0"/>
+   <column width="-1" name="code" type="field" hidden="0"/>
+   <column width="-1" type="actions" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="admin_level" editable="1"/>
+  <field name="boundary" editable="1"/>
+  <field name="code" editable="1"/>
+  <field name="name" editable="1"/>
+  <field name="osm_id" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field name="admin_level" labelOnTop="0"/>
+  <field name="boundary" labelOnTop="0"/>
+  <field name="code" labelOnTop="0"/>
+  <field name="name" labelOnTop="0"/>
+  <field name="osm_id" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>1</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <NamedLayer>
+  <se:Name>boundary_line</se:Name>
+  <UserStyle>
+   <se:Name>boundary_line</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>State</se:Name>
+     <se:Description>
+      <se:Title>State</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1104</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>County</se:Name>
+     <se:Description>
+      <se:Title>County</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1106</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Civil Township</se:Name>
+     <se:Description>
+      <se:Title>Civil Township</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1107</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>City</se:Name>
+     <se:Description>
+      <se:Title>City</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1108</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Ward</se:Name>
+     <se:Description>
+      <se:Title>Ward</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>1109</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:LineSymbolizer>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#daaf00</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+       <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+      </se:Stroke>
+     </se:LineSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Basic lines, selected only County by default.', 'postgres', NULL, '2020-02-28 00:54:03.826941');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (198, 'pgosm', 'osm', 'accomodation_point', 'way', 'osm_accomodation_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" symbollevels="0" forceraster="0" type="categorizedSymbol" enableorderby="0">
+  <categories>
+   <category value="2401" label="Hotel" symbol="0" render="true"/>
+   <category value="2402" label="Motel" symbol="1" render="true"/>
+   <category value="2403" label="Bed &amp; Breakfast" symbol="2" render="true"/>
+   <category value="2404" label="Guesthouse" symbol="3" render="true"/>
+   <category value="2405" label="Hostel" symbol="4" render="true"/>
+   <category value="2406" label="Chalet" symbol="5" render="true"/>
+   <category value="2421" label="Shelter" symbol="6" render="true"/>
+   <category value="2422" label="Camp Site" symbol="7" render="true"/>
+   <category value="2423" label="Alpine Hut" symbol="8" render="true"/>
+   <category value="2424" label="Caravan Site" symbol="9" render="true"/>
+   <category value="" label="" symbol="10" render="true"/>
+  </categories>
+  <symbols>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="gpsicons/h.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,255,255,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="1" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="gpsicons/h.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,255,255,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="10" alpha="1">
+    <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="202,135,62,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="2" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="accommodation/accommodation_bed_and_breakfast.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="3" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="-2"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="2"/>
+     <prop k="name" v="accommodation/accommodation_youth_hostel.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,255,255,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="4" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="-2"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="2"/>
+     <prop k="name" v="accommodation/accommodation_youth_hostel.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,255,255,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="5" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="-2"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="2"/>
+     <prop k="name" v="accommodation/accommodation_youth_hostel.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,255,255,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="6" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="accommodation/accommodation_shelter.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="7" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,58,13,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="accommodation/accommodation_camping.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="8" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="accommodation/accommodation_alpinehut.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="9" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="accommodation/accommodation_caravan_park.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="213,180,60,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp type="randomcolors" name="[source]"/>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory barWidth="5" rotationOffset="270" minimumSize="0" enabled="0" width="15" penAlpha="255" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" diagramOrientation="Up" labelPlacementMethod="XHeight" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" minScaleDenominator="0" opacity="1" sizeType="MM" scaleDependency="Area" maxScaleDenominator="1e+08" height="15" backgroundColor="#ffffff">
+   <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings placement="0" linePlacementFlags="18" showAll="1" obstacle="0" zIndex="0" priority="0" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
    <editWidget type="TextEdit">
     <config>
      <Option/>
@@ -29416,63 +35493,1592 @@ INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_na
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias name="" index="0" field="osm_id"/>
-  <alias name="" index="1" field="name"/>
-  <alias name="" index="2" field="amenity"/>
-  <alias name="" index="3" field="landuse"/>
-  <alias name="" index="4" field="leisure"/>
-  <alias name="" index="5" field="tourism"/>
-  <alias name="" index="6" field="code"/>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="landuse" name=""/>
+  <alias index="3" field="leisure" name=""/>
+  <alias index="4" field="tourism" name=""/>
+  <alias index="5" field="code" name=""/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default applyOnUpdate="0" expression="" field="osm_id"/>
-  <default applyOnUpdate="0" expression="" field="name"/>
-  <default applyOnUpdate="0" expression="" field="amenity"/>
-  <default applyOnUpdate="0" expression="" field="landuse"/>
-  <default applyOnUpdate="0" expression="" field="leisure"/>
-  <default applyOnUpdate="0" expression="" field="tourism"/>
-  <default applyOnUpdate="0" expression="" field="code"/>
+  <default expression="" applyOnUpdate="0" field="osm_id"/>
+  <default expression="" applyOnUpdate="0" field="name"/>
+  <default expression="" applyOnUpdate="0" field="landuse"/>
+  <default expression="" applyOnUpdate="0" field="leisure"/>
+  <default expression="" applyOnUpdate="0" field="tourism"/>
+  <default expression="" applyOnUpdate="0" field="code"/>
  </defaults>
  <constraints>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_id"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="amenity"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="landuse"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="leisure"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="tourism"/>
-  <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="code"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="osm_id" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="name" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="landuse" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="leisure" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="tourism" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="code" exp_strength="0"/>
  </constraints>
  <constraintExpressions>
-  <constraint exp="" desc="" field="osm_id"/>
-  <constraint exp="" desc="" field="name"/>
-  <constraint exp="" desc="" field="amenity"/>
-  <constraint exp="" desc="" field="landuse"/>
-  <constraint exp="" desc="" field="leisure"/>
-  <constraint exp="" desc="" field="tourism"/>
-  <constraint exp="" desc="" field="code"/>
+  <constraint exp="" field="osm_id" desc=""/>
+  <constraint exp="" field="name" desc=""/>
+  <constraint exp="" field="landuse" desc=""/>
+  <constraint exp="" field="leisure" desc=""/>
+  <constraint exp="" field="tourism" desc=""/>
+  <constraint exp="" field="code" desc=""/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
   <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
   <columns>
-   <column type="field" width="-1" name="osm_id" hidden="0"/>
-   <column type="field" width="-1" name="name" hidden="0"/>
-   <column type="field" width="-1" name="amenity" hidden="0"/>
-   <column type="field" width="-1" name="landuse" hidden="0"/>
-   <column type="field" width="-1" name="leisure" hidden="0"/>
-   <column type="field" width="-1" name="tourism" hidden="0"/>
-   <column type="field" width="-1" name="code" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
+   <column hidden="0" type="field" width="-1" name="osm_id"/>
+   <column hidden="0" type="field" width="-1" name="name"/>
+   <column hidden="0" type="field" width="-1" name="landuse"/>
+   <column hidden="0" type="field" width="-1" name="leisure"/>
+   <column hidden="0" type="field" width="-1" name="tourism"/>
+   <column hidden="0" type="field" width="-1" name="code"/>
+   <column hidden="1" type="actions" width="-1"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
   <rowstyles/>
   <fieldstyles/>
  </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="leisure"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+  <field editable="1" name="tourism"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="leisure"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+  <field labelOnTop="0" name="tourism"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se">
+ <NamedLayer>
+  <se:Name>accomodation_point</se:Name>
+  <UserStyle>
+   <se:Name>accomodation_point</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Hotel</se:Name>
+     <se:Description>
+      <se:Title>Hotel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2401</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//gpsicons/h.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23ffffff&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="gpsicons/h.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motel</se:Name>
+     <se:Description>
+      <se:Title>Motel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2402</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/svg/gpsicons/h.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23ffffff&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="gpsicons/h.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Bed &amp; Breakfast</se:Name>
+     <se:Description>
+      <se:Title>Bed &amp; Breakfast</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2403</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg/accommodation/accommodation_bed_and_breakfast.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_bed_and_breakfast.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Guesthouse</se:Name>
+     <se:Description>
+      <se:Title>Guesthouse</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2404</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg/accommodation/accommodation_youth_hostel.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23ffffff&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_youth_hostel.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+       <se:Rotation/>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Hostel</se:Name>
+     <se:Description>
+      <se:Title>Hostel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2405</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/svg/accommodation/accommodation_youth_hostel.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23ffffff&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_youth_hostel.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+       <se:Rotation/>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Chalet</se:Name>
+     <se:Description>
+      <se:Title>Chalet</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2406</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/svg/accommodation/accommodation_youth_hostel.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23ffffff&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_youth_hostel.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>21</se:Size>
+       <se:Rotation/>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Shelter</se:Name>
+     <se:Description>
+      <se:Title>Shelter</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2421</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg/accommodation/accommodation_shelter.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_shelter.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Camp Site</se:Name>
+     <se:Description>
+      <se:Title>Camp Site</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2422</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg/accommodation/accommodation_camping.svg?fill=%23003a0d&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_camping.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#003a0d</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Alpine Hut</se:Name>
+     <se:Description>
+      <se:Title>Alpine Hut</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2423</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//accommodation/accommodation_alpinehut.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_alpinehut.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Caravan Site</se:Name>
+     <se:Description>
+      <se:Title>Caravan Site</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2424</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <!--Parametric SVG-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg/accommodation/accommodation_caravan_park.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Plain SVG fallback, no parameters-->
+       <se:ExternalGraphic>
+        <se:OnlineResource xlink:type="simple" xlink:href="accommodation/accommodation_caravan_park.svg"/>
+        <se:Format>image/svg+xml</se:Format>
+       </se:ExternalGraphic>
+       <!--Well known marker fallback-->
+       <se:Mark>
+        <se:WellKnownName>square</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>29</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PointSymbolizer>
+      <se:Graphic>
+       <se:Mark>
+        <se:WellKnownName>circle</se:WellKnownName>
+        <se:Fill>
+         <se:SvgParameter name="fill">#ca873e</se:SvgParameter>
+        </se:Fill>
+        <se:Stroke>
+         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+        </se:Stroke>
+       </se:Mark>
+       <se:Size>7</se:Size>
+      </se:Graphic>
+     </se:PointSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Simple SVG markers for the main codes in this layer.', 'postgres', NULL, '2020-02-28 20:54:45.683707');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (199, 'pgosm', 'osm', 'accomodation_polygon', 'way', 'osm_accomodation_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" symbollevels="0" forceraster="0" type="categorizedSymbol" enableorderby="0">
+  <categories>
+   <category value="2401" label="Hotel" symbol="0" render="true"/>
+   <category value="2402" label="Motel" symbol="1" render="true"/>
+   <category value="2403" label="Bed &amp; Breakfast" symbol="2" render="true"/>
+   <category value="2404" label="Guesthouse" symbol="3" render="true"/>
+   <category value="2405" label="Hostel" symbol="4" render="true"/>
+   <category value="2406" label="Chalet" symbol="5" render="true"/>
+   <category value="2421" label="Shelter" symbol="6" render="true"/>
+   <category value="2422" label="Camp Site" symbol="7" render="true"/>
+   <category value="2423" label="Alpine Hut" symbol="8" render="true"/>
+   <category value="2424" label="Caravan Site" symbol="9" render="true"/>
+   <category value="" label="" symbol="10" render="true"/>
+  </categories>
+  <symbols>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="1" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="10" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="2" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="3" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="4" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="5" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="6" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="7" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="8" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="9" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="184,184,184,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol clip_to_extent="1" type="fill" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="225,89,137,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp type="preset" name="[source]">
+   <prop k="preset_color_0" v="184,184,184,255"/>
+   <prop k="preset_color_name_0" v="#fa4b3c"/>
+   <prop k="rampType" v="preset"/>
+  </colorramp>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory barWidth="5" rotationOffset="270" minimumSize="0" enabled="0" width="15" penAlpha="255" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" diagramOrientation="Up" labelPlacementMethod="XHeight" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" minScaleDenominator="0" opacity="1" sizeType="MM" scaleDependency="Area" maxScaleDenominator="1e+08" height="15" backgroundColor="#ffffff">
+   <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings placement="1" linePlacementFlags="18" showAll="1" obstacle="0" zIndex="0" priority="0" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration type="Map">
+   <Option type="Map" name="QgsGeometryGapCheck">
+    <Option value="0" type="double" name="allowedGapsBuffer"/>
+    <Option value="false" type="bool" name="allowedGapsEnabled"/>
+    <Option value="" type="QString" name="allowedGapsLayer"/>
+   </Option>
+  </checkConfiguration>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="leisure">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="tourism">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="landuse" name=""/>
+  <alias index="3" field="leisure" name=""/>
+  <alias index="4" field="tourism" name=""/>
+  <alias index="5" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default expression="" applyOnUpdate="0" field="osm_id"/>
+  <default expression="" applyOnUpdate="0" field="name"/>
+  <default expression="" applyOnUpdate="0" field="landuse"/>
+  <default expression="" applyOnUpdate="0" field="leisure"/>
+  <default expression="" applyOnUpdate="0" field="tourism"/>
+  <default expression="" applyOnUpdate="0" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="osm_id" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="name" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="landuse" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="leisure" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="tourism" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="code" exp_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" field="osm_id" desc=""/>
+  <constraint exp="" field="name" desc=""/>
+  <constraint exp="" field="landuse" desc=""/>
+  <constraint exp="" field="leisure" desc=""/>
+  <constraint exp="" field="tourism" desc=""/>
+  <constraint exp="" field="code" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+  <columns>
+   <column hidden="0" type="field" width="-1" name="osm_id"/>
+   <column hidden="0" type="field" width="-1" name="name"/>
+   <column hidden="0" type="field" width="-1" name="landuse"/>
+   <column hidden="0" type="field" width="-1" name="leisure"/>
+   <column hidden="0" type="field" width="-1" name="tourism"/>
+   <column hidden="0" type="field" width="-1" name="code"/>
+   <column hidden="1" type="actions" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="code"/>
+  <field editable="1" name="landuse"/>
+  <field editable="1" name="leisure"/>
+  <field editable="1" name="name"/>
+  <field editable="1" name="osm_id"/>
+  <field editable="1" name="tourism"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="code"/>
+  <field labelOnTop="0" name="landuse"/>
+  <field labelOnTop="0" name="leisure"/>
+  <field labelOnTop="0" name="name"/>
+  <field labelOnTop="0" name="osm_id"/>
+  <field labelOnTop="0" name="tourism"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>name</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se">
+ <NamedLayer>
+  <se:Name>accomodation_polygon</se:Name>
+  <UserStyle>
+   <se:Name>accomodation_polygon</se:Name>
+   <se:FeatureTypeStyle>
+    <se:Rule>
+     <se:Name>Hotel</se:Name>
+     <se:Description>
+      <se:Title>Hotel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2401</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Motel</se:Name>
+     <se:Description>
+      <se:Title>Motel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2402</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Bed &amp; Breakfast</se:Name>
+     <se:Description>
+      <se:Title>Bed &amp; Breakfast</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2403</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Guesthouse</se:Name>
+     <se:Description>
+      <se:Title>Guesthouse</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2404</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Hostel</se:Name>
+     <se:Description>
+      <se:Title>Hostel</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2405</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Chalet</se:Name>
+     <se:Description>
+      <se:Title>Chalet</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2406</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Shelter</se:Name>
+     <se:Description>
+      <se:Title>Shelter</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2421</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Camp Site</se:Name>
+     <se:Description>
+      <se:Title>Camp Site</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2422</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Alpine Hut</se:Name>
+     <se:Description>
+      <se:Title>Alpine Hut</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2423</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name>Caravan Site</se:Name>
+     <se:Description>
+      <se:Title>Caravan Site</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:PropertyIsEqualTo>
+       <ogc:PropertyName>code</ogc:PropertyName>
+       <ogc:Literal>2424</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+    <se:Rule>
+     <se:Name></se:Name>
+     <se:Description>
+      <se:Title>code is ''''</se:Title>
+     </se:Description>
+     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+      <ogc:Or>
+       <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>code</ogc:PropertyName>
+        <ogc:Literal></ogc:Literal>
+       </ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
+        <ogc:PropertyName>code</ogc:PropertyName>
+       </ogc:PropertyIsNull>
+      </ogc:Or>
+     </ogc:Filter>
+     <se:PolygonSymbolizer>
+      <se:Fill>
+       <se:SvgParameter name="fill">#b8b8b8</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+       <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+       <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+      </se:Stroke>
+     </se:PolygonSymbolizer>
+    </se:Rule>
+   </se:FeatureTypeStyle>
+  </UserStyle>
+ </NamedLayer>
+</StyledLayerDescriptor>
+', true, 'Categorized by code with legend display values set.  Basic gray for all polygons.', 'postgres', NULL, '2020-02-28 20:57:46.630234');
+INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (200, 'pgosm', 'osm', 'health_point', 'way', 'osm_health_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+<qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 attr="code" symbollevels="0" forceraster="0" type="categorizedSymbol" enableorderby="0">
+  <categories>
+   <category value="2101" label="Pharmacy" symbol="0" render="true"/>
+   <category value="2110" label="Hospital" symbol="1" render="true"/>
+   <category value="2120" label="Doctor" symbol="2" render="true"/>
+   <category value="2121" label="Dentist" symbol="3" render="true"/>
+   <category value="2129" label="Veterinary" symbol="4" render="true"/>
+   <category value="" label="" symbol="5" render="true"/>
+  </categories>
+  <symbols>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="health/health_pharmacy.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="1" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="health/health_hospital.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="2" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="77,152,206,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="health/health_doctors.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="3" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="health/health_dentist.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="8"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="4" alpha="1">
+    <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="0,0,0,255"/>
+     <prop k="fixedAspectRatio" v="0"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="name" v="health/health_veterinary.svg"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="6"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="5" alpha="1">
+    <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="228,130,61,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <source-symbol>
+   <symbol clip_to_extent="1" type="marker" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="125,139,143,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="2"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </source-symbol>
+  <colorramp type="randomcolors" name="[source]"/>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory barWidth="5" rotationOffset="270" minimumSize="0" enabled="0" width="15" penAlpha="255" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" diagramOrientation="Up" labelPlacementMethod="XHeight" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" minScaleDenominator="0" opacity="1" sizeType="MM" scaleDependency="Area" maxScaleDenominator="1e+08" height="15" backgroundColor="#ffffff">
+   <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings placement="0" linePlacementFlags="18" showAll="1" obstacle="0" zIndex="0" priority="0" dist="0">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="osm_id">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="name">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="amenity">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="landuse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="code">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias index="0" field="osm_id" name=""/>
+  <alias index="1" field="name" name=""/>
+  <alias index="2" field="amenity" name=""/>
+  <alias index="3" field="landuse" name=""/>
+  <alias index="4" field="code" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default expression="" applyOnUpdate="0" field="osm_id"/>
+  <default expression="" applyOnUpdate="0" field="name"/>
+  <default expression="" applyOnUpdate="0" field="amenity"/>
+  <default expression="" applyOnUpdate="0" field="landuse"/>
+  <default expression="" applyOnUpdate="0" field="code"/>
+ </defaults>
+ <constraints>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="osm_id" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="name" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="amenity" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="landuse" exp_strength="0"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" field="code" exp_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" field="osm_id" desc=""/>
+  <constraint exp="" field="name" desc=""/>
+  <constraint exp="" field="amenity" desc=""/>
+  <constraint exp="" field="landuse" desc=""/>
+  <constraint exp="" field="code" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+  <columns>
+   <column hidden="0" type="field" width="-1" name="osm_id"/>
+   <column hidden="0" type="field" width="-1" name="name"/>
+   <column hidden="0" type="field" width="-1" name="amenity"/>
+   <column hidden="0" type="field" width="-1" name="landuse"/>
+   <column hidden="0" type="field" width="-1" name="code"/>
+   <column hidden="1" type="actions" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <storedexpressions/>
  <editform tolerant="1"></editform>
  <editforminit/>
  <editforminitcodesource>0</editforminitcodesource>
@@ -29500,53 +37106,48 @@ def my_form_open(dialog, layer, feature):
   <field editable="1" name="amenity"/>
   <field editable="1" name="code"/>
   <field editable="1" name="landuse"/>
-  <field editable="1" name="leisure"/>
   <field editable="1" name="name"/>
   <field editable="1" name="osm_id"/>
-  <field editable="1" name="tourism"/>
  </editable>
  <labelOnTop>
   <field labelOnTop="0" name="amenity"/>
   <field labelOnTop="0" name="code"/>
   <field labelOnTop="0" name="landuse"/>
-  <field labelOnTop="0" name="leisure"/>
   <field labelOnTop="0" name="name"/>
   <field labelOnTop="0" name="osm_id"/>
-  <field labelOnTop="0" name="tourism"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>name</previewExpression>
  <mapTip></mapTip>
  <layerGeometryType>0</layerGeometryType>
 </qgis>
-', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0">
+', '<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se">
  <NamedLayer>
-  <se:Name>food_point - EDITING</se:Name>
+  <se:Name>health_point</se:Name>
   <UserStyle>
-   <se:Name>food_point - EDITING</se:Name>
+   <se:Name>health_point</se:Name>
    <se:FeatureTypeStyle>
     <se:Rule>
-     <se:Name>0 - 1000</se:Name>
+     <se:Name>Pharmacy</se:Name>
      <se:Description>
-      <se:Title>0 - 1000</se:Title>
+      <se:Title>Pharmacy</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2301</ogc:Literal>
+       <ogc:Literal>2101</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
      <se:PointSymbolizer>
       <se:Graphic>
        <!--Parametric SVG-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//health/health_pharmacy.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Plain SVG fallback, no parameters-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="health/health_pharmacy.svg"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Well known marker fallback-->
@@ -29565,147 +37166,26 @@ def my_form_open(dialog, layer, feature):
      </se:PointSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>1 - 2k</se:Name>
+     <se:Name>Hospital</se:Name>
      <se:Description>
-      <se:Title>1 - 2k</se:Title>
+      <se:Title>Hospital</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2301</ogc:Literal>
+       <ogc:Literal>2110</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2000</se:MaxScaleDenominator>
      <se:PointSymbolizer>
       <se:Graphic>
        <!--Parametric SVG-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//health/health_hospital.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Plain SVG fallback, no parameters-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>24</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2 - 3k</se:Name>
-     <se:Description>
-      <se:Title>2 - 3k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2301</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>3000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>14</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>3 - 5k</se:Name>
-     <se:Description>
-      <se:Title>3 - 5k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2301</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>3000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_restaurant.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_restaurant.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>8</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>&lt; 1000</se:Name>
-     <se:Description>
-      <se:Title>&lt; 1000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2302</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="health/health_hospital.svg"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Well known marker fallback-->
@@ -29724,68 +37204,64 @@ def my_form_open(dialog, layer, feature):
      </se:PointSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>1000 - 2500</se:Name>
+     <se:Name>Doctor</se:Name>
      <se:Description>
-      <se:Title>1000 - 2500</se:Title>
+      <se:Title>Doctor</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2302</ogc:Literal>
+       <ogc:Literal>2120</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
      <se:PointSymbolizer>
       <se:Graphic>
        <!--Parametric SVG-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//health/health_doctors.svg?fill=%234d98ce&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Plain SVG fallback, no parameters-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="health/health_doctors.svg"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Well known marker fallback-->
        <se:Mark>
         <se:WellKnownName>square</se:WellKnownName>
         <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
+         <se:SvgParameter name="fill">#4d98ce</se:SvgParameter>
         </se:Fill>
         <se:Stroke>
          <se:SvgParameter name="stroke">#232323</se:SvgParameter>
          <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
         </se:Stroke>
        </se:Mark>
-       <se:Size>24</se:Size>
+       <se:Size>29</se:Size>
       </se:Graphic>
      </se:PointSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>2.5 - 5k</se:Name>
+     <se:Name>Dentist</se:Name>
      <se:Description>
-      <se:Title>2.5 - 5k</se:Title>
+      <se:Title>Dentist</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2302</ogc:Literal>
+       <ogc:Literal>2121</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
-     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
      <se:PointSymbolizer>
       <se:Graphic>
        <!--Parametric SVG-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_fastfood.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//health/health_dentist.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Plain SVG fallback, no parameters-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_fastfood.svg" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="health/health_dentist.svg"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Well known marker fallback-->
@@ -29799,211 +37275,31 @@ def my_form_open(dialog, layer, feature):
          <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
         </se:Stroke>
        </se:Mark>
-       <se:Size>10</se:Size>
+       <se:Size>29</se:Size>
       </se:Graphic>
      </se:PointSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>&lt; 1k</se:Name>
+     <se:Name>Veterinary</se:Name>
      <se:Description>
-      <se:Title>&lt; 1k</se:Title>
+      <se:Title>Veterinary</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:PropertyIsEqualTo>
        <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2303</ogc:Literal>
+       <ogc:Literal>2129</ogc:Literal>
       </ogc:PropertyIsEqualTo>
      </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
      <se:PointSymbolizer>
       <se:Graphic>
        <!--Parametric SVG-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="C:/OSGEO4~1/apps/qgis/./svg//health/health_veterinary.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Plain SVG fallback, no parameters-->
        <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>28</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>1 - 2.5k</se:Name>
-     <se:Description>
-      <se:Title>1 - 2.5k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2303</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>24</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2.5 - 5k</se:Name>
-     <se:Description>
-      <se:Title>2.5 - 5k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2303</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_cafe.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_cafe.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>13</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>&lt; 1k</se:Name>
-     <se:Description>
-      <se:Title>&lt; 1k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2304</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2305</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2307</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>25</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>1 - 2.5k</se:Name>
-     <se:Description>
-      <se:Title>1 - 2.5k</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:Or>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2304</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2305</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2307</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-      </ogc:Or>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/svg/food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
+        <se:OnlineResource xlink:type="simple" xlink:href="health/health_veterinary.svg"/>
         <se:Format>image/svg+xml</se:Format>
        </se:ExternalGraphic>
        <!--Well known marker fallback-->
@@ -30022,235 +37318,27 @@ def my_form_open(dialog, layer, feature):
      </se:PointSymbolizer>
     </se:Rule>
     <se:Rule>
-     <se:Name>2500 - 5000</se:Name>
+     <se:Name></se:Name>
      <se:Description>
-      <se:Title>2500 - 5000</se:Title>
+      <se:Title>code is ''''</se:Title>
      </se:Description>
      <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
       <ogc:Or>
        <ogc:PropertyIsEqualTo>
         <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2304</ogc:Literal>
+        <ogc:Literal></ogc:Literal>
        </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
+       <ogc:PropertyIsNull>
         <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2305</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
-       <ogc:PropertyIsEqualTo>
-        <ogc:PropertyName>code</ogc:PropertyName>
-        <ogc:Literal>2307</ogc:Literal>
-       </ogc:PropertyIsEqualTo>
+       </ogc:PropertyIsNull>
       </ogc:Or>
      </ogc:Filter>
-     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <!--Parametric SVG-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="C:/OSGEO4~1/apps/qgis/./svg//food/food_pub.svg?fill=%23000000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Plain SVG fallback, no parameters-->
-       <se:ExternalGraphic>
-        <se:OnlineResource xlink:href="food/food_pub.svg" xlink:type="simple"/>
-        <se:Format>image/svg+xml</se:Format>
-       </se:ExternalGraphic>
-       <!--Well known marker fallback-->
-       <se:Mark>
-        <se:WellKnownName>square</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#000000</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>13</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>Food Court</se:Name>
-     <se:Description>
-      <se:Title>Food Court</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
      <se:PointSymbolizer>
       <se:Graphic>
        <se:Mark>
         <se:WellKnownName>circle</se:WellKnownName>
         <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>0 - 1000</se:Name>
-     <se:Description>
-      <se:Title>0 - 1000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MaxScaleDenominator>1000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>1000 - 2500</se:Name>
-     <se:Description>
-      <se:Title>1000 - 2500</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>2500 - 5000</se:Name>
-     <se:Description>
-      <se:Title>2500 - 5000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>5000 - 10000</se:Name>
-     <se:Description>
-      <se:Title>5000 - 10000</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-     <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name>10000 - 0</se:Name>
-     <se:Description>
-      <se:Title>10000 - 0</se:Title>
-     </se:Description>
-     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-      <ogc:PropertyIsEqualTo>
-       <ogc:PropertyName>code</ogc:PropertyName>
-       <ogc:Literal>2306</ogc:Literal>
-      </ogc:PropertyIsEqualTo>
-     </ogc:Filter>
-     <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#3acd8b</se:SvgParameter>
-        </se:Fill>
-        <se:Stroke>
-         <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-         <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-        </se:Stroke>
-       </se:Mark>
-       <se:Size>7</se:Size>
-      </se:Graphic>
-     </se:PointSymbolizer>
-    </se:Rule>
-    <se:Rule>
-     <se:Name></se:Name>
-     <!--Parser Error: 
-syntax error, unexpected ELSE - Expression was: ELSE-->
-     <se:PointSymbolizer>
-      <se:Graphic>
-       <se:Mark>
-        <se:WellKnownName>circle</se:WellKnownName>
-        <se:Fill>
-         <se:SvgParameter name="fill">#60ce44</se:SvgParameter>
+         <se:SvgParameter name="fill">#e4823d</se:SvgParameter>
         </se:Fill>
         <se:Stroke>
          <se:SvgParameter name="stroke">#232323</se:SvgParameter>
@@ -30265,14 +37353,14 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
   </UserStyle>
  </NamedLayer>
 </StyledLayerDescriptor>
-', true, 'OpenStreetMap food points, e.g. Restaurant, fast food, cafe, pub.', 'rpl_db_admin', NULL, '2019-11-15 18:11:35.230289');
+', true, 'Codes with legend, basic styles.', 'postgres', NULL, '2020-02-28 21:05:45.58111');
 
 
 --
 -- Name: layer_styles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.layer_styles_id_seq', 189, true);
+SELECT pg_catalog.setval('public.layer_styles_id_seq', 201, true);
 
 
 --
