@@ -1,11 +1,77 @@
-# PgOSM and QGIS Styles
+# QGIS Styles
 
-Included layer styles should work in QGIS 3.4 and later.  They are helpful to get started with PgOSM data
-with QGIS.  These styles are intended to give new users an easy starting point
+PgOSM includes layer styles that should work in QGIS 3.4 and later.
+These styles should be helpful to quickly get started with PgOSM data with QGIS.
+They give new users an easy starting point
 towards visualizing the restructured OpenStreetMap data in QGIS.
+
+
+## Load Styles to Staging
+
+The following commands load default styles where they have been developed and
+included in this project.  The `create_layer_styles.sql` script create a staging
+table for the incoming layer styles.  The table structure is the same as what
+QGIS creates (as of 3.4) except the `id` column is a plain `INT` column instead
+of the `SERIAL`, and there is no primary key.
 
 	psql -d pgosm -f create_layer_styles.sql
 	psql -d pgosm -f layer_styles_defaults.sql
+
+
+### Prepare
+
+To use these styles as defaults, update the `f_table_catalog` and
+`f_table_schema` values in the staging table.
+
+```sql
+UPDATE public.layer_styles_staging
+	SET f_table_catalog = 'your_db',
+		f_table_schema = 'osm'
+;
+```
+
+### Update existing records
+
+Example command showing update from staging based on object names.
+
+```sql
+UPDATE public.layer_styles ls
+	SET f_geometry_column = new.f_geometry_column,
+		styleqml = new.styleqml,
+		stylesld = new.stylesld,
+		useasdefault = new.useasdefault,
+		description = new.description,
+		"owner" = new."owner",
+		ui = new.ui,
+		update_time = new.update_time
+	FROM public.layer_styles_staging new
+	WHERE new.f_table_catalog = ls.f_table_catalog 
+		AND new.f_table_schema = ls.f_table_schema
+		AND new.f_table_name = ls.f_table_name
+		AND new.stylename = ls.stylename
+;
+```
+
+Add new records from staging, based on object names.
+
+```sql
+INSERT INTO public.layer_styles
+	(f_table_catalog, f_table_schema, f_table_name,
+	 f_geometry_column, stylename, styleqml, stylesld,
+	 useasdefault, description, "owner", ui, update_time)
+SELECT new.f_table_catalog, new.f_table_schema, new.f_table_name,
+	 new.f_geometry_column, new.stylename, new.styleqml, new.stylesld,
+	 new.useasdefault, new.description, new."owner", new.ui, new.update_time
+	FROM public.layer_styles_staging new
+	LEFT JOIN public.layer_styles ls
+		ON new.f_table_catalog = ls.f_table_catalog 
+			AND new.f_table_schema = ls.f_table_schema
+			AND new.f_table_name = ls.f_table_name
+			AND new.stylename = ls.stylename
+	WHERE ls.id IS NULL
+;
+```
+
 
 ## Style naming conventions
 
