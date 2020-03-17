@@ -1,29 +1,77 @@
-# PgOSM and QGIS Styles
+# QGIS Styles
 
-Default layer styles should work in QGIS 3.4 and later.  They are helpful to get started with PgOSM data
-with QGIS.
+PgOSM includes layer styles that should work in QGIS 3.4 and later.
+These styles should be helpful to quickly get started with PgOSM data with QGIS.
+They give new users an easy starting point
+towards visualizing the restructured OpenStreetMap data in QGIS.
+
+
+## Load Styles to Staging
+
+The following commands load default styles where they have been developed and
+included in this project.  The `create_layer_styles.sql` script create a staging
+table for the incoming layer styles.  The table structure is the same as what
+QGIS creates (as of 3.4) except the `id` column is a plain `INT` column instead
+of the `SERIAL`, and there is no primary key.
 
 	psql -d pgosm -f create_layer_styles.sql
 	psql -d pgosm -f layer_styles_defaults.sql
 
-## Export styles
 
-Data only, column inserts to allow not passing in the primary key (if needed).
+### Prepare
 
-	pg_dump --data-only --column-inserts -d pgosm -t public.layer_styles > ~/tmp/layer_styles_export.sql
+To use these styles as defaults, update the `f_table_catalog` and
+`f_table_schema` values in the staging table.
 
+```sql
+UPDATE public.layer_styles_staging
+	SET f_table_catalog = 'your_db',
+		f_table_schema = 'osm'
+;
+```
 
-## Older Postgres
+### Update existing records
 
-Bug fixed in 11.3 (and older varients back through 9.4...).  See:
-https://blog.rustprooflabs.com/2019/05/pg-fixed-xml-pg_dump
+Example command showing update from staging based on object names.
 
-If upgrading isn't an option, this applies the work around.
+```sql
+UPDATE public.layer_styles ls
+	SET f_geometry_column = new.f_geometry_column,
+		styleqml = new.styleqml,
+		stylesld = new.stylesld,
+		useasdefault = new.useasdefault,
+		description = new.description,
+		"owner" = new."owner",
+		ui = new.ui,
+		update_time = new.update_time
+	FROM public.layer_styles_staging new
+	WHERE new.f_table_catalog = ls.f_table_catalog 
+		AND new.f_table_schema = ls.f_table_schema
+		AND new.f_table_name = ls.f_table_name
+		AND new.stylename = ls.stylename
+;
+```
 
-	echo "SET XML OPTION DOCUMENT;" > ~/tmp/layer_styles_export.sql
-	pg_dump --data-only --column-inserts -d geodb -t public.layer_styles >> ~/tmp/layer_styles_export.sql
+Add new records from staging, based on object names.
 
-Remove the id from the `INSERT` command so it doesn't try to force a potentially-conflicting primary key with an existing table.
+```sql
+INSERT INTO public.layer_styles
+	(f_table_catalog, f_table_schema, f_table_name,
+	 f_geometry_column, stylename, styleqml, stylesld,
+	 useasdefault, description, "owner", ui, update_time)
+SELECT new.f_table_catalog, new.f_table_schema, new.f_table_name,
+	 new.f_geometry_column, new.stylename, new.styleqml, new.stylesld,
+	 new.useasdefault, new.description, new."owner", new.ui, new.update_time
+	FROM public.layer_styles_staging new
+	LEFT JOIN public.layer_styles ls
+		ON new.f_table_catalog = ls.f_table_catalog 
+			AND new.f_table_schema = ls.f_table_schema
+			AND new.f_table_name = ls.f_table_name
+			AND new.stylename = ls.stylename
+	WHERE ls.id IS NULL
+;
+```
+
 
 ## Style naming conventions
 
@@ -37,4 +85,27 @@ e.g.
 
 	stylename = osm_road_line
 
+
+## Export styles
+
+Before exporting and updated styles, set owner to `postgres`.
+
+	UPDATE public.layer_styles SET owner = 'postgres';
+
+
+Data only, column inserts to allow not passing in the primary key (if needed).
+
+	 pg_dump -d pgosm --data-only --column-inserts -t public.layer_styles > layer_styles_defaults.sql
+
+> Remove the id from the `INSERT` command so it doesn't try to force a potentially-conflicting primary key with an existing table.
+
+## Older Postgres
+
+Bug fixed in 11.3 (and older varients back through 9.4...).  See:
+https://blog.rustprooflabs.com/2019/05/pg-fixed-xml-pg_dump
+
+If upgrading isn't an option, this applies the work around.
+
+	echo "SET XML OPTION DOCUMENT;" > ~/tmp/layer_styles_export.sql
+	pg_dump --data-only --column-inserts -d geodb -t public.layer_styles >> ~/tmp/layer_styles_export.sql
 
