@@ -51,3 +51,7 @@ When `pgosm` runs it creates a schema named `osm` and loads layer-specific data 
 The `natural_point` layer, for example, contains trees, peaks, and other items with [nature-related tags](https://wiki.openstreetmap.org/wiki/Key:natural) in OpenStreetMap.
 
 
+## QGIS Layer Styles
+
+See [the QGIS styles](./db/style/README.md) README for details.
+

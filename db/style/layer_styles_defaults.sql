@@ -20,7 +20,7 @@ SET row_security = off;
 -- Data for Name: layer_styles; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (186, 'pgosm', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (186, 'pgosm', 'osm', 'landuse_polygon', 'way', 'osm_landuse_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingHints="1" simplifyLocal="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" minScale="1e+08" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.8.1-Zanzibar" maxScale="0" simplifyMaxScale="1" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
@@ -976,7 +976,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', false, 'OpenStreetMap landuse polygons.  Residential, commercial, industrial, grass, etc.', 'postgres', NULL, '2019-11-15 10:31:07.283089');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (188, 'pgosm', 'osm', 'building_point', 'way', 'osm_building_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (188, 'pgosm', 'osm', 'building_point', 'way', 'osm_building_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -1721,7 +1721,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap building point layer.  Building points and enterances.', 'postgres', NULL, '2019-11-15 17:48:39.01566');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (189, 'pgosm', 'osm', 'food_point', 'way', 'osm_food_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (189, 'pgosm', 'osm', 'food_point', 'way', 'osm_food_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -3261,7 +3261,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap food points, e.g. Restaurant, fast food, cafe, pub.', 'postgres', NULL, '2019-11-15 18:11:35.230289');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (193, 'pgosm', 'osm', 'tourism_point', 'way', 'osm_tourism_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (193, 'pgosm', 'osm', 'tourism_point', 'way', 'osm_tourism_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
@@ -4629,7 +4629,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Initial pass, classified most codes, gave many SVG styles.', 'postgres', NULL, '2020-02-27 21:00:28.424012');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (169, 'pgosm', 'osm', 'natural_point', 'way', 'osm_natural_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (169, 'pgosm', 'osm', 'natural_point', 'way', 'osm_natural_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="1" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="0">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{f32d95a2-e7ca-4780-b370-00b8849527a3}">
@@ -5714,7 +5714,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap natural points, e.g. Peak and Tree.', 'postgres', NULL, '2018-07-18 17:01:58.698118');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (171, 'pgosm', 'osm', 'natural_polygon', 'way', 'osm_natural_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (171, 'pgosm', 'osm', 'natural_polygon', 'way', 'osm_natural_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{e9f1ea8e-f852-4224-97df-ca38e2e0f97f}">
@@ -7996,7 +7996,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap layer', 'postgres', NULL, '2018-07-18 17:12:59.829246');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (170, 'pgosm', 'osm', 'natural_line', 'way', 'osm_natural_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (170, 'pgosm', 'osm', 'natural_line', 'way', 'osm_natural_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="25000" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{ceb7579f-2437-4aae-a2a3-82f29ae548b4}">
@@ -8722,7 +8722,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreeMap natural lines.  e.g Cliffs', 'postgres', NULL, '2018-07-18 17:08:05.222986');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (173, 'pgosm', 'osm', 'traffic_polygon', 'way', 'osm_traffic_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (173, 'pgosm', 'osm', 'traffic_polygon', 'way', 'osm_traffic_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{48ea5ceb-e4ed-4ae9-8c86-428e22b45635}">
@@ -9316,7 +9316,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap traffic polygons.  Parking, fences, etc.', 'postgres', NULL, '2018-07-18 17:28:40.331348');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (175, 'pgosm', 'osm', 'waterways_line', 'way', 'osm_waterways_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (175, 'pgosm', 'osm', 'waterways_line', 'way', 'osm_waterways_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{d6ec8fe9-621f-4475-a60b-28d4de880dd5}">
@@ -10329,7 +10329,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap waterways line.  Rivers, streams, canals, drains', 'postgres', NULL, '2018-07-18 17:43:43.425349');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (176, 'pgosm', 'osm', 'water_polygon', 'way', 'osm_water_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (176, 'pgosm', 'osm', 'water_polygon', 'way', 'osm_water_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 attr="code" symbollevels="0" forceraster="0" enableorderby="0" type="categorizedSymbol">
   <categories>
@@ -10841,7 +10841,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap water polygons, including riverbanks and wetlands.', 'postgres', NULL, '2018-07-18 17:48:52.701685');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (172, 'pgosm', 'osm', 'miscpoi_point', 'way', 'osm_miscpoi_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (172, 'pgosm', 'osm', 'miscpoi_point', 'way', 'osm_miscpoi_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="-4.65661e-10" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -14374,7 +14374,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap extra points of interest (POI).  e.g. Fire hydrants, benches, toilets, fountains, towers, etc.', 'postgres', NULL, '2019-11-15 08:58:40.775784');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (185, 'pgosm', 'osm', 'road_line', 'way', 'osm_road_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (185, 'pgosm', 'osm', 'road_line', 'way', 'osm_road_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyLocal="1" styleCategories="AllStyleCategories" minScale="25000" simplifyDrawingTol="1" simplifyMaxScale="1" maxScale="0" version="3.8.1-Zanzibar" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyAlgorithm="0" readOnly="0" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
@@ -19070,7 +19070,7 @@ syntax error, unexpected ELSE - Expression was: ELSE AND highway = ''raceway''--
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap road lines.  Highways, footways, paths, etc.', 'postgres', NULL, '2019-11-22 10:25:26.957335');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (201, 'pgosm', 'osm', 'health_polygon', 'way', 'osm_health_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (201, 'pgosm', 'osm', 'health_polygon', 'way', 'osm_health_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -19560,7 +19560,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Basic codes established, simple gray polygons.', 'postgres', NULL, '2020-02-28 21:07:52.113078');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (177, 'pgosm', 'osm', 'leisure_polygon', 'way', 'osm_leisure_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (177, 'pgosm', 'osm', 'leisure_polygon', 'way', 'osm_leisure_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -20359,7 +20359,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap leisure polygon style.  Playgrounds, swimming pools, golf courses, etc.', 'postgres', NULL, '2018-07-19 21:11:33.599921');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (178, 'pgosm', 'osm', 'power_polygon', 'way', 'osm_power_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (178, 'pgosm', 'osm', 'power_polygon', 'way', 'osm_power_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -20798,7 +20798,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power polygon layer.  Power stations, solar panels, transformers, etc.', 'postgres', NULL, '2018-07-19 21:15:23.476352');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (179, 'pgosm', 'osm', 'powerlines_line', 'way', 'osm_powerlines_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (179, 'pgosm', 'osm', 'powerlines_line', 'way', 'osm_powerlines_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -21144,7 +21144,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power lines layer.', 'postgres', NULL, '2018-07-19 21:18:38.648917');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (180, 'pgosm', 'osm', 'power_point', 'way', 'osm_power_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (180, 'pgosm', 'osm', 'power_point', 'way', 'osm_power_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
   <rules key="{3f7b10c8-05d5-42ea-9cc3-612d6df52c23}">
@@ -22050,7 +22050,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap power points.  Towers, sub stations, transformers, etc.', 'postgres', NULL, '2018-07-19 21:22:33.272345');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (181, 'pgosm', 'osm', 'places_point', 'way', 'osm_places_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (181, 'pgosm', 'osm', 'places_point', 'way', 'osm_places_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="1" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="0" maxScale="0" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="categorizedSymbol" forceraster="0" symbollevels="0" attr="code">
   <categories>
@@ -22813,7 +22813,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap places points.  City, town, suburb, etc.', 'postgres', NULL, '2018-07-19 21:27:04.466648');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (182, 'pgosm', 'osm', 'boundaries_polygon', 'way', 'osm_boundaries_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (182, 'pgosm', 'osm', 'boundaries_polygon', 'way', 'osm_boundaries_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" simplifyDrawingHints="1" maxScale="-4.65661e-10" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" version="3.2.0-Bonn" readOnly="0">
  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
   <rules key="{4110adc7-d471-4caa-9fb8-de1ac1710ab9}">
@@ -23072,7 +23072,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap boundaries in polygon format.  e.g. County and City', 'postgres', NULL, '2018-07-19 21:35:57.044477');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (168, 'pgosm', 'osm', 'building_polygon', 'way', 'osm_building_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (168, 'pgosm', 'osm', 'building_polygon', 'way', 'osm_building_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" version="3.2.0-Bonn" minScale="1e+8" simplifyMaxScale="1" maxScale="-4.65661e-10">
  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
   <rules key="{c2c73c7d-59b0-44da-9930-178fe0f6a20c}">
@@ -23614,7 +23614,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap buildings layer, fades in with zoom.', 'postgres', NULL, '2019-04-27 08:10:33.948188');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (187, 'pgosm', 'osm', 'traffic_point', 'way', 'osm_traffic_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (187, 'pgosm', 'osm', 'traffic_point', 'way', 'osm_traffic_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="0" version="3.8.1-Zanzibar" labelsEnabled="0" simplifyLocal="1" simplifyDrawingTol="1" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -32124,7 +32124,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'OpenStreetMap traffic points.  Stop signs, lights, calming, barriers, gates, etc.', 'postgres', NULL, '2019-11-15 16:46:53.289898');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (194, 'pgosm', 'osm', 'tourism_polygon', 'way', 'osm_tourism_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (194, 'pgosm', 'osm', 'tourism_polygon', 'way', 'osm_tourism_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
@@ -33119,7 +33119,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Initial pass, classified main codes.', 'postgres', NULL, '2020-02-27 21:05:16.466433');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (195, 'pgosm', 'osm', 'place_polygon', 'way', 'osm_place_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (195, 'pgosm', 'osm', 'place_polygon', 'way', 'osm_place_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="1">
  <flags>
   <Identifiable>1</Identifiable>
@@ -33925,7 +33925,7 @@ syntax error, unexpected ELSE - Expression was: ELSE-->
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Simple rule based polygons.  Mostly transparent fill wilt borders.', 'postgres', NULL, '2020-02-27 22:14:37.061751');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (196, 'pgosm', 'osm', 'boundary_polygon', 'way', 'osm_boundary_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (196, 'pgosm', 'osm', 'boundary_polygon', 'way', 'osm_boundary_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="1">
  <flags>
   <Identifiable>1</Identifiable>
@@ -34469,7 +34469,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Basic formatting, defaults to only displaying County polygons with basic labels.', 'postgres', NULL, '2020-02-28 00:48:06.540966');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (197, 'pgosm', 'osm', 'boundary_line', 'way', 'osm_boundary_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (197, 'pgosm', 'osm', 'boundary_line', 'way', 'osm_boundary_line', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis minScale="1e+08" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" maxScale="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" simplifyLocal="1" version="3.10.2-A Coruña" readOnly="0" simplifyDrawingTol="1" labelsEnabled="0">
  <flags>
   <Identifiable>1</Identifiable>
@@ -35055,7 +35055,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Basic lines, selected only County by default.', 'postgres', NULL, '2020-02-28 00:54:03.826941');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (198, 'pgosm', 'osm', 'accomodation_point', 'way', 'osm_accomodation_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (198, 'pgosm', 'osm', 'accomodation_point', 'way', 'osm_accomodation_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -36016,7 +36016,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Simple SVG markers for the main codes in this layer.', 'postgres', NULL, '2020-02-28 20:54:45.683707');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (199, 'pgosm', 'osm', 'accomodation_polygon', 'way', 'osm_accomodation_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (199, 'pgosm', 'osm', 'accomodation_polygon', 'way', 'osm_accomodation_polygon', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -36745,7 +36745,7 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Categorized by code with legend display values set.  Basic gray for all polygons.', 'postgres', NULL, '2020-02-28 20:57:46.630234');
-INSERT INTO public.layer_styles (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (200, 'pgosm', 'osm', 'health_point', 'way', 'osm_health_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
+INSERT INTO public.layer_styles_staging (id, f_table_catalog, f_table_schema, f_table_name, f_geometry_column, stylename, styleqml, stylesld, useasdefault, description, owner, ui, update_time) VALUES (200, 'pgosm', 'osm', 'health_point', 'way', 'osm_health_point', '<!DOCTYPE qgis PUBLIC ''http://mrcc.com/qgis.dtd'' ''SYSTEM''>
 <qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.10.2-A Coruña" readOnly="0" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyDrawingTol="1" labelsEnabled="0" minScale="1e+08">
  <flags>
   <Identifiable>1</Identifiable>
@@ -37354,16 +37354,4 @@ def my_form_open(dialog, layer, feature):
  </NamedLayer>
 </StyledLayerDescriptor>
 ', true, 'Codes with legend, basic styles.', 'postgres', NULL, '2020-02-28 21:05:45.58111');
-
-
---
--- Name: layer_styles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.layer_styles_id_seq', 201, true);
-
-
---
--- PostgreSQL database dump complete
---
 
