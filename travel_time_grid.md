@@ -108,7 +108,8 @@ ALTER TABLE pgosm.travel_grid ADD not_claimed BOOLEAN DEFAULT True;
 ```sql
 DROP TABLE IF EXISTS pgosm.routing_roads;
 CREATE TABLE pgosm.routing_roads AS
-SELECT r.osm_id AS id, r.name, r.traffic, r.highway, r.ref, r.code,
+SELECT r.osm_id AS id, r.name, r.traffic, r.highway, r.ref, 
+        ld.layer_detail_id, r.code,
         ST_Length(r.way)::DOUBLE PRECISION AS cost_length,
         r.way AS the_geom
     FROM (SELECT ST_Envelope(ST_Union(way)) AS way
@@ -118,8 +119,13 @@ SELECT r.osm_id AS id, r.name, r.traffic, r.highway, r.ref, r.code,
     INNER JOIN osm.road_line r 
         ON ST_Contains(b.way, r.way) 
             OR ST_Intersects(b.way, r.way)
+    INNER JOIN pgosm.layer_group lg ON lg.class = 'road'
+    INNER JOIN pgosm.layer_detail ld
+        ON ld.layer_group_id = lg.layer_group_id
+            AND r.code = ld.code
     INNER JOIN pgosm.routable rbl 
-        ON r.code = rbl.code AND rbl.route_motor
+        ON ld.layer_detail_id = rbl.layer_detail_id
+            AND rbl.route_motor
 ;
 
 CREATE INDEX GIX_pgosm_routing_roads ON pgosm.routing_roads
@@ -166,6 +172,7 @@ Add columns
 
 ```sql
 ALTER TABLE pgosm.routing_roads_noded ADD cost_length DOUBLE PRECISION NULL;
+ALTER TABLE pgosm.routing_roads_noded ADD layer_detail_id INT NULL;
 ALTER TABLE pgosm.routing_roads_noded ADD code TEXT NULL;
 ALTER TABLE pgosm.routing_roads_noded ADD cost_minutes DOUBLE PRECISION NULL;
 
@@ -173,15 +180,11 @@ ALTER TABLE pgosm.routing_roads_noded ADD cost_minutes DOUBLE PRECISION NULL;
 UPDATE pgosm.routing_roads_noded rn
     SET cost_length = ST_Length(rn.the_geom)::DOUBLE PRECISION,
         code = r.code,
+        layer_detail_id = r.layer_detail_id,
         cost_minutes = ST_Length(rn.the_geom)::DOUBLE PRECISION / (rbl.max_speed / 60 * 1.609344 * 1000)
     FROM pgosm.routing_roads r
-    INNER JOIN pgosm.routable rbl ON r.code = rbl.code
+    INNER JOIN pgosm.routable rbl ON r.layer_detail_id = rbl.layer_detail_id
     WHERE rn.old_id = r.id
-    ;
-
-UPDATE pgosm.routing_roads_noded rn
-    SET cost_minutes = rn.cost_length * 10.0
-    WHERE rn.cost_minutes IS NULL
     ;
 ```
 
