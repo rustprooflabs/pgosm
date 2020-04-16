@@ -7,15 +7,16 @@ stages:
 
 
 before_script:
-  - python3 -V
+  - python3.7 -V
 
 
 install_venv:
   stage: build
   script:
-    - python3 -m venv venv
+    - python3.7 -m venv venv
     - source venv/bin/activate
     - python -V
+    - pip install --upgrade pip
     - pip install -r requirements.txt
   artifacts:
     paths:
@@ -57,6 +58,17 @@ run_coverage:
     reports:
       metrics: coverage.xml
   allow_failure: true
+
+
+pip_check_outdated:
+  stage: code_quality
+  script:
+    - source venv/bin/activate
+    - python -V
+    - pip list --outdated > pip_outdated_packages.log
+  artifacts:
+    paths:
+      - pip_outdated_packages.log
 
 
 ...
