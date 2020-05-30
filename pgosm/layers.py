@@ -24,7 +24,7 @@ def process_layers(schema='osm', generate_only=False):
         Schema name to create.  Will DROP if exists.  Default='osm'.
 
     generate_only : boolean
-        When False the generated SQL script is executed.
+        When False (default) the generated SQL script is executed.
     """
     start_time = time.time()
     print('Starting processing.')
