@@ -33,28 +33,28 @@ The RustProof Labs blog has a post explaining how to
 
 Switch to the `postgres` user and clone the PgOSM repo.
 
-	sudo su - postgres
-	mkdir ~/git
-	cd ~/git
-	git clone https://github.com/rustprooflabs/pgosm.git
+    sudo su - postgres
+    mkdir ~/git
+    cd ~/git
+    git clone https://github.com/rustprooflabs/pgosm.git
 
 ### Deploy schema and define layers
 
 Deploying the table structure is done via [sqitch](https://sqitch.org/).
 
-	cd ~/git/pgosm/db
-	sqitch deploy db:pg:pgosm
+    cd ~/git/pgosm/db
+    sqitch deploy db:pg:pgosm
 
 
 Load included layer groupings:
 
-	psql -d pgosm -f ~/git/pgosm/db/data/layer_definitions.sql
-	psql -d pgosm -f ~/git/pgosm/db/data/thematic_road.sql
+    psql -d pgosm -f ~/git/pgosm/db/data/layer_definitions.sql
+    psql -d pgosm -f ~/git/pgosm/db/data/thematic_road.sql
 
 
 Load included routable roads definitions (optional).
 
-	psql -d pgosm -f ~/git/pgosm/db/data/routable.sql
+    psql -d pgosm -f ~/git/pgosm/db/data/routable.sql
 
 
 ### Setup Python environment
@@ -65,15 +65,15 @@ to transform the OpenStreetMap data structure.
 
 Create a `pgosm` virtual environment for Python and install the required modules.
 
-	mkdir ~/venv
-	cd ~/venv
-	python3.7 -m venv pgosm
-	source ~/venv/pgosm/bin/activate
-	pip install -r ~/git/pgosm/requirements.txt
+    mkdir ~/venv
+    cd ~/venv
+    python3.7 -m venv pgosm
+    source ~/venv/pgosm/bin/activate
+    pip install -r ~/git/pgosm/requirements.txt
 
-Create the folder for the generated SQL statements	.
+Create the folder for the generated SQL statements  .
 
-	mkdir ~/git/pgosm/output
+    mkdir ~/git/pgosm/output
 
 
 #### Env vars
@@ -81,14 +81,14 @@ Create the folder for the generated SQL statements	.
 The Python portion of the process needs to build a connection string to connect to the data and apply the
 transformations.  Set these appropriately to connect to your `pgosm` database.
 
-	export DB_HOST=localhost
-	export DB_NAME=pgosm
-	export DB_USER=your_db_user
-	
+    export DB_HOST=localhost
+    export DB_NAME=pgosm
+    export DB_USER=your_db_user
+    
 The above assumes you have a password setup in `~/.pgpass`.  If you can't do that (or don't want
 to) you can define the `DB_PW` variable.
 
-	export DB_PW=NonyaBusine$s
+    export DB_PW=NonyaBusine$s
 
 
 ## Run PgOSM
@@ -96,29 +96,29 @@ to) you can define the `DB_PW` variable.
 It's time to run the transformation!  These commands ensure the virtual environment is active and
 runs the process via Python.
 
-	source ~/venv/pgosm/bin/activate
-	cd ~/git/pgosm
-	python -c "import pgosm; pgosm.process_layers();"
+    source ~/venv/pgosm/bin/activate
+    cd ~/git/pgosm
+    python -c "import pgosm; pgosm.process_layers();"
 
 Output should look similar to the following snippet.
 
 
-	DB Password not set.  Will attempt to use ~/.pgpass.
-	DB Port not set.  Defaulting to 5432
-	Output Path:  output/create_pgosm_layers.sql
-	Starting processing.
-	26 layers returned
-	Processing layer place (layer_group_id=1).
-	Processing layer boundary (layer_group_id=2).
-	Processing layer admin_area (layer_group_id=3).
-	...
-	Processing layer waterway (layer_group_id=23).
-	Processing layer water (layer_group_id=24).
-	Processing layer coastline (layer_group_id=25).
-	Processing layer t_road (layer_group_id=26).
-	Executing SQL Script...
-	Executing SQL Script completed.
-	Finished processing.  Total time elapsed: 90.7 seconds.
+    DB Password not set.  Will attempt to use ~/.pgpass.
+    DB Port not set.  Defaulting to 5432
+    Output Path:  output/create_pgosm_layers.sql
+    Starting processing.
+    26 layers returned
+    Processing layer place (layer_group_id=1).
+    Processing layer boundary (layer_group_id=2).
+    Processing layer admin_area (layer_group_id=3).
+    ...
+    Processing layer waterway (layer_group_id=23).
+    Processing layer water (layer_group_id=24).
+    Processing layer coastline (layer_group_id=25).
+    Processing layer t_road (layer_group_id=26).
+    Executing SQL Script...
+    Executing SQL Script completed.
+    Finished processing.  Total time elapsed: 90.7 seconds.
 
 The `pgosm` database now has a new schema named `osm` with the transformed
 OpenStreetMap tables.
@@ -132,6 +132,36 @@ Use the optional `schema` parameter (i.e. `pgosm.process_layers(schema='osm_co')
 Use the optional `generate_only` parameter
 (i.e. `pgosm.process_layers(generate_only=True)`) to generate the SQL script
 for the transformations, but not run it.
+
+
+## Docker Image
+
+PgOSM can be deployed in a Docker image.  Uses [main Postgres image](https://hub.docker.com/_/postgres/) as starting point, see that
+repo for full instructions on using the core Postgres functionality.
+
+```
+docker build -t rustprooflabs/pgosm .
+```
+
+Run container.
+
+```
+docker run --name pgosm-test \
+    -v /local/path/to/pgosm/output:/app/output \
+    -e POSTGRES_PASSWORD=mysecretpassword \
+    -p 5433:5432 -d rustprooflabs/pgosm
+```
+
+Run the PgOSM Sub-region processing.
+
+```
+docker exec -it \
+    -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres \
+    pgosm-test bash docker/run_pgosm_subregion.sh \
+    north-america/us \
+    colorado \
+    4000
+```
 
 
 ----
