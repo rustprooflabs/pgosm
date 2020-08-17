@@ -71,6 +71,9 @@ Create a `pgosm` virtual environment for Python and install the required modules
     source ~/venv/pgosm/bin/activate
     pip install -r ~/git/pgosm/requirements.txt
 
+> Note: On `linux/arm64` architecture (e.g. Raspberry Pi) you may need to use `pip install Cython numpy` before installing the `requirements.txt` file.
+
+
 Create the folder for the generated SQL statements  .
 
     mkdir ~/git/pgosm/output
@@ -146,8 +149,10 @@ docker build -t rustprooflabs/pgosm .
 Run container.
 
 ```
+mkdir ~/pgosm
+
 docker run --name pgosm-test \
-    -v /local/path/to/pgosm/output:/app/output \
+    -v ~/pgosm:/app/output \
     -e POSTGRES_PASSWORD=mysecretpassword \
     -p 5433:5432 -d rustprooflabs/pgosm
 ```

@@ -5,9 +5,10 @@
 #       district-of-columbia \
 #       4000
 #
-# $1 - Region - e.g. north-america/us OR north-america
-# $2 - Subregion - e.g. district-of-columbia OR us-west
+# $1 - Region - e.g. north-america/us
+# $2 - Subregion - e.g. district-of-columbia 
 # $3 - Cache (mb) - e.g. 4000
+
 
 echo "Running with Region:  $1"
 echo "Running Sub-Region:  $2"
