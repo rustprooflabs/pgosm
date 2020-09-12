@@ -36,6 +36,6 @@ export DB_USER=$POSTGRES_USER
 export DB_PW=$POSTGRES_PASSWORD
 
 cd ..
-python3 -c "import pgosm; pgosm.process_layers();"
+python3 -c "import pgosm; pgosm.process_layers(schema='$PGOSM_SCHEMA');"
 
-pg_dump -U postgres -d pgosm --schema=osm > /app/output/pgosm-$2.sql
+pg_dump -U postgres -d pgosm --schema=$PGOSM_SCHEMA --schema=pgosm > /app/output/pgosm-$2.sql

@@ -162,7 +162,8 @@ Run the PgOSM Sub-region processing.
 ```
 docker exec -it \
     -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres \
-    pgosm-test bash docker/run_pgosm_subregion.sh \
+    -e PGOSM_SCHEMA=osm_co \
+    pgosm bash docker/run_pgosm_subregion.sh \
     north-america/us \
     colorado \
     4000
