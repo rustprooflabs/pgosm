@@ -149,10 +149,10 @@ docker build -t rustprooflabs/pgosm .
 Run container.
 
 ```
-mkdir ~/pgosm
+mkdir ~/pgosm-data
 
-docker run --name pgosm-test \
-    -v ~/pgosm:/app/output \
+docker run --name pgosm -d \
+    -v ~/pgosm-data:/app/output \
     -e POSTGRES_PASSWORD=mysecretpassword \
     -p 5433:5432 -d rustprooflabs/pgosm
 ```
