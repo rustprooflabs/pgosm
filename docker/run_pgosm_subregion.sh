@@ -13,7 +13,15 @@
 echo "Running with Region:  $1"
 echo "Running Sub-Region:  $2"
 echo "Downloading OSM file"
-wget https://download.geofabrik.de/$1/$2-latest.osm.pbf -O /tmp/$2-latest.osm.pbf
+
+PBF_FILE=/app/output/source-$2.osm.pbf
+
+if [ -f $PBF_FILE ]; then
+    echo "$PBF_FILE exists."
+else 
+    echo "$FILE does not exist."
+    wget https://download.geofabrik.de/$1/$2-latest.osm.pbf -O $PBF_FILE
+fi
 
 echo "Create empty pgosm database with extensions..."
 psql -U postgres -c "CREATE DATABASE pgosm;"
@@ -22,7 +30,7 @@ psql -U postgres -d pgosm -c "CREATE EXTENSION IF NOT EXISTS hstore;"
 osm2pgsql -U postgres --create --slim --drop \
   --cache $3 \
   --hstore --multi-geometry \
-  -d pgosm  /tmp/$2-latest.osm.pbf
+  -d pgosm  $PBF_FILE
 
 
 cd db/
