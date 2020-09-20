@@ -13,29 +13,55 @@
 echo "Running with Region:  $1"
 echo "Running Sub-Region:  $2"
 echo "Downloading OSM file"
-wget https://download.geofabrik.de/$1/$2-latest.osm.pbf -O /tmp/$2-latest.osm.pbf
+
+PBF_FILE=/app/output/source-$2.osm.pbf
+
+if [ -f $PBF_FILE ]; then
+    echo "$PBF_FILE exists."
+else 
+    echo "$FILE does not exist."
+    wget https://download.geofabrik.de/$1/$2-latest.osm.pbf -O $PBF_FILE
+fi
 
 echo "Create empty pgosm database with extensions..."
+psql -U postgres -c "DROP DATABASE IF EXISTS pgosm;"
 psql -U postgres -c "CREATE DATABASE pgosm;"
-psql -U postgres -d pgosm -c "CREATE EXTENSION IF NOT EXISTS postgis;"
-psql -U postgres -d pgosm -c "CREATE EXTENSION IF NOT EXISTS hstore;"
+psql -U postgres -d pgosm -c "CREATE EXTENSION postgis;"
+psql -U postgres -d pgosm -c "CREATE EXTENSION hstore;"
 osm2pgsql -U postgres --create --slim --drop \
   --cache $3 \
   --hstore --multi-geometry \
-  -d pgosm  /tmp/$2-latest.osm.pbf
+  -d pgosm  $PBF_FILE
 
 
+# Change to DB directory and prepare layer transformations
 cd db/
+
+echo "Deploying PgOSM schema with sqitch..."
 sqitch deploy db:pg://postgres@localhost/pgosm
-psql -U postgres -d pgosm -f data/layer_definitions.sql
-psql -U postgres -d pgosm -f data/thematic_road.sql
+
+if [ -f data/custom/skip_default ]; then
+	echo "Skipping default layer definitions script."
+else
+	echo "Loading default layers"
+	psql -U postgres -d pgosm -f data/layer_definitions.sql
+fi
+
+
+for i in data/custom/*.sql; do
+    [ -f "$i" ] || break
+    echo "Running custom script..."
+    echo $i
+    psql -U postgres -d pgosm -f $i
+done
 
 export DB_HOST=localhost
 export DB_NAME=pgosm
 export DB_USER=$POSTGRES_USER
 export DB_PW=$POSTGRES_PASSWORD
 
+## Back out of db directory, process.
 cd ..
-python3 -c "import pgosm; pgosm.process_layers();"
+python3 -c "import pgosm; pgosm.process_layers(schema='$PGOSM_SCHEMA');"
 
-pg_dump -U postgres -d pgosm --schema=osm > /app/output/pgosm-$2.sql
+pg_dump -U postgres -d pgosm --schema=$PGOSM_SCHEMA --schema=pgosm > /app/output/pgosm-$2.sql

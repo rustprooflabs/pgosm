@@ -150,11 +150,31 @@ Run container.
 
 ```
 mkdir ~/pgosm-data
+mkdir ~/pgosm-input
 
 docker run --name pgosm -d \
     -v ~/pgosm-data:/app/output \
+    -v ~/pgosm-input:/app/db/data/custom \
     -e POSTGRES_PASSWORD=mysecretpassword \
     -p 5433:5432 -d rustprooflabs/pgosm
+```
+
+To run custom transformations, place the SQL for the 
+setup into `~/pgosm-input` (created above).
+The following command adds the included `thematic_road` 
+transformation into the processing queue, thus into the 
+SQL output at the end.
+
+```
+cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
+```
+
+To skip the default full transformations, place a `skip_default`
+file into `~/pgosm-input`.
+
+
+```
+touch ~/pgosm-input/skip_default
 ```
 
 Run the PgOSM Sub-region processing.
@@ -162,11 +182,14 @@ Run the PgOSM Sub-region processing.
 ```
 docker exec -it \
     -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres \
-    pgosm-test bash docker/run_pgosm_subregion.sh \
+    -e PGOSM_SCHEMA=osm_dc \
+    pgosm bash docker/run_pgosm_subregion.sh \
     north-america/us \
-    colorado \
-    4000
+    district-of-columbia \
+    400
 ```
+
+> Skip the PgOSM processing entirely with a `skip_default` file and no custom files.  This is helpful for developing custom transformations.
 
 
 ----
