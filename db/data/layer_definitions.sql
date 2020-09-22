@@ -1,33 +1,33 @@
 
 
 
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1000','1099','place','osm_id, name, place, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary,  way','Administrative boundaries, roughly follows https://wiki.openstreetmap.org/wiki/Tag%3aboundary=administrative');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1200','1299','admin_area','osm_id, name, admin_level, boundary, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1000','1099','place','osm_id, name, place, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1100','1199','boundary','osm_id, name, admin_level, boundary, tags,  way','Administrative boundaries, roughly follows https://wiki.openstreetmap.org/wiki/Tag%3aboundary=administrative');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1200','1299','admin_area','osm_id, name, admin_level, boundary, tags, way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('1500','1599','building','osm_id, "addr:housename" AS housename, "addr:housenumber" AS housenumber, building, name, place, COALESCE(tags -> ''building:levels'', ''1'') AS levels, regexp_replace(COALESCE(tags -> ''building:height'', ''4''), ''[^0-9\.]+'', '''', ''g'')::NUMERIC AS height, operator, tags, way','');
 
 INSERT INTO pgosm.layer_group (code_start, code_end, class,	osm_columns, description) VALUES ('1600','1699','indoor','osm_id, name, ref, COALESCE(tags -> ''indoor'', ''area'') AS indoor, area, COALESCE(tags -> ''room'', '''') AS room, amenity, COALESCE(tags -> ''level'', ''1'') AS level, tags, way','Indoor areas, typically within buildings.  Roughly conforms to https://wiki.openstreetmap.org/wiki/Simple_Indoor_Tagging');
 
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2000','2099','public','osm_id, name, amenity, landuse, way','government offices, post office, police, etc.');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2100','2199','health','osm_id, name, amenity, landuse, way','Hospitals, pharmacies');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2200','2299','leisure','osm_id, name, amenity, landuse, leisure, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2300','2399','food','osm_id, name, amenity, tags -> ''cuisine'' AS cuisine, tags -> ''takeaway'' AS takeaway, tags -> ''capacity'' AS capacity, tags -> ''opening_hours'' AS opening_hours, tags -> ''outdoor_seating'' AS outdoor_seating, "addr:housename" AS housename, "addr:housenumber" AS housenumber, tags -> ''addr:street'' AS street, tags -> ''addr:unit'' AS addr_unit, tags -> ''addr:suite'' AS addr_suite, COALESCE(tags -> ''website'', tags -> ''contact:website'', tags -> ''url'', '''') AS website, COALESCE(tags -> ''email'', tags -> ''contact:email'', '''') AS email, way','Restaurants, pubs, cafes');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2400','2499','accomodation','osm_id, name, landuse, leisure, tourism, way','Hotel, motel, etc.');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2500','2599','shopping','osm_id, name, shop, amenity, tags -> ''vending'' AS vending, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2600','2899','tourism','osm_id, name, tourism, amenity, tags -> ''information'' AS information, way','I am not so sure about this range….');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2000','2099','public','osm_id, name, amenity, landuse, tags, way','government offices, post office, police, etc.');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2100','2199','health','osm_id, name, amenity, landuse, tags, way','Hospitals, pharmacies');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2200','2299','leisure','osm_id, name, amenity, landuse, leisure, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2300','2399','food','osm_id, name, amenity, tags -> ''cuisine'' AS cuisine, tags -> ''takeaway'' AS takeaway, tags -> ''capacity'' AS capacity, tags -> ''opening_hours'' AS opening_hours, tags -> ''outdoor_seating'' AS outdoor_seating, "addr:housename" AS housename, "addr:housenumber" AS housenumber, tags -> ''addr:street'' AS street, tags -> ''addr:unit'' AS addr_unit, tags -> ''addr:suite'' AS addr_suite, COALESCE(tags -> ''website'', tags -> ''contact:website'', tags -> ''url'', '''') AS website, COALESCE(tags -> ''email'', tags -> ''contact:email'', '''') AS email, tags, way','Restaurants, pubs, cafes');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2400','2499','accomodation','osm_id, name, landuse, leisure, tourism, tags, way','Hotel, motel, etc.');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2500','2599','shopping','osm_id, name, shop, amenity, tags -> ''vending'' AS vending, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2600','2899','tourism','osm_id, name, tourism, amenity, tags -> ''information'' AS information, tags, way','I am not so sure about this range….');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('2900','2999','miscpoi','osm_id, name, tags, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, way','Place of Worship');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, REPLACE(tags -> ''maxspeed'', '' mph'', '''') AS maxspeed, oneway, tracktype, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5200','5299','traffic','osm_id, name, tags -> ''traffic''  AS traffic, highway, ref, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('3000','3999','pofw','osm_id, name, religion, tags, way','Place of Worship');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('4100','4199','natural','osm_id, name, "natural", tags -> ''ele'' AS elevation, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5000','5099','transport','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5100','5199','road','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, REPLACE(tags -> ''maxspeed'', '' mph'', '''') AS maxspeed, oneway, tracktype, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('5200','5299','traffic','osm_id, name, tags -> ''traffic''  AS traffic, highway, ref, tags, way','');
 
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6100','6199','railway','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6400','6499','power','osm_id, name, power, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6500','6599','powerline','osm_id, name, power, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('7200','7299','landuse','osm_id, name, landuse, "natural", leisure,boundary, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('8100','8199','waterway','osm_id, name, waterway, "natural", landuse, way','');
-INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('8200','8299','water','osm_id, name, waterway, "natural", landuse, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6100','6199','railway','osm_id, name, tags -> ''traffic'' AS traffic, highway, ref, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6400','6499','power','osm_id, name, power, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('6500','6599','powerline','osm_id, name, power, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('7200','7299','landuse','osm_id, name, landuse, "natural", leisure, boundary, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('8100','8199','waterway','osm_id, name, waterway, "natural", landuse, tags, way','');
+INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('8200','8299','water','osm_id, name, waterway, "natural", landuse,tags,  way','');
 INSERT INTO pgosm.layer_group (code_start, code_end, class, osm_columns, description) VALUES ('8300','8399','coastline','','');
 
 
