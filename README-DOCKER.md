@@ -15,10 +15,10 @@ docker build -t rustprooflabs/pgosm .
 Tag with Pg version.
 
 ```
-docker build -t rustprooflabs/pgosm:pg12 .
+docker build -t rustprooflabs/pgosm:pg13 .
 ```
 
-> Note: Update the Dockerfile to build with non-default Postgres version.
+> Note: Update the Dockerfile to build with non-default Postgres/PostGIS version.
 
 Push to Dockerhub
 
