@@ -5,153 +5,46 @@ The goal of `PgOSM` is to make it simpler to load an OpenStreetMap `.pbf` file i
 See included `LICENSE` file for more details about licensing.
 
 
-## Using PgOSM
-
-The process overview looks like this:
-
-* Download OSM PBF file
-* `osm2pgsql` loads PBF -> Postgres
-* `pgosm` converts into user-defined layer tables
-* Enjoy!
-
-### Prereqs
-
-* PostgreSQL
-* PostGIS
-* osm2pgsql 1.2
-* Python 3.7+
-
-This guide is written for Debian/Ubuntu variants of Linux.
-
-### Load data via osm2psql
-
-Start by loading the OpenStreetMap data to Postgres/PostGIS. 
-The RustProof Labs blog has a post explaining how to
-[load an OpenStreetMap PBF to PostGIS](https://blog.rustprooflabs.com/2020/01/postgis-osm-load-2020) using [osm2pgsql](https://github.com/openstreetmap/osm2pgsql).
-
-### Clone and setup PgOSM
-
-Switch to the `postgres` user and clone the PgOSM repo.
-
-    sudo su - postgres
-    mkdir ~/git
-    cd ~/git
-    git clone https://github.com/rustprooflabs/pgosm.git
-
-### Deploy schema and define layers
-
-Deploying the table structure is done via [sqitch](https://sqitch.org/).
-
-    cd ~/git/pgosm/db
-    sqitch deploy db:pg:pgosm
-
-
-Load included layer groupings:
-
-    psql -d pgosm -f ~/git/pgosm/db/data/layer_definitions.sql
-    psql -d pgosm -f ~/git/pgosm/db/data/thematic_road.sql
-
-
-Load included routable roads definitions (optional).
-
-    psql -d pgosm -f ~/git/pgosm/db/data/routable.sql
-
-
-### Setup Python environment
-
-The PgOSM transformations are processed using Python. The Python program
-reads the data loaded in the prior step to generate the SQL code
-to transform the OpenStreetMap data structure.
-
-Create a `pgosm` virtual environment for Python and install the required modules.
-
-    mkdir ~/venv
-    cd ~/venv
-    python3.7 -m venv pgosm
-    source ~/venv/pgosm/bin/activate
-    pip install -r ~/git/pgosm/requirements.txt
-
-> Note: On `linux/arm64` architecture (e.g. Raspberry Pi) you may need to use `pip install Cython numpy` before installing the `requirements.txt` file.
-
-
-Create the folder for the generated SQL statements  .
-
-    mkdir ~/git/pgosm/output
-
-
-#### Env vars
-
-The Python portion of the process needs to build a connection string to connect to the data and apply the
-transformations.  Set these appropriately to connect to your `pgosm` database.
-
-    export DB_HOST=localhost
-    export DB_NAME=pgosm
-    export DB_USER=your_db_user
-    
-The above assumes you have a password setup in `~/.pgpass`.  If you can't do that (or don't want
-to) you can define the `DB_PW` variable.
-
-    export DB_PW=NonyaBusine$s
-
-
-## Run PgOSM
-
-It's time to run the transformation!  These commands ensure the virtual environment is active and
-runs the process via Python.
-
-    source ~/venv/pgosm/bin/activate
-    cd ~/git/pgosm
-    python -c "import pgosm; pgosm.process_layers();"
-
-Output should look similar to the following snippet.
-
-
-    DB Password not set.  Will attempt to use ~/.pgpass.
-    DB Port not set.  Defaulting to 5432
-    Output Path:  output/create_pgosm_layers.sql
-    Starting processing.
-    26 layers returned
-    Processing layer place (layer_group_id=1).
-    Processing layer boundary (layer_group_id=2).
-    Processing layer admin_area (layer_group_id=3).
-    ...
-    Processing layer waterway (layer_group_id=23).
-    Processing layer water (layer_group_id=24).
-    Processing layer coastline (layer_group_id=25).
-    Processing layer t_road (layer_group_id=26).
-    Executing SQL Script...
-    Executing SQL Script completed.
-    Finished processing.  Total time elapsed: 90.7 seconds.
-
-The `pgosm` database now has a new schema named `osm` with the transformed
-OpenStreetMap tables.
-
-### Variations
-
-
-Use the optional `schema` parameter (i.e. `pgosm.process_layers(schema='osm_co')`) to override the default `osm` schema name.
-
-
-Use the optional `generate_only` parameter
-(i.e. `pgosm.process_layers(generate_only=True)`) to generate the SQL script
-for the transformations, but not run it.
-
 
 ## Docker Image
 
-PgOSM can be deployed in a Docker image.  Uses [main Postgres image](https://hub.docker.com/_/postgres/) as starting point, see that
-repo for full instructions on using the core Postgres functionality.
 
-```
-docker build -t rustprooflabs/pgosm .
-```
+PgOSM is easiest deployed using the Docker image from [Docker Hub](https://hub.docker.com/r/rustprooflabs/pgosm). To use PgOSM without Docker, see the [manual instructions (README-MANUAL.md)](README-MANUAL.md).
 
-Run container.
+
+Create folder for the output (``~/pgosm-data``),
+this stores the generated SQL file used to perform the PgOSM transformations and the
+output file from ``pg_dump`` containing the ``osm`` and ``pgosm`` schemas to load into a production database.
+The ``.osm.pbf`` file and associated ``md5``are saved here.  Custom templates, and custom OSM file inputs can be stored here.
+
 
 ```
 mkdir ~/pgosm-data
 mkdir ~/pgosm-input
+```
 
+To run custom transformations, place the SQL for the 
+setup into `~/pgosm-input`. The following command adds the included `thematic_road` 
+transformation into the processing queue, thus into the 
+SQL output at the end.
+
+*(Optional)*
+
+```
+cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
+```
+
+To skip the default transformations, place a `skip_default` file into `~/pgosm-input`.
+
+*(Optional)*
+
+```
+touch ~/pgosm-input/skip_default
+```
+
+Start the `pgosm` container to make PostgreSQL/PostGIS available.  This command exposes Postgres inside Docker on port 5433 and establishes links to local directories.
+
+```
 docker run --name pgosm -d \
     -v ~/pgosm-data:/app/output \
     -v ~/pgosm-input:/app/db/data/custom \
@@ -159,25 +52,9 @@ docker run --name pgosm -d \
     -p 5433:5432 -d rustprooflabs/pgosm
 ```
 
-To run custom transformations, place the SQL for the 
-setup into `~/pgosm-input` (created above).
-The following command adds the included `thematic_road` 
-transformation into the processing queue, thus into the 
-SQL output at the end.
 
-```
-cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
-```
-
-To skip the default full transformations, place a `skip_default`
-file into `~/pgosm-input`.
-
-
-```
-touch ~/pgosm-input/skip_default
-```
-
-Run the PgOSM Sub-region processing.
+Run the PgOSM Sub-region processing.  Using the Washington D.C. sub-region is great
+for testing, it runs fast even on the smallest hardware.
 
 ```
 docker exec -it \
