@@ -1,7 +1,7 @@
 # Using PgOSM - Non-Docker
 
 If you want to install and configure osm2pgsql and PgOSM manually, follow these
-instructions.  The recommended way to run this for most users is to use the Docker
+instructions.  The [recommended method](README.md) to run this for most users is to use the Docker
 image.
 
 

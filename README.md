@@ -9,7 +9,10 @@ See included `LICENSE` file for more details about licensing.
 ## Docker Image
 
 
-PgOSM is easiest deployed using the Docker image from [Docker Hub](https://hub.docker.com/r/rustprooflabs/pgosm).  Create folder for the output (``~/pgosm-data``),
+PgOSM is easiest deployed using the Docker image from [Docker Hub](https://hub.docker.com/r/rustprooflabs/pgosm). To use PgOSM without Docker, see the [manual instructions (README-MANUAL.md)](README-MANUAL.md).
+
+
+Create folder for the output (``~/pgosm-data``),
 this stores the generated SQL file used to perform the PgOSM transformations and the
 output file from ``pg_dump`` containing the ``osm`` and ``pgosm`` schemas to load into a production database.
 The ``.osm.pbf`` file and associated ``md5``are saved here.  Custom templates, and custom OSM file inputs can be stored here.

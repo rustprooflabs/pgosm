@@ -2,7 +2,7 @@
 
 Notes covering Docker and generating image for Docker Hub.
 
-Uses [main Postgres image](https://hub.docker.com/_/postgres/) as starting point, see that
+Uses [main Postgres image](https://hub.docker.com/_/postgres/) via the [main PostGIS image](https://hub.docker.com/r/postgis/postgis) as starting point, see that
 repo for full instructions on using the core Postgres functionality.
 
 Build latest.
