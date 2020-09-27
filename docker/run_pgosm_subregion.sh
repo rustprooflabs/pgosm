@@ -14,14 +14,40 @@ echo "Running with Region:  $1"
 echo "Running Sub-Region:  $2"
 echo "Downloading OSM file"
 
-PBF_FILE=/app/output/source-$2.osm.pbf
+BASE_PATH=/app/
+
+OUT_PATH=/app/output/
+DB_PATH=/app/db/
+
+# Naming scheme must match Geofabrik's for MD5 sums to validatate
+PBF_FILE=$OUT_PATH$2-latest.osm.pbf
+MD5_FILE=$OUT_PATH$2-latest.osm.pbf.md5
 
 if [ -f $PBF_FILE ]; then
     echo "$PBF_FILE exists."
 else 
-    echo "$FILE does not exist."
+    echo "$PBF_FILE does not exist.  Downloading..."
     wget https://download.geofabrik.de/$1/$2-latest.osm.pbf -O $PBF_FILE
 fi
+
+if [ -f $MD5_FILE ]; then
+  echo "$MD5_FILE exists."
+else
+  echo "$MD5_FILE does not exist.  Downloading..."
+  wget https://download.geofabrik.de/$1/$2-latest.osm.pbf.md5 -O $MD5_FILE
+fi
+
+
+
+if cd $OUT_PATH && md5sum -c $MD5_FILE; then
+    echo 'MD5 checksum validated'
+else
+    echo 'MD5 sum of file did not match.'
+    echo $PWD
+    exit 1
+fi
+
+cd $BASE_PATH
 
 echo "Create empty pgosm database with extensions..."
 psql -U postgres -c "DROP DATABASE IF EXISTS pgosm;"
@@ -35,9 +61,10 @@ osm2pgsql -U postgres --create --slim --drop \
 
 
 # Change to DB directory and prepare layer transformations
-cd db/
+cd $DB_PATH
 
 echo "Deploying PgOSM schema with sqitch..."
+echo "Directory: $PWD"
 sqitch deploy db:pg://postgres@localhost/pgosm
 
 if [ -f data/custom/skip_default ]; then
@@ -65,3 +92,5 @@ cd ..
 python3 -c "import pgosm; pgosm.process_layers(schema='$PGOSM_SCHEMA');"
 
 pg_dump -U postgres -d pgosm --schema=$PGOSM_SCHEMA --schema=pgosm > /app/output/pgosm-$2.sql
+
+exit 0
