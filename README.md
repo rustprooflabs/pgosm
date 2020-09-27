@@ -6,7 +6,7 @@ See included `LICENSE` file for more details about licensing.
 
 
 
-## Docker Image
+## PgOSM via Docker
 
 
 PgOSM is easiest deployed using the Docker image from [Docker Hub](https://hub.docker.com/r/rustprooflabs/pgosm). To use PgOSM without Docker, see the [manual instructions (README-MANUAL.md)](README-MANUAL.md).
@@ -68,6 +68,19 @@ docker exec -it \
 
 > Skip the PgOSM processing entirely with a `skip_default` file and no custom files.  This is helpful for developing custom transformations.
 
+## Always download
+
+To force the processing to remove existing files and re-download the latest PBF and MD5 files from Geofabrik, set the `PGOSM_ALWAYS_DOWNLOAD` env var when running the Docker
+container.
+
+```
+docker run --name pgosm -d \
+    -v ~/pgosm-data:/app/output \
+    -v ~/pgosm-input:/app/db/data/custom \
+    -e POSTGRES_PASSWORD=mysecretpassword \
+    -e PGOSM_ALWAYS_DOWNLOAD=1 \
+    -p 5433:5432 -d rustprooflabs/pgosm
+```
 
 ----
 
