@@ -28,11 +28,21 @@ setup into `~/pgosm-input`. The following command adds the included `thematic_ro
 transformation into the processing queue, thus into the 
 SQL output at the end.
 
+*(Optional)*
+
 ```
 cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
 ```
 
-Run container.
+To skip the default transformations, place a `skip_default` file into `~/pgosm-input`.
+
+*(Optional)*
+
+```
+touch ~/pgosm-input/skip_default
+```
+
+Start the `pgosm` container to make PostgreSQL/PostGIS available.  This command exposes Postgres inside Docker on port 5433 and establishes links to local directories.
 
 ```
 docker run --name pgosm -d \
@@ -42,12 +52,6 @@ docker run --name pgosm -d \
     -p 5433:5432 -d rustprooflabs/pgosm
 ```
 
-
-To skip the default transformations, place a `skip_default` file into `~/pgosm-input`.
-
-```
-touch ~/pgosm-input/skip_default
-```
 
 Run the PgOSM Sub-region processing.  Using the Washington D.C. sub-region is great
 for testing, it runs fast even on the smallest hardware.
