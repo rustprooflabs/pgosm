@@ -8,12 +8,25 @@ See included `LICENSE` file for more details about licensing.
 
 ## Docker Image
 
-PgOSM can be deployed in a Docker image. Create folder for output,
-and optional folder for input.
+
+PgOSM is easiest deployed using the Docker image from [Docker Hub](https://hub.docker.com/r/rustprooflabs/pgosm).  Create folder for the output (``~/pgosm-data``),
+this stores the generated SQL file used to perform the PgOSM transformations and the
+output file from ``pg_dump`` containing the ``osm`` and ``pgosm`` schemas to load into a production database.
+The ``.osm.pbf`` file and associated ``md5``are saved here.  Custom templates, and custom OSM file inputs can be stored here.
+
 
 ```
 mkdir ~/pgosm-data
 mkdir ~/pgosm-input
+```
+
+To run custom transformations, place the SQL for the 
+setup into `~/pgosm-input`. The following command adds the included `thematic_road` 
+transformation into the processing queue, thus into the 
+SQL output at the end.
+
+```
+cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
 ```
 
 Run container.
@@ -26,15 +39,6 @@ docker run --name pgosm -d \
     -p 5433:5432 -d rustprooflabs/pgosm
 ```
 
-To run custom transformations, place the SQL for the 
-setup into `~/pgosm-input` (created above).
-The following command adds the included `thematic_road` 
-transformation into the processing queue, thus into the 
-SQL output at the end.
-
-```
-cp ~/git/pgosm/db/data/thematic_road.sql ~/pgosm-input/
-```
 
 To skip the default transformations, place a `skip_default` file into `~/pgosm-input`.
 
