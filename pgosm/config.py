@@ -1,5 +1,5 @@
+"""Configuration for PgOSM runtime."""
 import os
-
 
 
 try:
@@ -34,21 +34,28 @@ except KeyError:
     msg = 'DB Port not set.  Defaulting to 5432'
     print(msg)
 
+APP_NAME = 'PgOSM'
 
 def get_db_string():
-    """ Builds the database connection string based on set parameters."""
+    """ Builds the database connection string based on set parameters.
+
+    Returns
+    --------------------
+    database_string : str
+        Database string to use to establish psycopg2 connection.
+    """
     if DB_PW is None:
-        database_string = 'postgresql://{user}@{host}:{port}/{dbname}'
+        database_string = 'postgresql://{user}@{host}:{port}/{dbname}?application_name={app_name}'
 
         return database_string.format(user=DB_USER, host=DB_HOST,
-                                      port=DB_PORT, dbname=DB_NAME)
+                                      port=DB_PORT, dbname=DB_NAME,
+                                      app_name=APP_NAME)
 
-    database_string = 'postgresql://{user}:{pw}@{host}:{port}/{dbname}'
+    database_string = 'postgresql://{user}:{pw}@{host}:{port}/{dbname}?application_name={app_name}'
     return database_string.format(user=DB_USER, pw=DB_PW, host=DB_HOST,
-                                  port=DB_PORT, dbname=DB_NAME)
+                                  port=DB_PORT, dbname=DB_NAME,
+                                  app_name=APP_NAME)
 
 
 DATABASE_STRING = get_db_string()
 
-
-APP_NAME = 'PgOSM'

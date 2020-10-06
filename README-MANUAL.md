@@ -65,7 +65,7 @@ Create a `pgosm` virtual environment for Python and install the required modules
 
     mkdir ~/venv
     cd ~/venv
-    python3.7 -m venv pgosm
+    python3.8 -m venv pgosm
     source ~/venv/pgosm/bin/activate
     pip install -r ~/git/pgosm/requirements.txt
 

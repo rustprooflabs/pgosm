@@ -1,8 +1,19 @@
+"""Provides custom processing for calculating travel times across a grid of points.
+
+See pgosm/travel_time_grid.md for details.
+"""
 import datetime
 from pgosm import db
 
 
-sql_raw = """
+def get_sql():
+    """Returns the raw SQL for the query needed.
+
+    Returns
+    -----------------------
+    sql_raw : str
+    """
+    sql_raw = """
 -- Building on CTE above, adding in process of getting agg cost
 WITH start_point AS (
 SELECT a.id
@@ -47,6 +58,7 @@ UPDATE pgosm.travel_grid grid
     WHERE grid.id = c.grid_id
 ;
 """
+    return sql_raw
 
 
 def record_count():
@@ -67,6 +79,16 @@ def record_count():
 
 
 def record_remaining(print_interval):
+    """Checks for remaining records, printing every N (`print_interval`) rows.
+
+    Parameters
+    ------------------
+    print_interval : int
+
+    Returns
+    ------------------
+    status : boolean
+    """
     remaining_rows = record_count()
     if remaining_rows % print_interval == 0:
         print(remaining_rows)
@@ -107,7 +129,7 @@ def _process_points(print_interval):
     while record_remaining(print_interval):
         grid_id = _grid_id()
         params = [grid_id]
-        db.execute_no_results(sql_raw, params)
+        db.execute_no_results(get_sql(), params)
 
 def run(print_interval=250):
     starttime = datetime.datetime.now()
@@ -116,7 +138,7 @@ def run(print_interval=250):
     print(f'Starting record count: {num_records}')
     if num_records == 0:
         raise ValueError('No records to process.')
-    
+
     print(f'Starting processing...')
     _process_points(print_interval)
 
@@ -125,4 +147,3 @@ def run(print_interval=250):
     elapsed = delta.total_seconds()
     print(f'Completed: {endtime}')
     print(f'{elapsed} seconds')
-

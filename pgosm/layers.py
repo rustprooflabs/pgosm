@@ -27,8 +27,8 @@ def process_layers(schema='osm', generate_only=False):
         When False (default) the generated SQL script is executed.
     """
     start_time = time.time()
-    print('Starting processing.')
-    
+    print('Starting PgOSM processing...')
+
     file_manager.remove_file(SQL_OUTPUT_PATH)
 
     create_osm_schema(schema=schema)
@@ -36,13 +36,21 @@ def process_layers(schema='osm', generate_only=False):
 
     end_time = time.time()
 
-    msg = 'Finished processing.  Total time elapsed: {} seconds.'
+    msg = 'Finished PgOSM processing.  Total time elapsed: {} seconds.'
     elapsed = round((end_time - start_time), 1)
     print(msg.format(elapsed))
 
 
 def create_osm_schema(schema):
-    """Creates an empty schema.  WARNING:  Drops existing `osm` schema."""
+    """Generates SQL to create an empty schema.
+
+    WARNING:  Drops existing schema!
+
+    Parameters
+    ------------------
+    schema : str
+        Schema name to drop (if exists) and create.
+    """
     sql = 'DROP SCHEMA IF EXISTS {} CASCADE;'.format(schema)
     file_manager.write_to_file(SQL_OUTPUT_PATH, sql)
     sql = 'CREATE SCHEMA {};'.format(schema)
@@ -58,6 +66,17 @@ def create_osm_schema(schema):
 
 
 def generate_layers(schema='osm', generate_only=False):
+    """Generates and (optionally) executes SQL to transform OpenStreetMap data.
+
+    Parameters
+    --------------------
+    schema : str
+        Schema name (e.g. `osm`) to save transformed data.
+
+    generate_only : boolean
+        Default False.  If True, the SQL to perform the transformation is
+        generated but **not** executed.
+    """
     generate_sql_for_layers(schema=schema)
 
     if generate_only:
@@ -69,6 +88,13 @@ def generate_layers(schema='osm', generate_only=False):
         print('Executing SQL Script completed.')
 
 def generate_sql_for_layers(schema='osm'):
+    """Queries the `pgosm` schema and generates the SQL to transform OpenStreetMap data.
+
+    Parameters
+    --------------------
+    schema : str
+        Schema name (e.g. `osm`) to save transformed data.
+    """
     layers = get_layers()
     print('{} layers returned'.format(len(layers)))
 
@@ -78,10 +104,16 @@ def generate_sql_for_layers(schema='osm'):
         description = data['description']
 
         process_layer_classes(layer_group_id, schema, layer_name,
-            layer_columns, description)
+                              layer_columns, description)
 
 
 def get_layers():
+    """Queries the `pgosm.layer_group` table for details needed to generate transformations.
+
+    Returns
+    ---------------
+    layers : pandas.DataFrame
+    """
     sql = 'SELECT layer_group_id, class AS name, osm_columns, description '
     sql += ' FROM pgosm.layer_group '
     layers = db.return_dataframe(sql, index_column='layer_group_id')
@@ -90,6 +122,7 @@ def get_layers():
 
 def process_layer_classes(layer_group_id, schema, layer_name,
                           layer_columns, description):
+    """FIXME:  Add docblock!"""
     print('Processing layer %s (layer_group_id=%s).' % (layer_name, layer_group_id))
     layer_classes = get_layer_classes(layer_group_id)
 
@@ -108,7 +141,7 @@ def process_layer_classes(layer_group_id, schema, layer_name,
             geom_polygon = True
 
     if (len(combined_filter) < 1):
-        print ('Stopping process_layer_classes(), no combined_filter.')
+        print('Stopping process_layer_classes(), no combined_filter.')
         return
 
     sql_filter = build_combined_filter_OR(combined_filter)
@@ -138,7 +171,7 @@ def process_layer_classes(layer_group_id, schema, layer_name,
 
 def create_layer_sql(table_name, columns, sql_filter,
                      geom_type, description):
-
+    """FIXME:  Add docblock!"""
     sql = 'SELECT ' + str(columns)
 
     if geom_type == 'point':
@@ -165,9 +198,10 @@ def create_layer_sql(table_name, columns, sql_filter,
     sql_comment = "COMMENT ON TABLE {table_name} is '{comment}'; "
     sql_comment = sql_comment.format(table_name=table_name,
                                      comment=table_comment)
-    file_manager.write_to_file(SQL_OUTPUT_PATH, sql_comment)    
+    file_manager.write_to_file(SQL_OUTPUT_PATH, sql_comment)
 
 def get_layer_classes(layer_group_id):
+    """FIXME:  Add docblock!"""
     sql = 'SELECT layer_detail_id, code, subclass, geom_point, geom_line, '
     sql += ' geom_polygon, osm_tag_filter, description '
     sql += '    FROM pgosm.layer_detail '
@@ -179,6 +213,7 @@ def get_layer_classes(layer_group_id):
 
 
 def build_combined_filter_OR(filter_sets):
+    """FIXME:  Add docblock!"""
     i = 0
     rows = list(filter_sets.values())
     for row in rows:
@@ -191,11 +226,10 @@ def build_combined_filter_OR(filter_sets):
 
 
 def build_combined_case_statement(filter_sets):
+    """FIXME:  Add docblock!"""
     sql = 'CASE '
     for key, value in filter_sets.items():
         sql += " WHEN (%s) THEN '%s' " % (value, key)
 
     sql += ' END AS code '
     return sql
-
-
