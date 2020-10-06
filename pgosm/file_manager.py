@@ -57,4 +57,3 @@ def read_file(file_path):
         data = f.read()
 
     return data
-

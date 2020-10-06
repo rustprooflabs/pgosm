@@ -138,7 +138,7 @@ def run(print_interval=250):
     print(f'Starting record count: {num_records}')
     if num_records == 0:
         raise ValueError('No records to process.')
-    
+
     print(f'Starting processing...')
     _process_points(print_interval)
 
@@ -147,4 +147,3 @@ def run(print_interval=250):
     elapsed = delta.total_seconds()
     print(f'Completed: {endtime}')
     print(f'{elapsed} seconds')
-

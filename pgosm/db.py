@@ -4,7 +4,7 @@ import pandas as pd
 from pgosm import config
 
 
-def return_dataframe(sql_query, params = list(), **kwargs):
+def return_dataframe(sql_query, params=None, **kwargs):
     """Queries Postgres to return data in DataFrame.
 
     Parameters

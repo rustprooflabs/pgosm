@@ -59,4 +59,3 @@ def get_db_string():
 
 DATABASE_STRING = get_db_string()
 
-

@@ -28,7 +28,7 @@ def process_layers(schema='osm', generate_only=False):
     """
     start_time = time.time()
     print('Starting PgOSM processing...')
-    
+
     file_manager.remove_file(SQL_OUTPUT_PATH)
 
     create_osm_schema(schema=schema)
@@ -104,7 +104,7 @@ def generate_sql_for_layers(schema='osm'):
         description = data['description']
 
         process_layer_classes(layer_group_id, schema, layer_name,
-            layer_columns, description)
+                              layer_columns, description)
 
 
 def get_layers():
@@ -141,7 +141,7 @@ def process_layer_classes(layer_group_id, schema, layer_name,
             geom_polygon = True
 
     if (len(combined_filter) < 1):
-        print ('Stopping process_layer_classes(), no combined_filter.')
+        print('Stopping process_layer_classes(), no combined_filter.')
         return
 
     sql_filter = build_combined_filter_OR(combined_filter)
@@ -198,7 +198,7 @@ def create_layer_sql(table_name, columns, sql_filter,
     sql_comment = "COMMENT ON TABLE {table_name} is '{comment}'; "
     sql_comment = sql_comment.format(table_name=table_name,
                                      comment=table_comment)
-    file_manager.write_to_file(SQL_OUTPUT_PATH, sql_comment)    
+    file_manager.write_to_file(SQL_OUTPUT_PATH, sql_comment)
 
 def get_layer_classes(layer_group_id):
     """FIXME:  Add docblock!"""
@@ -233,5 +233,3 @@ def build_combined_case_statement(filter_sets):
 
     sql += ' END AS code '
     return sql
-
-
