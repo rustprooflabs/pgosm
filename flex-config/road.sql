@@ -5,4 +5,4 @@ ALTER TABLE osm.road_line
     PRIMARY KEY (way_id)
 ;
 
-CREATE INDEX ix_osm_road_line_highway ON osm.road_line (highway);
+CREATE INDEX ix_osm_road_line_highway ON osm.road_line (osm_type);

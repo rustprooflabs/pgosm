@@ -7,10 +7,11 @@ transformations and cleanup in `<name>.sql`.
 
 
 ```
-osm2pgsql --slim --drop --output=flex --style=./road.lua -d pgosm ~/tmp/district-of-columbia-latest.osm.pbf
+osm2pgsql --slim --drop --output=flex --style=./road.lua --style=./natural.lua -d pgosm ~/tmp/district-of-columbia-latest.osm.pbf
 ```
 
 ```sql
 psql -d pgosm -f ./road.sql
+psql -d pgosm -f ./natural.sql
 ```
 

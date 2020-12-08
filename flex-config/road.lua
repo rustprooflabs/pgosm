@@ -6,7 +6,7 @@ local json = require('dkjson')
 local tables = {}
 
 tables.highways = osm2pgsql.define_way_table('road_line', {
-    { column = 'highway',     type = 'text', not_null = true },
+    { column = 'osm_type',     type = 'text', not_null = true },
     { column = 'name',     type = 'text' },
     { column = 'ref',     type = 'text' },
     { column = 'maxspeed', type = 'int' },
@@ -62,7 +62,7 @@ function osm2pgsql.process_way(object)
 
     -- Using grab_tag() removes from remaining key/value saved to Pg
     local name = object:grab_tag('name')
-    local highway = object:grab_tag('highway')
+    local osm_type = object:grab_tag('highway')
     local ref = object:grab_tag('ref')
     -- in km/hr
     maxspeed = parse_speed(object.tags.maxspeed)
@@ -72,7 +72,7 @@ function osm2pgsql.process_way(object)
     tables.highways:add_row({
         tags = json.encode(object.tags),
         name = name,
-        highway = highway,
+        osm_type = osm_type,
         ref = ref,
         maxspeed = maxspeed,
         oneway = oneway,
