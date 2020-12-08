@@ -6,8 +6,8 @@ local json = require('dkjson')
 local tables = {}
 
 tables.highways = osm2pgsql.define_way_table('road_line', {
+    { column = 'highway',     type = 'text', not_null = true },
     { column = 'name',     type = 'text' },
-    { column = 'highway',     type = 'text' },
     { column = 'ref',     type = 'text' },
     { column = 'maxspeed', type = 'int' },
     { column = 'oneway',     type = 'direction' },
