@@ -1,19 +1,20 @@
-
-
 -- Use JSON encoder
 local json = require('dkjson')
 
 local tables = {}
 
-tables.highways = osm2pgsql.define_way_table('road_line', {
-    { column = 'osm_type',     type = 'text', not_null = true },
-    { column = 'name',     type = 'text' },
-    { column = 'ref',     type = 'text' },
-    { column = 'maxspeed', type = 'int' },
-    { column = 'oneway',     type = 'direction' },
-    { column = 'tags',     type = 'jsonb' },
-    { column = 'geom',     type = 'linestring' },
-}, { schema = 'osm' })
+tables.highways = osm2pgsql.define_way_table('road_line',
+    {
+        { column = 'osm_type',     type = 'text', not_null = true },
+        { column = 'name',     type = 'text' },
+        { column = 'ref',     type = 'text' },
+        { column = 'maxspeed', type = 'int' },
+        { column = 'oneway',     type = 'direction' },
+        { column = 'tags',     type = 'jsonb' },
+        { column = 'geom',     type = 'linestring' },
+    },
+    { schema = 'osm' }
+)
 
 
 function clean_tags(tags)
