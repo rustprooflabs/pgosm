@@ -10,6 +10,20 @@ tables.natural = osm2pgsql.define_node_table('natural_point', {
     { column = 'geom',     type = 'point' },
 }, { schema = 'osm' })
 
+tables.natural_line = osm2pgsql.define_way_table('natural_line', {
+    { column = 'osm_type',     type = 'text', not_null = true },
+    { column = 'tags',     type = 'jsonb' },
+    { column = 'geom',     type = 'linestring' },
+}, { schema = 'osm' })
+
+
+tables.natural_polygon = osm2pgsql.define_way_table('natural_polygon', {
+    { column = 'osm_type',     type = 'text' , not_null = true},
+    { column = 'tags',     type = 'jsonb' },
+    { column = 'geom',     type = 'multipolygon' },
+}, { schema = 'osm' })
+
+
 
 function clean_tags(tags)
     tags.odbl = nil
@@ -38,4 +52,31 @@ function osm2pgsql.process_node(object)
         geom = { create = 'point' }
     })
 
+end
+
+function osm2pgsql.process_way(object)
+    -- We are only interested in highways
+    if not object.tags.natural then
+        return
+    end
+
+    clean_tags(object.tags)
+
+    local osm_type = object:grab_tag('natural')
+
+
+    if object.is_closed then
+        tables.natural_polygon:add_row({
+            tags = json.encode(object.tags),
+            osm_type = osm_type,
+            geom = { create = 'area' }
+        })
+    else
+        tables.natural_line:add_row({
+            tags = json.encode(object.tags),
+            osm_type = osm_type,
+            geom = { create = 'line' }
+        })
+    end
+    
 end
