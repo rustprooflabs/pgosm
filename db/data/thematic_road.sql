@@ -12,6 +12,7 @@ INSERT INTO pgosm.layer_detail (layer_group_id, code,
 SELECT lg.layer_group_id, a.* 
 	FROM  (
 	VALUES ('5111', 'motorway', False,True, False, 'highway=''motorway''','')
+	      ,('5112', 'trunk', False,True, False, 'highway=''trunk''','')
 		  ,('5113','primary',False,True,False,'highway=''primary''','')
 		  ,('5114','secondary',False,True,False,'highway=''secondary''','')
 		,('5115','tertiary',False,True,False,'highway=''tertiary''','')
