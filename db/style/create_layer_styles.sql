@@ -32,5 +32,6 @@ CREATE TABLE IF NOT EXISTS public.layer_styles (
     owner character varying(30),
     ui xml,
     update_time timestamp without time zone DEFAULT now(),
+    type character varying,
     CONSTRAINT layer_styles_pkey PRIMARY KEY (id)
 );
