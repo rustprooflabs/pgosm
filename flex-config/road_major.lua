@@ -3,17 +3,19 @@ local json = require('dkjson')
 
 local tables = {}
 
-tables.road_major = osm2pgsql.define_way_table('road_major',
-    {
+tables.road_major = osm2pgsql.define_table({
+    name = 'road_major',
+    schema = 'osm',
+    ids = { type = 'way', id_column = 'osm_id' },
+    columns = {
         { column = 'osm_type',     type = 'text', not_null = true },
         { column = 'name',     type = 'text' },
         { column = 'ref',     type = 'text' },
         { column = 'maxspeed', type = 'int' },
         { column = 'tags',     type = 'jsonb' },
         { column = 'geom',     type = 'linestring' },
-    },
-    { schema = 'osm' }
-)
+    }
+})
 
 
 function clean_tags(tags)
@@ -52,7 +54,8 @@ function parse_speed(input)
 end
 
 
-function osm2pgsql.process_way(object)
+-- Change function name here
+function road_major_process_way(object)
     -- We are only interested in highways
     if not object.tags.highway then
         return
@@ -91,4 +94,27 @@ function osm2pgsql.process_way(object)
         geom = { create = 'line' }
     })
 
+end
+
+
+-- deep_copy based on copy2: https://gist.github.com/tylerneylon/81333721109155b2d244
+function deep_copy(obj)
+    if type(obj) ~= 'table' then return obj end
+    local res = setmetatable({}, getmetatable(obj))
+    for k, v in pairs(obj) do res[deep_copy(k)] = deep_copy(v) end
+    return res
+end
+
+
+if osm2pgsql.process_way == nil then
+    -- Change function name here
+    osm2pgsql.process_way = road_major_process_way
+else
+    local nested = osm2pgsql.process_way
+    osm2pgsql.process_way = function(object)
+        local object_copy = deep_copy(object)
+        nested(object)
+        -- Change function name here
+        road_major_process_way(object_copy)
+    end
 end
