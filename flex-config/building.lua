@@ -34,6 +34,31 @@ function clean_tags(tags)
 end
 
 
+
+function parse_building_height(input)
+    if not input then
+        return nil
+    end
+
+    local height = tonumber(input)
+
+    -- If height is just a number, it is in meters, just return it
+    if height then
+        return height
+    end
+
+    -- If there is an 'ft' at the end, convert to meters and return
+    if input:sub(-2) == 'ft' then
+        local num = tonumber(input:sub(1, -3))
+        if num then
+            return num * 0.3048
+        end
+    end
+
+    return nil
+end
+
+
 -- Change function name here
 function building_process_way(object)
     if not object.tags.building then
@@ -54,7 +79,7 @@ function building_process_way(object)
     local state = object:grab_tag('addr:state')
     local wheelchair = object:grab_tag('wheelchair')
     local levels = object:grab_tag('building:levels')
-    local height = object:grab_tag('building:height')
+    local height = parse_building_height(object.tags['building:height'])
     local housenumber  = object:grab_tag('addr:housenumber')
     local operator  = object:grab_tag('operator')
 
