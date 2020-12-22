@@ -4,6 +4,7 @@ The goal of `PgOSM` is to make it simpler to load an OpenStreetMap `.pbf` file i
 
 See included `LICENSE` file for more details about licensing.
 
+> This project is becoming obsolete as osm2pgsql's new Flex output continues to develop.  See [the PgOSM Flex project](https://github.com/rustprooflabs/pgosm-flex).  The layers created by this project are actively being recreated in the PgOSM flex project.
 
 
 ## PgOSM via Docker
