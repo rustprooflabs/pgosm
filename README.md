@@ -1,10 +1,17 @@
+# :warning: Use PgOSM Flex instead! :warning:
+
+
+This project is obsolete and unmaintained!  Use [the PgOSM Flex project](https://github.com/rustprooflabs/pgosm-flex) instead
+
+----
+
+
 # PgOSM:  Making PostGIS + OpenStreetMap easier!
 
 The goal of `PgOSM` is to make it simpler to load an OpenStreetMap `.pbf` file into PostGIS. The resulting data structure provides spatial analysts easier access to open-source spatial data.  One focus of this project is to be easy to setup and run on low-power (e.g. non-server) hardware.  The target machine for this process is a virtual machine within a consumer-grade laptop given 1GB ram and a single core processor.
 
 See included `LICENSE` file for more details about licensing.
 
-> This project is becoming obsolete as osm2pgsql's new Flex output continues to develop.  See [the PgOSM Flex project](https://github.com/rustprooflabs/pgosm-flex).  The layers created by this project are actively being recreated in the PgOSM flex project.
 
 
 ## PgOSM via Docker
