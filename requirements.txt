@@ -1,5 +1,5 @@
 coverage==5.1
-ipython==7.15.0
+ipython==7.16.3
 numpy==1.18.4
 pandas==1.0.4
 psycopg2==2.8.5
